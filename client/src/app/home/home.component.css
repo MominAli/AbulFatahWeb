@@ -1,0 +1,233 @@
+.feedback-donation-section {
+    margin-top: 20px;
+}
+
+.feedback-donation-section .feedback-donation-area {
+    position: relative;
+    border-radius: 15px;
+    background-color: #fff
+}
+
+.feedback-donation-section .feedback-donation-area::before {
+    content: "";
+    border: 1px solid #ccc;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%
+}
+
+.donation,.feedback-donation-section .feedback-donation-area .feedback {
+    padding: 40px 180px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center
+}
+
+.feedback-donation-section .feedback-donation-area .donation h5,.feedback-donation-section .feedback-donation-area .feedback h5 {
+    text-align: center;
+    color: #3b3b79;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0
+}
+
+.feedback-donation-section .feedback-donation-area .donation h5 img,.feedback-donation-section .feedback-donation-area .feedback h5 img {
+    height: 27px;
+    padding: 0 2px
+}
+
+.feedback-donation-section .feedback-donation-area .feedback h5 .back {
+    margin-left: 10px
+}
+
+.feedback-donation-section .feedback-donation-area .donation p,.feedback-donation-section .feedback-donation-area .feedback p {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 400!important;
+    margin-bottom: 12px;
+    font-family: "Segoe UI"!important
+}
+
+.feedback-donation-section .feedback-donation-area .donate-anch,.feedback-donation-section .feedback-donation-area .feed-anch {
+    display: block;
+    width: 70%;
+    margin: 0 auto
+}
+
+.feedback-donation-section .feedback-donation-area .donation-btn,.feedback-donation-section .feedback-donation-area .feedback-btn {
+    border: none;
+    outline: 0;
+    background-color: #f1c152;
+    color: #fff;
+    padding: 6px 0;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Segoe UI"!important
+}
+
+.footer-copyright-section {
+    padding: 15px 0;
+    text-align: center
+}
+
+.footer-copyright-section .footer-styling-area {
+    position: relative
+}
+
+.footer-copyright-section .footer-styling-area::before {
+    content: "";
+    border: 1px solid #ccc;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 50%
+}
+
+.follow-us,.footer-copyright-section .copy-right {
+    margin: 0;
+    color: #333;
+    font-size: 20px
+}
+
+.footer-copyright-section .social-icons {
+    text-decoration: none
+}
+
+.footer-copyright-section .facebook,.twitter,.youtube {
+    margin: 0 10px
+}
+
+.footer-copyright-section .social-icons span i {
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+    background: #38383891;
+    padding: 5px 0;
+    text-decoration: none;
+    width: 25px
+}
+
+.footer-copyright-section .facebook span i:hover {
+    background: #037eb8
+}
+
+.footer-copyright-section .youtube span i:hover {
+    background: #ba2125
+}
+
+.footer-copyright-section .twitter span i:hover {
+    background: #1cc4f7
+}
+
+@media screen and (max-width: 1920px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 120px
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .feedback-donation-section .feedback-donation-area .donate-anch,.feedback-donation-section .feedback-donation-area .feed-anch {
+        width:100%
+    }
+
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding: 30px 80px
+    }
+
+    .feedback-donation-section .feedback-donation-area .donation p,.feedback-donation-section .feedback-donation-area .feedback p {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 60px
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 20px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feedback-donation-section .feedback-donation-area::before {
+        height:0;
+        width: 100%;
+        top: 50%;
+        left: 0
+    }
+
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding: 30px 85px
+    }
+
+    .footer-copyright-section .footer-styling-area::before {
+        border: none
+    }
+
+    .feedback-donation-section .feedback-donation-area .donation h5,.feedback-donation-section .feedback-donation-area .feedback h5 {
+        margin-bottom: 5px;
+        font-size: 20px
+    }
+
+    .feedback-donation-section .feedback-donation-area .donation p,.feedback-donation-section .feedback-donation-area .feedback p {
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .feedback-donation-section .feedback-donation-area .donation-btn,.feedback-donation-section .feedback-donation-area .feedback-btn {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 50px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 25px
+    }
+
+    .feedback-donation-section .feedback-donation-area .donation-btn,.feedback-donation-section .feedback-donation-area .feedback-btn {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .feedback-donation-section .feedback-donation-area .donation h5 img,.feedback-donation-section .feedback-donation-area .feedback h5 img {
+        height:25px
+    }
+
+    .follow-us,.footer-copyright-section .copy-right {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .donation,.feedback-donation-section .feedback-donation-area .feedback {
+        padding:30px 10px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .follow-us,.footer-copyright-section .copy-right {
+        font-size:15px
+    }
+}
