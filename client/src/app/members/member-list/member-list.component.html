@@ -1,8 +1,5 @@
 <div class="row">
 
-    <div class="text-center mt-3">
-        <h2>Your matches - {{memberService.paginatedResult()?.pagination?.totalItems}}</h2>
-    </div>
 
     <div class="container mt-3">
         <form #form="ngForm" class="d-flex mb-3" (ngSubmit)="loadMembers()">
@@ -41,28 +38,6 @@
 
             <button class="btn btn-primary ms-1" type="submit">Apply filters</button>
             <button (click)="resetFilters()" class="btn btn-info ms-1" type="button">Reset filters</button>
-
-            <div class="col">
-                <div class="btn-group float-end">
-                    <button
-                        type="button"
-                        class="btn btn-primary"
-                        name="orderBy"
-                        (click)="loadMembers()"
-                        btnRadio="lastActive"
-                        [(ngModel)]="memberService.userParams().orderBy"
-                    >Last Active</button>
-                    <button
-                        type="button"
-                        class="btn btn-primary"
-                        name="orderBy"
-                        (click)="loadMembers()"
-                        btnRadio="created"
-                        [(ngModel)]="memberService.userParams().orderBy"
-                    >Newest Members</button>
-                </div>
-            </div>
-
         </form>
     </div>
 
