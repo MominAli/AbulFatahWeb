@@ -9,13 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { EventsComponent } from './events/events.component';
 import { BooksComponent } from './books/books.component';
 import { MediaComponent } from './media/media.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavComponent, NgxSpinnerComponent]
+    imports: [RouterOutlet, NavComponent, NgxSpinnerComponent,CarouselComponent]
 })
 export class AppComponent implements OnInit {
   private accountService = inject(AccountService);
