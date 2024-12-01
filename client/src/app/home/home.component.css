@@ -54,7 +54,7 @@
     line-height: 28px;
     font-weight: 400!important;
     margin-bottom: 12px;
-    font-family: "Segoe UI"!important
+    font-family: 'Roboto', sans-serif !important
 }
 
 .feedback-donation-section .feedback-donation-area .donate-anch,.feedback-donation-section .feedback-donation-area .feed-anch {
@@ -74,7 +74,7 @@
     font-size: 20px;
     width: 100%;
     cursor: pointer;
-    font-family: "Segoe UI"!important
+    font-family: 'Roboto', sans-serif !important
 }
 
 .footer-copyright-section {

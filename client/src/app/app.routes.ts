@@ -26,15 +26,12 @@ export const routes: Routes = [
     {path: 'books-details', component: BooksDetailsComponent},
     {path: 'media', component: MediaComponent},
     {path: 'quran', component: QuranComponent},
-    {path: 'quran-parawise', component: QuranParawiseComponent},
+    {path: 'quranparawise', component: QuranParawiseComponent},
 
     {path: 'activity', component: ActivityComponent},
 
     {path: 'contact', component: ContactComponent},
     {path: 'register', component: RegisterComponent},
-
-
-
 
     {
         path: '',

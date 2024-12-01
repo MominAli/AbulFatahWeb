@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-quran',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './quran.component.css'
 })
 export class QuranComponent {
+  constructor(private router: Router){ }
 
+  quranDetails()
+  {
+     this.router.navigate(['/quran-parawise']);
+  }
 }
