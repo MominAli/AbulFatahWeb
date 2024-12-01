@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { BooksDetailsComponent } from './books-details/books-details.component';
 import { ActivityComponent } from './activity/activity.component';
+import { QuranParawiseComponent } from './quran/quran-parawise/quran-parawise.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -25,6 +26,8 @@ export const routes: Routes = [
     {path: 'books-details', component: BooksDetailsComponent},
     {path: 'media', component: MediaComponent},
     {path: 'quran', component: QuranComponent},
+    {path: 'quran-parawise', component: QuranParawiseComponent},
+
     {path: 'activity', component: ActivityComponent},
 
     {path: 'contact', component: ContactComponent},

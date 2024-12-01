@@ -31,7 +31,7 @@ body {
 .bgListimg ul.nav-tabs li a.active {
    background-position: center;
    background-size: 100%;
-   background: #f1c152;
+   background: #157784;
    color: white;
    border-color: transparent;
 }
@@ -40,7 +40,7 @@ body {
    line-height: 25px;
    border: 1px solid #ddd;
    /* border-top: 5px solid #29879f; */
-   border-bottom: 3px solid #f1c152;
+   border-bottom: 3px solid #157784;
    padding: 30px 25px;
    background: #ffffffbf;
    direction: ltr;

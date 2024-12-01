@@ -1,5 +1,29 @@
 
+/************************************************************************
+
+Template Name: 
+URI: 
+Description: 
+Author:  Theme
+Author URI: Version: 1.2
+
+*************************************************************************
+
+
 /*** Spinner Start ***/
+
+html p 
+ {
+  font-family:Arial, Verdana, Sans-Serif;
+  font-size:13pt;
+  font-weight:normal;
+  font-style:normal;
+  color:#000000;
+  text-decoration:none;
+  padding-top:10px;
+  /*padding-bottom:10px;*/
+}
+
 
 #spinner {
     opacity: 0;
@@ -40,13 +64,14 @@
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
-    font-weight: 700 !important;
-    font-family: 'Open', sans-serif !important;
+  line-height: 1.4 !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 h4, h5, h6, .h4, .h5, .h6 {
     font-weight: 600 !important;
-    font-family: 'Open', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: white;
 }
 
 .py-6 {
@@ -58,7 +83,6 @@ h4, h5, h6, .h4, .h5, .h6 {
 /*** Button Start ***/
 
 .btn {
-    font-weight: 600;
     transition: .5s;
 }
 
@@ -93,17 +117,18 @@ h4, h5, h6, .h4, .h5, .h6 {
     font-weight: normal;
 }
 
-.btn.btn-primary:hover {
-    color: var(--bs-primary) !important;
-    background: var(--bs-dark) !important;
-    border-color: var(--bs-dark) !important;
+.btn-primary {
+    color: white;
+    background-color: #157784;
+    border-color: #157784
 }
 
-.btn.btn-dark:hover {
-    color: var(--bs-dark) !important;
-    background: var(--bs-primary) !important;
-    border-color: var(--bs-primary) !important;
+.btn-primary:hover {
+    color: white;
+    background-color: #f3ca6c;
+    border-color: #f2c763
 }
+
 /*** Button End ***/
 
 
@@ -138,7 +163,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link {
     padding: 12px;
     color: var(--bs-dark);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     transition: .5s;
 }
@@ -434,7 +459,10 @@ h4, h5, h6, .h4, .h5, .h6 {
 /*** Footer Start ***/
 .footer {
     margin-top: 6rem;
-    background: var(--bs-dark);
+    background:#157784; 
+    color: white;
+    /* background:#157784; var(--bs-dark);  */
+
 }
 
 .footer .footer-item p {
