@@ -13,6 +13,6 @@ export class QuranComponent {
 
   quranDetails()
   {
-     this.router.navigate(['/quran-parawise']);
+     this.router.navigate(['/quranparawise']);
   }
 }
