@@ -5,13 +5,14 @@ import { EventsComponent } from '../events/events.component';
 import { BooksComponent } from '../books/books.component';
 import { MediaComponent } from '../media/media.component';
 import { Router } from '@angular/router';
+import { CarouselComponent } from '../components/carousel/carousel.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [RegisterComponent,FooterComponent,EventsComponent,BooksComponent,MediaComponent]
+    imports: [RegisterComponent,FooterComponent,EventsComponent,BooksComponent,MediaComponent,CarouselComponent]
 })
 export class HomeComponent {
   registerMode = false;
