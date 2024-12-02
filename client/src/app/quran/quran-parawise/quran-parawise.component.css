@@ -1,81 +1,81 @@
 
 body {
-    font-size: 16px;
-   line-height: 24px;
-   font-family: 'Open Sans', sans-serif;
-   vertical-align: baseline;
-  
-   color: #444444;
-   font-weight: 400;
+   font-size: 16px;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  vertical-align: baseline;
+ 
+  color: #444444;
+  font-weight: 400;
 }
 
 .next-parah {
-   background-color: #157784;
-   padding: 6px 6px;
-   border-radius: 40px 0px 0px 40px;
-   color: white;
-   border: 5px solid #66a1a9;
-   font-size: 14px;
-   width: 140px;
-   float: left;
-   text-align: center;
-   font-size: 10px !important;
-   text-decoration: none;
+  background-color: #157784;
+  padding: 6px 6px;
+  border-radius: 40px 0px 0px 40px;
+  color: white;
+  border: 5px solid #66a1a9;
+  font-size: 14px;
+  width: 140px;
+  float: left;
+  text-align: center;
+  font-size: 10px !important;
+  text-decoration: none;
 }
 
 .prevSurah {
-   background-color: #157784;
-   padding: 6px 6px;
-   border-radius: 0px 40px 40px 0px;
-   color: white;
-   border: 5px solid #66a1a9;
-   font-size: 14px;
-   width: 140px;
-   float: right;
-   text-align: center;
-   font-size: 10px !important;
-   text-decoration: none;
+  background-color: #157784;
+  padding: 6px 6px;
+  border-radius: 0px 40px 40px 0px;
+  color: white;
+  border: 5px solid #66a1a9;
+  font-size: 14px;
+  width: 140px;
+  float: right;
+  text-align: center;
+  font-size: 10px !important;
+  text-decoration: none;
 }
 
 .nameAll p {
-   font-family: Al-Qalam;
-   
-   font-size: 20px;
-   color: #3274a6;
-   font-weight: bold;
+  font-family: Al-Qalam;
+  
+  font-size: 20px;
+  color: #3274a6;
+  font-weight: bold;
 
 }
 .nameAllU {
 font-family: Al-Qalam;
-   font-size: 20px;
-   color: #3274a6;
-   font-weight: bold;
-   direction: rtl !important;
+  font-size: 20px;
+  color: #3274a6;
+  font-weight: bold;
+  direction: rtl !important;
 
 }
 .movers {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .font-20 {
-   font-size: 20px !important;
+  font-size: 20px !important;
 }
 
 .bg-para-img {
-   border: 15px solid #157784;
-       text-align: justify;
-   background-color: #5595a21a;
-   min-height: 55rem;
+  border: 30px solid #157784;
+  text-align: justify;
+  background-color: #5595a21a;
+  min-height: 55rem;
 }
 
 .variable_font {
-   font-size: 42px;
-   border-bottom: 1px solid;
-   margin: 0px;
-   line-height: 52px;
-   text-align: center;
-   padding: 10x;
+  font-size: 42px;
+  border-bottom: 1px solid;
+  margin: 0px;
+  line-height: 52px;
+  text-align: center;
+  padding: 10x;
 
 }
 .reading {
@@ -95,57 +95,57 @@ width: 190px;
 }
 
 .reading-bottom {
-   border-bottom: 4px solid #9d9c9c;
+  border-bottom: 4px solid #9d9c9c;
 }
 .reading:before {
-   z-index: 1;
-   content: "";
-   top: 0;
-   left: -8px;
-   position: absolute;
-   width: 0;
-   height: 0;
-   border-top: 8px solid #9d9c9c;
-   border-left: 8px solid transparent;
+  z-index: 1;
+  content: "";
+  top: 0;
+  left: -8px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #9d9c9c;
+  border-left: 8px solid transparent;
 }
 .reading:after {
-   content: "";
-   height: 100%;
-   width: 100%;
-   z-index: -1;
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   background-color: #9d9c9c;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #9d9c9c;
 }
 .bg-right {
-   background: #efefef;
+  background: #efefef;
 
 }
 .selectBox {
-   line-height: 40px;
-   color: #009688;
-   text-align: right;
-   font-family: Al-Qalam !important;
-   font-size: 20px;
-   display: block;
-   border-right: 5px solid #157784 !important;
+  line-height: 40px;
+  color: #009688;
+  text-align: right;
+  font-family: Al-Qalam !important;
+  font-size: 20px;
+  display: block;
+  border-right: 5px solid #157784 !important;
 }
 
 .label-makeup {
- 
-   color: #157784;
-   font-weight: bold;
-   margin-bottom: 0px;
-   background-color: #edf4f6;
-   text-align: left;
-   border-radius: 0px 0px;
-   margin-left: -15px !important;
-   display: flex ;
-   align-items: center;
-   justify-content: center;
-   line-height: 58px;
+
+  color: #157784;
+  font-weight: bold;
+  margin-bottom: 0px;
+  background-color: #edf4f6;
+  text-align: left;
+  border-radius: 0px 0px;
+  margin-left: -15px !important;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  line-height: 58px;
 }
 
 
@@ -154,15 +154,15 @@ text-decoration: none;
 }
 
 .action-btn {
-   background: #157784;
-   color: white;
-   /* transition: 0.5s; */
-   padding: 6px 10px;
-   width: 100%;
-   float: left;
-   text-align: center;
-   border-radius: 20px;
-   margin-bottom: 5px;
+  background: #157784;
+  color: white;
+  /* transition: 0.5s; */
+  padding: 6px 10px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
 
 
@@ -171,7 +171,7 @@ text-decoration: none;
 
 
 .reading.readingwidth {
-   width: 300px;
+  width: 300px;
 }
 
 .switchform {
@@ -179,29 +179,46 @@ right: 20px;
 top: -1px;
 }
 .form-switch .form-check-input {
-   background-color: #9d9c9c;
+  background-color: #9d9c9c;
 }
 .form-check-input:checked, .form-check-input:focus, .form-select:focus {
-   border: none;
-   box-shadow: none;
+  border: none;
+  box-shadow: none;
 }
- .form-switch.form-switch-lg {
-   margin-bottom: 1.5rem; /* JUST FOR STYLING PURPOSE */
- }
- 
- .form-switch.form-switch-lg .form-check-input {
-   height: 2rem;
-   width: calc(3rem + 0.75rem);
-   border-radius: 4rem;
- }
- 
- .form-switch.form-switch-xl {
-   margin-bottom: 2rem; /* JUST FOR STYLING PURPOSE */
- }
- 
- .form-switch.form-switch-xl .form-check-input {
-   height: 2.5rem;
-   width: calc(4rem + 0.75rem);
-   border-radius: 5rem;
- }
- 
+.form-switch.form-switch-lg {
+  margin-bottom: 1.5rem; /* JUST FOR STYLING PURPOSE */
+}
+
+.form-switch.form-switch-lg .form-check-input {
+  height: 2rem;
+  width: calc(3rem + 0.75rem);
+  border-radius: 4rem;
+}
+
+.form-switch.form-switch-xl {
+  margin-bottom: 2rem; /* JUST FOR STYLING PURPOSE */
+}
+
+.form-switch.form-switch-xl .form-check-input {
+  height: 2.5rem;
+  width: calc(4rem + 0.75rem);
+  border-radius: 5rem;
+}
+
+.bottom-btn a {
+  color: #ffffff;
+  background-color: #008b8b;
+  width: 100%;
+  padding: 10px 6px;
+  border-radius: 5px 10px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .next-parah, .prevSurah {
+      width: 70px;
+  }
+}
