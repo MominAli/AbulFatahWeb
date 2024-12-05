@@ -34,13 +34,10 @@
                     </div>
                 </div> -->
 
-                <div>
-
-                </div style="height:600px">
                 <div class="bg-para-img my-4">
                     <ngx-extended-pdf-viewer [src]="'assets/example.pdf'" [textLayer]="true" [showHandToolButton]="true"
                         [showPresentationModeButton]="true" [showDownloadButton]="true"></ngx-extended-pdf-viewer>
-                </div>
+
                 </div>
 
                 <!-- <div class="d-flex">
@@ -92,40 +89,8 @@
                             <select name="quran-para" class="form-select border-0 selectBox rounded-0"
                                 aria-label="Default select example">
                                 <option selected> Select Para </option>
-                                <option value="1">(1) الٓمّٓ </option>
-                                <option value="2">(2) سَیَقُوْلُ </option>
-                                <option value="3">(3) تِلْكَ ٱلرُّسُلُ </option>
-                                <option value="4">(4) لَنْ تَنَالُوا </option>
-                                <option value="5">(5) وَٱلْمُحْصَنَاتُ </option>
-                                <option value="6">(6) یَا أَیُّهَا الَّذِینَ آمَنُوا </option>
-                                <option value="7">(7) وَإِذَا سَمِعُوا </option>
-                                <option value="8">(8) وَلَوْ أَنَّنَا </option>
-                                <option value="9">(9) قَدْ أَفْلَحَ </option>
-                                <option value="10">(10) وَٱعْلَمُوا </option>
-                                <option value="11">(11) یَعْتَذِرُونَ </option>
-                                <option value="12">(12) وَمَاۤ أُبَرِّئُ </option>
-                                <option value="13">(13) وَمَاۤ أُبَرِّئُ </option>
-                                <option value="14">(14) رُبَمَا یَوَدُّ </option>
-                                <option value="15">(15) سُبْحَانَ ٱلَّذِی </option>
-                                <option value="16">(16) قَدْ أَفْلَحَ </option>
-                                <option value="17">(17) اقْتَرَبَ </option>
-                                <option value="18">(18) قَدْ أَفْلَحَ </option>
-                                <option value="19">(19) وَقَالَ ٱلَّذِینَ </option>
-                                <option value="20">(20) أَمَّنْ خَلَقَ </option>
-                                <option value="21">(21) فَمَنْ خَانَ </option>
-                                <option value="22">(22) قَدْ أَفْلَحَ </option>
-                                <option value="23">(23) مَنْ كَانَ یَرْجُو </option>
-                                <option value="24">(24) یَا أَیُّهَا الَّذِینَ آمَنُوا </option>
-                                <option value="25">(25) إِنَّا أَنْزَلْنَاهُ </option>
-                                <option value="26">(26) قَدْ أَفْلَحَ </option>
-                                <option value="27">(27) إِنَّهُ هُوَ السَّمِیعُ </option>
-                                <option value="28">(28) قَدْ أَفْلَحَ </option>
-                                <option value="29">(29) تَبَارَكَ الَّذِی </option>
-                                <option value="30">(30) عَمَّ یَتَسَآءَلُونَ </option>
-
-
+                                <option *ngFor="let para of paras" [value]="para.value">{{ para.name }}</option>
                             </select>
-
                         </div>
                         <div class="col-3">
                             <label class="label-makeup">Parah </label>
@@ -140,113 +105,120 @@
                             <select name="quran-surah" class="form-select border-0 selectBox rounded-0"
                                 aria-label="Default select example">
                                 <option selected> Select Surah </option>
-
-                                <option selected> Select Surah </option>
-                                <option value="1">(1) اَلْفَاتِحَة |مکیۃ|</option>
-                                <option value="2">(2) البقرة |مدنیۃ|</option>
-                                <option value="3">(3) آل عمران |مدنیۃ|</option>
-                                <option value="4">(4) النساء |مدنیۃ|</option>
-                                <option value="5">(5) المائدة |مدنیۃ|</option>
-                                <option value="6">(6) الأنعام |مکیۃ|</option>
-                                <option value="7">(7) الأعراف |مکیۃ|</option>
-                                <option value="8">(8) الأنفال |مدنیۃ|</option>
-                                <option value="9">(9) التوبة |مدنیۃ|</option>
-                                <option value="10">(10) یونس |مکیۃ|</option>
-                                <option value="11">(11) ھود |مکیۃ|</option>
-                                <option value="12">(12) یوسف |مکیۃ|</option>
-                                <option value="13">(13) الرعد |مدنیۃ|</option>
-                                <option value="14">(14) إبراھیم |مکیۃ|</option>
-                                <option value="15">(15) الحجر |مکیۃ|</option>
-                                <option value="16">(16) النحل |مکیۃ|</option>
-                                <option value="17">(17) الإسراء |مکیۃ|</option>
-                                <option value="18">(18) الکھف |مکیۃ|</option>
-                                <option value="19">(19) مریم |مکیۃ|</option>
-                                <option value="20">(20) طه |مکیۃ|</option>
-                                <option value="21">(21) الأنبیاء |مکیۃ|</option>
-                                <option value="22">(22) الحج |مدنیۃ|</option>
-                                <option value="23">(23) المؤمنون |مکیۃ|</option>
-                                <option value="24">(24) النور |مدنیۃ|</option>
-                                <option value="25">(25) الفرقان |مکیۃ|</option>
-                                <option value="26">(26) الشعراء |مکیۃ|</option>
-                                <option value="27">(27) النمل |مکیۃ|</option>
-                                <option value="28">(28) القصص |مکیۃ|</option>
-                                <option value="29">(29) العنكبوت |مکیۃ|</option>
-                                <option value="30">(30) الروم |مکیۃ|</option>
-                                <option value="31">(31) لقمان |مکیۃ|</option>
-                                <option value="32">(32) السجدة |مکیۃ|</option>
-                                <option value="33">(33) الأحزاب |مدنیۃ|</option>
-                                <option value="34">(34) سبأ |مکیۃ|</option>
-                                <option value="35">(35) فاطر |مکیۃ|</option>
-                                <option value="36">(36) یٰسٓ |مکیۃ|</option>
-                                <option value="37">(37) الصافات |مکیۃ|</option>
-                                <option value="38">(38) صٓ |مکیۃ|</option>
-                                <option value="39">(39) الزمر |مکیۃ|</option>
-                                <option value="40">(40) غافر |مکیۃ|</option>
-                                <option value="41">(41) فصلت |مکیۃ|</option>
-                                <option value="42">(42) الشورى |مکیۃ|</option>
-                                <option value="43">(43) الزخرف |مکیۃ|</option>
-                                <option value="44">(44) الدخان |مکیۃ|</option>
-                                <option value="45">(45) الجاثية |مکیۃ|</option>
-                                <option value="46">(46) الأحقاف |مکیۃ|</option>
-                                <option value="47">(47) محمد |مدنیۃ|</option>
-                                <option value="48">(48) الفتح |مدنیۃ|</option>
-                                <option value="49">(49) الحجرات |مدنیۃ|</option>
-                                <option value="50">(50) قٓ |مکیۃ|</option>
-                                <option value="51">(51) الذاريات |مکیۃ|</option>
-                                <option value="52">(52) الطور |مکیۃ|</option>
-                                <option value="53">(53) النجم |مکیۃ|</option>
-                                <option value="54">(54) القمر |مکیۃ|</option>
-                                <option value="55">(55) الرحمن |مدنیۃ|</option>
-                                <option value="56">(56) الواقعة |مکیۃ|</option>
-                                <option value="57">(57) الحديد |مدنیۃ|</option>
-                                <option value="58">(58) المجادلة |مدنیۃ|</option>
-                                <option value="59">(59) الحشر |مدنیۃ|</option>
-                                <option value="60">(60) الممتحنة |مدنیۃ|</option>
-                                <option value="61">(61) الصف |مدنیۃ|</option>
-                                <option value="62">(62) الجمعة |مدنیۃ|</option>
-                                <option value="63">(63) المنافقون |مدنیۃ|</option>
-                                <option value="64">(64) التغابن |مدنیۃ|</option>
-                                <option value="65">(65) الطلاق |مدنیۃ|</option>
-                                <option value="66">(66) التحريم |مدنیۃ|</option>
-                                <option value="67">(67) الملك |مکیۃ|</option>
-                                <option value="68">(68) القلم |مکیۃ|</option>
-                                <option value="69">(69) الحاقة |مکیۃ|</option>
-                                <option value="70">(70) المعارج |مکیۃ|</option>
-                                <option value="71">(71) نوح |مکیۃ|</option>
-                                <option value="72">(72) الجن |مکیۃ|</option>
-                                <option value="73">(73) المزمل |مکیۃ|</option>
-                                <option value="74">(74) المدثر |مکیۃ|</option>
-                                <option value="75">(75) القيامة |مکیۃ|</option>
-                                <option value="76">(76) الإنسان |مدنیۃ|</option>
-                                <option value="77">(77) المرسلات |مکیۃ|</option>
-                                <option value="78">(78) النبأ |مکیۃ|</option>
-                                <option value="79">(79) النازعات |مکیۃ|</option>
-                                <option value="80">(80) عبس |مکیۃ|</option>
-                                <option value="81">(81) التكوير |مکیۃ|</option>
-                                <option value="82">(82) الإنفطار |مکیۃ|</option>
-                                <option value="83">(83) المطففين |مکیۃ|</option>
-                                <option value="84">(84) الإنشقاق |مکیۃ|</option>
-                                <option value="85">(85) البروج |مکیۃ|</option>
-                                <option value="86">(86) الطارق |مکیۃ|</option>
-                                <option value="87">(87) الأعلى |مکیۃ|</option>
-                                <option value="88">(88) الغاشية |مکیۃ|</option>
-                                <option value="89">(89) الفجر |مکیۃ|</option>
-                                <option value="90">(90) البلد |مکیۃ|</option>
-                                <option value="91">(91) الشمس |مکیۃ|</option>
-                                <option value="92">(92) الليل |مکیۃ|</option>
-                                <option value="93">(93) الضحى |مکیۃ|</option>
-                                <option value="94">(94) الشرح |مکیۃ|</option>
-                                <option value="95">(95) التين |مکیۃ|</option>
-                                <option value="96">(96) العلق |مکیۃ|</option>
-                                <option value="97">(97) القدر |مکیۃ|</option>
-                                <option value="98">(98) البينة |مدنیۃ|</option>
-                                <option value="99">(99) الزلزلة |مدنیۃ|</option>
-                                <option value="100">(100) العاديات |مکیۃ|</option>
-                                <option value="101">(101) القارعة |مکیۃ|</option>
-                                <option value="102">(102) التكاثر |مکیۃ|</option>
-                                <option value="103">(103) العصر |مکیۃ|</option>
-                                <option value="104">(104) الهمزة |مکیۃ|</option>
-
+                                <option value="1">1 - Surah Al-Fatihah - الفاتحة</option>
+                                <option value="2">2 - Surah Al-Baqarah - البقرة</option>
+                                <option value="3">3 - Surah Aal-e-Imran - آل عمران</option>
+                                <option value="4">4 - Surah An-Nisaa - النساء</option>
+                                <option value="5">5 - Surah Al-Maidah - المائدة</option>
+                                <option value="6">6 - Surah Al-Anaam - الأنعام</option>
+                                <option value="7">7 - Surah Al-Airaaf - الأعراف</option>
+                                <option value="8">8 - Surah Al-Anfaal - الأنفال</option>
+                                <option value="9">9 - Surah At-Taubah - التوبة</option>
+                                <option value="10">10 - Surah Younus - يونس</option>
+                                <option value="11">11 - Surah Hood - هود</option>
+                                <option value="12">12 - Surah Yousuf - يوسف</option>
+                                <option value="13">13 - Surah Ar-Raad - الرعد</option>
+                                <option value="14">14 - Surah Ibraheem - إبراهيم</option>
+                                <option value="15">15 - Surah Al-Hijr - الحجر</option>
+                                <option value="16">16 - Surah An-Nahl - النحل</option>
+                                <option value="17">17 - Surah Bani Israeil - الإسراء</option>
+                                <option value="18">18 - Surah Al-Kahf - الكهف</option>
+                                <option value="19">19 - Surah Maryam - مريم</option>
+                                <option value="20">20 - Surah Taa Haa - طه</option>
+                                <option value="21">21 - Surah Al-Anbiyaa - الأنبياء</option>
+                                <option value="22">22 - Surah Al-Hajj - الحج</option>
+                                <option value="23">23 - Surah Al-Mominoon - المؤمنون</option>
+                                <option value="24">24 - Surah An-Noor - النور</option>
+                                <option value="25">25 - Surah Al-Furqaan - الفرقان</option>
+                                <option value="26">26 - Surah Ash-Shoaraa - الشعراء</option>
+                                <option value="27">27 - Surah An-Naml - النمل</option>
+                                <option value="28">28 - Surah Al-Qasas - القصص</option>
+                                <option value="29">29 - Surah Al-Ankaboot - العنكبوت</option>
+                                <option value="30">30 - Surah Ar-Room - الروم</option>
+                                <option value="31">31 - Surah Luqmaan - لقمان</option>
+                                <option value="32">32 - Surah As-Sajdah - السجدة</option>
+                                <option value="33">33 - Surah Al-Ahzaab - الأحزاب</option>
+                                <option value="34">34 - Surah Saba - سبأ</option>
+                                <option value="35">35 - Surah Fatir - فاطر</option>
+                                <option value="36">36 - Surah Yaaseen - يس</option>
+                                <option value="37">37 - Surah As-Saffat - الصافات</option>
+                                <option value="38">38 - Surah Saad - ص</option>
+                                <option value="39">39 - Surah Az-Zumar - الزمر</option>
+                                <option value="40">40 - Surah Al-Momin - غافر</option>
+                                <option value="41">41 - Surah Haa Meem Sajdah - فصلت</option>
+                                <option value="42">42 - Surah Ash-Shoora - الشورى</option>
+                                <option value="43">43 - Surah Az-Zukhruf - الزخرف</option>
+                                <option value="44">44 - Surah Ad-Dukhan - الدخان</option>
+                                <option value="45">45 - Surah Al-Jasia - الجاثية</option>
+                                <option value="46">46 - Surah Al-Ahqaaf - الأحقاف</option>
+                                <option value="47">47 - Surah Muhammad - محمد</option>
+                                <option value="48">48 - Surah Al-Fath - الفتح</option>
+                                <option value="49">49 - Surah Al-Hujuraat - الحجرات</option>
+                                <option value="50">50 - Surah Qaaf - ق</option>
+                                <option value="51">51 - Surah Az-Zaariaat - الذاريات</option>
+                                <option value="52">52 - Surah At-Toor - الطور</option>
+                                <option value="53">53 - Surah An-Najm - النجم</option>
+                                <option value="54">54 - Surah Al-Qamar - القمر</option>
+                                <option value="55">55 - Surah Ar-Rahman - الرحمن</option>
+                                <option value="56">56 - Surah Al-Waqiah - الواقعة</option>
+                                <option value="57">57 - Surah Al-Hadeed - الحديد</option>
+                                <option value="58">58 - Surah Al-Mujadilah - المجادلة</option>
+                                <option value="59">59 - Surah Al-Hashr - الحشر</option>
+                                <option value="60">60 - Surah Al-Mumtahinah - الممتحنة</option>
+                                <option value="61">61 - Surah As-Saff - الصف</option>
+                                <option value="62">62 - Surah Al-Jumah - الجمعة</option>
+                                <option value="63">63 - Surah Al-Munafiqoon - المنافقون</option>
+                                <option value="64">64 - Surah At-Taghabun - التغابن</option>
+                                <option value="65">65 - Surah At-Talaaq - الطلاق</option>
+                                <option value="66">66 - Surah At-Tahreem - التحريم</option>
+                                <option value="67">67 - Surah Al-Mulk - الملك</option>
+                                <option value="68">68 - Surah Al-Qalam - القلم</option>
+                                <option value="69">69 - Surah Al-Haaqqah - الحاقة</option>
+                                <option value="70">70 - Surah Al-Maarij - المعارج</option>
+                                <option value="71">71 - Surah Nooh - نوح</option>
+                                <option value="72">72 - Surah Al-Jinn - الجن</option>
+                                <option value="73">73 - Surah Al-Muzzamil - المزمل</option>
+                                <option value="74">74 - Surah Al-Muddasir - المدثر</option>
+                                <option value="75">75 - Surah Al-Qayamah - القيامة</option>
+                                <option value="76">76 - Surah Ad-Daher - الإنسان</option>
+                                <option value="77">77 - Surah Al-Mursalat - المرسلات</option>
+                                <option value="78">78 - Surah An-Naba - النبأ</option>
+                                <option value="79">79 - Surah An-Naziaat - النازعات</option>
+                                <option value="80">80 - Surah Abasa - عبس</option>
+                                <option value="81">81 - Surah At-Takveer - التكوير</option>
+                                <option value="82">82 - Surah Al-Infitaar - الإنفطار</option>
+                                <option value="83">83 - Surah Al-Mutaffifeen - المطففين</option>
+                                <option value="84">84 - Surah Al-Inshiqaq - الإنشقاق</option>
+                                <option value="85">85 - Surah Al-Burooj - البروج</option>
+                                <option value="86">86 - Surah At-Tariq - الطارق</option>
+                                <option value="87">87 - Surah Al-Aala - الأعلى</option>
+                                <option value="88">88 - Surah Al-Ghashia - الغاشية</option>
+                                <option value="89">89 - Surah Al-Fajr - الفجر</option>
+                                <option value="90">90 - Surah Al-Balad - البلد</option>
+                                <option value="91">91 - Surah Ash-Shams - الشمس</option>
+                                <option value="92">92 - Surah Al-Lail - الليل</option>
+                                <option value="93">93 - Surah Az-Zuha - الضحى</option>
+                                <option value="94">94 - Surah Alam Nashrah - الشرح</option>
+                                <option value="95">95 - Surah At-Teen - التين</option>
+                                <option value="96">96 - Surah Al-Alaq
+                                <option value="97">97 - Surah Al-Qadr - القدر</option>
+                                <option value="98">98 - Surah Al-Bayyinah - البينة</option>
+                                <option value="99">99 - Surah Al-Zilzal - الزلزلة</option>
+                                <option value="100">100 - Surah Al-Adiyaat - العاديات</option>
+                                <option value="101">101 - Surah Al-Qariah - القارعة</option>
+                                <option value="102">102 - Surah At-Takasur - التكاثر</option>
+                                <option value="103">103 - Surah Al-Asr - العصر</option>
+                                <option value="104">104 - Surah Al-Humazah - الهمزة</option>
+                                <option value="105">105 - Surah Al-Feel - الفيل</option>
+                                <option value="106">106 - Surah Quraish - قريش</option>
+                                <option value="107">107 - Surah Al-Maoon - الماعون</option>
+                                <option value="108">108 - Surah Al-Kausar - الكوثر</option>
+                                <option value="109">109 - Surah Al-Kafiroon - الكافرون</option>
+                                <option value="110">110 - Surah An-Nasr - النصر</option>
+                                <option value="111">111 - Surah Al-Lahab - المسد</option>
+                                <option value="112">112 - Surah Al-Ikhlaas - الإخلاص</option>
+                                <option value="113">113 - Surah Al-Falaq - الفلق</option>
+                                <option value="114">114 - Surah An-Naas - الناس</option>
                             </select>
 
                         </div>
