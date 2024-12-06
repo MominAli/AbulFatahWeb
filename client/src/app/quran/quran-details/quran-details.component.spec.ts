@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuranParawiseComponent } from './quran-parawise.component';
+import { QuranDetailsComponent } from './quran-details.component';
 
-describe('QuranParawiseComponent', () => {
-  let component: QuranParawiseComponent;
-  let fixture: ComponentFixture<QuranParawiseComponent>;
+describe('QuranDetailsComponent', () => {
+  let component: QuranDetailsComponent;
+  let fixture: ComponentFixture<QuranDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuranParawiseComponent]
+      imports: [QuranDetailsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(QuranParawiseComponent);
+    fixture = TestBed.createComponent(QuranDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

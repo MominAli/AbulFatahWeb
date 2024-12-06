@@ -2,15 +2,16 @@ import { Component } from '@angular/core';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+
 @Component({
-  selector: 'app-quran-parawise',
+  selector: 'app-quran-details',
   standalone: true,
   imports: [CommonModule,RouterOutlet, NgxExtendedPdfViewerModule],
 
-  templateUrl: './quran-parawise.component.html',
-  styleUrl: './quran-parawise.component.css'
+  templateUrl: './quran-details.component.html',
+  styleUrl: './quran-details.component.css'
 })
-export class QuranParawiseComponent {
+export class QuranDetailsComponent {
   paras = [
     { value: 1, name: '1 - Alif-Laam-Meem - المّ' },
     { value: 2, name: '2 - Sayaqoolu - سيقول' },
@@ -164,6 +165,4 @@ Qari = [
   {  value: "1", name: "1 - Qari 01" },
   {  value: "2", name: "2 - Qari 02" },
 ]
-
-  
 }
