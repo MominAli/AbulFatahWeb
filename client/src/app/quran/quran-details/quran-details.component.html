@@ -89,7 +89,7 @@
                             <select name="quran-para" class="form-select border-0 selectBox rounded-0"
                                 aria-label="Default select example">
                                 <option selected> Select Para </option>
-                                <option *ngFor="let para of paras" [value]="para.value">{{ para.name }}</option>
+                                <option *ngFor="let para of ddlPara" [value]="para.value">{{ para.name }}</option>
                             </select>
                         </div>
                         <div class="col-3">
@@ -105,7 +105,7 @@
                             <select name="quran-surah" class="form-select border-0 selectBox rounded-0"
                                 aria-label="Default select example">
                                 <option  disabled selected>Select Surah</option>
-                                <option *ngFor="let surah of surahs" [value]="surah.value">{{ surah.name }}</option>
+                                <option *ngFor="let surah of ddlSurah" [value]="surah.value">{{ surah.name }}</option>
                             </select>
                             
 
@@ -137,7 +137,7 @@
                             <select name="quran-surah" class="form-select border-0 selectBox rounded-0"
                             aria-label="Default select example">
                             <option  disabled selected>Select Qari </option>
-                            <option *ngFor="let qari of Qari" [value]="qari.value">{{ qari.name }}</option>
+                            <option *ngFor="let qari of ddlQari" [value]="qari.value">{{ qari.name }}</option>
                         </select>
                         </div>
                         <div class="col-3">
@@ -245,7 +245,7 @@
                             <select name="quran-surah" class="form-select border-0 selectBox rounded-0"
                             aria-label="Default select example">
                             <option  disabled selected>Select Qari </option>
-                            <option *ngFor="let qari of Qari" [value]="qari.value">{{ qari.name }}</option>
+                            <option *ngFor="let qari of ddlQari" [value]="qari.value">{{ qari.name }}</option>
                         </select>
 
                         </div>
