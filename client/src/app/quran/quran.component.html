@@ -29,7 +29,7 @@
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <!-- start First Tab-->
             <div class="row g-3">
-              <div *ngFor="let surah of surah_lists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
+              <div *ngFor="let surah of surahLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
                 <div class="cardList">
                   <a (click)="quranDetails()" class="text-decoration-none">
                     <div class="row">
@@ -56,7 +56,7 @@
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
             <div class="row g-3">
-              <div *ngFor="let para of para_lists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
+              <div *ngFor="let para of paraLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
                 <div class="cardList">
                   <a class="text-decoration-none" href="#">
                     <div class="row">
