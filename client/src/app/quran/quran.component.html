@@ -58,7 +58,7 @@
             <div class="row g-3">
               <div *ngFor="let para of paraLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
                 <div class="cardList">
-                  <a class="text-decoration-none" href="#">
+                  <a class="text-decoration-none" (click)="quranDetails()">
                     <div class="row">
                       <div class="col-lg-4 col-md-5 col-5 pr-0">
                         <h5 class="paraName">Para {{ para.paraNumber }}</h5>

@@ -41,8 +41,6 @@ export class QurandetailsService {
     { surahNumber: 7, suranameEng: 'Al Anam', suranameArabic: 'اَلْاَ نْعَام', imgSrc: 'assets/img/quran/makkah-img.ico', imgAlt: 'Al Anam' },
     { surahNumber: 8, suranameEng: 'Al Anam', suranameArabic: 'اَلْاَ نْعَام', imgSrc: 'assets/img/quran/makkah-img.ico', imgAlt: 'Al Anam' },
     { surahNumber: 9, suranameEng: 'Al Anam', suranameArabic: 'اَلْاَ نْعَام', imgSrc: 'assets/img/quran/makkah-img.ico', imgAlt: 'Al Anam' },
-    { surahNumber: 10, suranameEng: 'Al Anam', suranameArabic: 'اَلْاَ نْعَام', imgSrc: 'assets/img/quran/makkah-img.ico', imgAlt: 'Al Anam' },
-
     ];
 
     private para_lists :Para[]= [
