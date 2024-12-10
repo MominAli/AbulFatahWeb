@@ -1,131 +1,61 @@
-
-        <!-- Sermon Start -->
-
-        <div class="container-fluid">
-            <div class="container py-5">
-              <div class="row g-0">
-            
-                <div class="col-md-8 col-lg-9 col-sm-12 order-lg-1 order-2 mt-2">
-                     <div class="row">
-            
-                <div class="col-md-5">
-                  <div class=" p-4" style="flex-direction: column; visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                            <img src="assets/img/11.jpeg" class="img-fluid" alt="">
+<!-- Sermon Start -->
+<div class="container-fluid">
+  <div class="container py-5">
+      <div class="row g-0">
+          <div class="col-md-8 col-lg-9 col-sm-12 order-lg-1 order-2 mt-2">
+              <div class="row" *ngFor="let book of bookDetails">
+                  <div class="col-md-5">
+                      <div class="p-4" style="flex-direction: column; visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                          <img [src]="book.image" class="img-fluid" alt="Book Image">
+                      </div>
                   </div>
-                </div>
-            
-                <div class="col-md-7">
-                  <div class="card-body pt-0">
-                    <h5 class="card-title mb-2">Book Information </h5>
-            
-                     <p> <span class="fw-bolder">  Name: </span>  Ajjaaib Ul Quran </p>
-                     <p> <span class="fw-bolder"> Author/Editor: </span> Maulana Abdul Mustafa Aazmoi </p>
-                     <p> <span class="fw-bolder"> Translator: </span> </p>
-                     <p> <span class="fw-bolder"> Publisher : </span>  N/A</p>
-                     <p> <span class="fw-bolder"> Pages : </span> 165</p>
-                     <p> <span class="fw-bolder"> Language : </span> Urdu</p>
-                     <p> <span class="fw-bolder">  Category : </span> Fazail </p>
-                     <p> <span class="fw-bolder"> Read Online : </span>  Click Book Tittle </p>
-                     <div class="mb-3">
-                          <button class="btn btn-primary border-0 px-5" type="button">pdf download  </button>
-                     </div>
+                  <div class="col-md-7">
+                      <div class="card-body pt-0">
+                          <h5 class="card-title mb-2">Book Information</h5>
+                          <p><span class="fw-bolder">Name:</span> {{ book.name }}</p>
+                          <p><span class="fw-bolder">Author/Editor:</span> {{ book.author }}</p>
+                          <p><span class="fw-bolder">Translator:</span> {{ book.translator }}</p>
+                          <p><span class="fw-bolder">Publisher:</span> {{ book.publisher }}</p>
+                          <p><span class="fw-bolder">Pages:</span> {{ book.pages }}</p>
+                          <p><span class="fw-bolder">Language:</span> {{ book.language }}</p>
+                          <p><span class="fw-bolder">Category:</span> {{ book.category }}</p>
+                          <p><span class="fw-bolder">Read Online:</span> Click Book Title</p>
+                          <div class="mb-3">
+                              <button class="btn btn-primary border-0 px-5" type="button">PDF Download</button>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                </div>
-            
-                <div class="row">
-                    <div class="col-md-12 mt-3">
-                        
-                         <a href="#">
-                               Read more Post : <span>1000</span>
-                         </a>
-                        
-                           
-                    </div>
-                </div>
-            
-            <div class="row mt-3">
-            <div class="col-md-12">
-            <div class="team-icon d-flex pb-4 mb-4">
-            <a class="btn btn-primary btn-lg-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-primary btn-lg-square me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a href="#" class="btn btn-primary btn-lg-square me-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="btn btn-primary btn-lg-square"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            </div>
-            </div>
-                </div>
-            
-               <div class="col-md-4 col-lg-3 col-sm-12 order-lg-2 order-1 mt-2">
-                                    <div class="bg-white shadow-sm">
-                                        <div class="card-body">
-            
-                                          <h4 class="mt-0 mb-3"> Search Books </h4>
-            
-                                           <div class="input-group mb-3">
-                                             <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-button">
-                                             <a class="bg-light border btn" type="button" id="search-button"><i class="fa fa-search"></i></a>
-                                            </div>
-            
-            
-                                            <div class="input-group mb-3">
-                                            <select class="form-select" aria-label="Default select example">
-                                              <option selected="">Open this select menu</option>
-                                              <option value="1">One</option>
-                                              <option value="2">Two</option>
-                                              <option value="3">Three</option>
-                                            </select>
-                                            </div>
-            
-<!--             
-                                            <div class="input-group justify-content-end mb-3">
-                                              <button class="btn btn-primary border-0 px-5" type="button">Send Message</button>
-                                            </div> -->
-            
-            
-                                             <h4 class="mt-5 mb-3" style="color: black;"> Popular Books </h4>
-            
-                                            <ul class="list-group list-group-flush">
-            
-                                              <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                                   <div class="ms-2 me-auto">
-                                                       A Horrific Camel
-
-                                                   </div>
-                                                    <span class="badge bg-primary rounded-pill">64</span>
-                                              </li>
-            
-                                               <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                                   <div class="ms-2 me-auto">
-                                                       Mawlid Enthusiast King
-                                                   </div>
-                                                    <span class="badge bg-primary rounded-pill">06</span>
-                                              </li>
-            
-            
-                                               <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                                   <div class="ms-2 me-auto">
-                                                      Imam Ali Raza
-                                                   </div>
-                                                    <span class="badge bg-primary rounded-pill">34</span>
-                                              </li>
-
-                                              
-                                              <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-                                                <div class="ms-2 me-auto">
-                                                   Abd Al Qadir Al Jilani
-
-                                                </div>
-                                                 <span class="badge bg-primary rounded-pill">94</span>
-                                           </li>
-                                              
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-            
-            
-            
-            </div>
-            </div>
-            </div>
+              </div>
+              <div class="row mt-3">
+                  <div class="col-md-12">
+                      <a href="#">Read more Post: <span>1000</span></a>
+                  </div>
+              </div>
+              <div class="row mt-3">
+                  <div class="col-md-12">
+                      <div class="team-icon d-flex pb-4 mb-4">
+                          <a class="btn btn-primary btn-lg-square me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-primary btn-lg-square me-2" href="#"><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-primary btn-lg-square me-2" href="#"><i class="fab fa-instagram"></i></a>
+                          <a class="btn btn-primary btn-lg-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-12 order-lg-2 order-1 mt-2">
+              <div class="bg-white shadow-sm">
+                  <div class="card-body">
+                      <h4 class="mt-5 mb-3" style="color: black;">Popular Books</h4>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item d-flex justify-content-between align-items-start px-0" *ngFor="let book of popularBooks">
+                              <div class="ms-2 me-auto">{{ book.name }}</div>
+                              <span class="badge bg-primary rounded-pill">{{ book.count }}</span>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Sermon End -->
