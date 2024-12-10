@@ -51,7 +51,12 @@ export class BookdetailsService {
 
   getPopularBooks() {
     // Implement logic to get popular books based on your criteria 
-    return [{ name: 'A Horrific Camel', count: 64 }, { name: 'Mawlid Enthusiast King', count: 6 }, { name: 'Imam Ali Raza', count: 34 }, { name: 'Abd Al Qadir Al Jilani', count: 94 }];
+    return [
+      { name: 'A Horrific Camel', count: 64 },
+       { name: 'Mawlid Enthusiast King', count: 6 },
+        { name: 'Imam Ali Raza', count: 34 }, 
+        { name: 'Abd Al Qadir Al Jilani', count: 94 }
+      ];
   }
 
 }
