@@ -42,16 +42,22 @@
                 <span id="search.errors" style="color: red; float: left;">Please provide value.</span>
             </form>
         </div>
-        <div class="col" *ngFor="let media of mediaList">
-            <a [href]="media.contentURL" title="{{ media.title }}">
-                <img style="height:150px !important;" class="group list-group-image" [src]=media.imageURL
-                    alt="Media Image" />
-            </a>
-            <div class="caption">
-                <a style="height: 15vh;" href="#" class="text"><b>{{ media.title }}</b></a>
-                <div><b>Duration: {{ media.duration }}</b></div>
-                <hr />
+        <div class="col-md-9" >
+            <div class="row">
+                <div class="col-md-4" *ngFor="let media of mediaList">
+                    <a [href]="media.contentURL" title="{{ media.title }}">
+                        <img style="height:150px !important;" class="group list-group-image" [src]=media.imageURL
+                            alt="Media Image" />
+                    </a>
+                    <div class="caption">
+                        <a style="height: 15vh;" href="#" class="text"><b>{{ media.title }}</b></a>
+                        <div><b>Duration: {{ media.duration }}</b></div>
+                        <hr />
+                    </div> 
+                </div>
             </div>
+           
+            
         </div>
     </div>
 </div>
