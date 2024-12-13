@@ -23,19 +23,19 @@ import { Injectable } from '@angular/core';
 
 // }
 
- export interface Media {
+export interface Media {
   title: string;
   duration: string;
   contentURL: string;
   imageURL: string;
-  topics:string[],
-  vocallist:string[],
-  months:string[],
+  topics: string[],
+  vocallist: string[],
+  months: string[],
 
 }
 
 
- export interface FilterOptions {
+export interface FilterOptions {
   topics: string[];
   vocalLists: string[];
   months: string[];
@@ -51,25 +51,43 @@ export class MediadetailsService {
   constructor() { }
 
   private mediaList: Media[] = [
-    { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-      topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-      { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-        topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-        { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-          topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-          { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-            topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-            { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-              topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-              { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-                topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-                { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-                  topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-                  { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-                    topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-                    { title: 'Hashmati Network 1',duration: '00:02:29',contentURL:'https://www.youtube.com/watch?v=orD6if_pXUA',imageURL:'https://data2.dawateislami.net/download/media-images/154795.jpg',
-                      topics:['Naat'],vocallist:['Huzur Nasir Raza'],months:['Muharram-ul-Haram']},
-                      
+    {
+      title: 'Hashmati Network 1', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Naat'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 2', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Bayan'], vocallist: ['Huzur Masoom Raza RA'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 3', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Naat'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 4', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Kawaali'], vocallist: ['Huzur Masoom Raza RA'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 5', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Bayan'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 6', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Naat'], vocallist: ['Huzur Masoom Raza RA'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 7', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Kawaali'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 8', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Bayan'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+    {
+      title: 'Hashmati Network 9', duration: '00:02:29', contentURL: 'https://www.youtube.com/watch?v=orD6if_pXUA', imageURL: 'https://i.ytimg.com/vi/RwZJ39LBkUs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWASEI_5OG2cS7IcAH1w1-5kNigQ',
+      topics: ['Naat'], vocallist: ['Huzur Nasir Raza'], months: ['Muharram-ul-Haram']
+    },
+
     // Add more media items as needed 
   ];
   getMediaList(): Media[] {
