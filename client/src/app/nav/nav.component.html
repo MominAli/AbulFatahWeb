@@ -61,15 +61,8 @@
                         <a routerLink="/activity" routerLinkActive="active" class="nav-link">Activity</a>
 
                         <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0 rounded-0">
-                                <a href="blog.html" class="dropdown-item">Latest Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
+                        <a routerLink="/aboutus" routerLinkActive="active" class="nav-link">About Us</a>
+                      
                     </div>
                     @if (accountService.currentUser()) {
                         <div dropdown class="dropdown">
