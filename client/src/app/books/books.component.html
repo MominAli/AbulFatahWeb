@@ -25,9 +25,8 @@
                             <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
                                 [class.show]="i === activeTab" [class.active]="i === activeTab">
                                 <div class="row">
-                                    <div *ngFor="let item of content | paginate: { itemsPerPage: 3, currentPage: currentPage }"
+                                    <div *ngFor="let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
                                         class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
-                                        {{ item }}
 
 
                                         <div class="img tittle">

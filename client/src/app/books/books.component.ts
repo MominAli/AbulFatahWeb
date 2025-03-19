@@ -22,7 +22,11 @@ export class BooksComponent {
       { img: '../../assets/img/11.jpeg', name: ' Mirate Husne Be Misal' },
       { img: '../../assets/img/12.jpeg', name: ' Mirate Husne Be Misal' },
       { img: '../../assets/img/13.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' },
+      { img: '../../assets/img/15.jpeg', name: ' Mirate Husne Be Misal' },
+      { img: '../../assets/img/16.jpeg', name: ' Mirate Husne Be Misal' },
+      { img: '../../assets/img/17.jpeg', name: ' Mirate Husne Be Misal' }
+
     ],
     [
       { img: '../../assets/img/15.jpeg', name: ' Mirate Husne Be Misal' },
@@ -55,8 +59,8 @@ export class BooksComponent {
   mobileTabsVisible = false;
 
     // Pagination properties
-    itemsPerPage: number = 2; // Number of items per page
-    currentPage: number = 1;
+    itemsPerPage: number = 4; // Number of items per page
+    currentPage: number = 2;
 
     // Total categories
     totalCategories: number = this.categories.length;
@@ -101,6 +105,6 @@ export class BooksComponent {
     );
   }
   onPageChange(event: number) {
-    this.currentPage = event; // Update the current page when pagination changes
-}
+        this.currentPage = event; // Update the current page when pagination changes
+    }
 }
