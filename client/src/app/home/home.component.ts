@@ -42,5 +42,8 @@ export class HomeComponent {
   goToFeedBack() {
     this.router.navigate(['/feedback']);
   }
- 
+  goToDonation() {
+    this.router.navigate(['/donation']);
+  }
+  
 }
