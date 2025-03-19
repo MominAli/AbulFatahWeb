@@ -1,50 +1,56 @@
-
 <div class="bookSession pt-5">
-    
+
     <div class="container mt-4">
-      <div class="tab-container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="menu-toggle mobiledown" (click)="toggleMenu()">Categories</h2>
-            <div class="mobileTabs" [class.show]="mobileTabsVisible">
-              <ul class="nav nav-tabs book-list-card">
-                <h2 class="categoriesName d-xl-none d-lg-none m-0">Categories</h2>
-            <p class="my-0 m-2 p-0">{{ totalCategories }} Categories</p>
-                <li *ngFor="let category of categories; let i = index" class="nav-item">
-                  <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category }}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-  
-          <div class="col-md-8">
-            <div class="search-container">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search categories or books..."
-                  [(ngModel)]="searchQuery"
-                  (input)="filterResults()"
-                />
-            <div class="tab-content">
-              <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade" [class.show]="i === activeTab" [class.active]="i === activeTab">
-                <div class="row">
-                  <div *ngFor="let item of content" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
-                    <div class="img tittle">
-                      <a (click)="booksDetails(item)" target="_blank">
-                        <img [src]="item.img" loading="lazy" class="img-fluid" />
-                      </a>
-                      <a href="#" target="_blank">
-                        <p class="book_name">{{ item.name }}</p>
-                      </a>
+        <div class="tab-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="menu-toggle mobiledown" (click)="toggleMenu()">Categories</h2>
+                    <div class="mobileTabs" [class.show]="mobileTabsVisible">
+                        <ul class="nav nav-tabs book-list-card">
+                            <h2 class="categoriesName d-xl-none d-lg-none m-0">Categories</h2>
+                            <p class="my-0 m-2 p-0">{{ totalCategories }} Categories</p>
+                            <li *ngFor="let category of categories; let i = index" class="nav-item">
+                                <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category
+                                    }}</a>
+                            </li>
+                        </ul>
                     </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="col-md-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" placeholder="Search categories or books..."
+                            [(ngModel)]="searchQuery" (input)="filterResults()" />
+                        <div class="tab-content">
+                            <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
+                                [class.show]="i === activeTab" [class.active]="i === activeTab">
+                                <div class="row">
+                                    <div *ngFor="let item of content | paginate: { itemsPerPage: 3, currentPage: currentPage }"
+                                        class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+                                        {{ item }}
+
+
+                                        <div class="img tittle">
+                                            <a (click)="booksDetails(item)" target="_blank">
+                                                <img [src]="item.img" loading="lazy" class="img-fluid" />
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <p class="book_name">{{ item.name }}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination controls -->
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)">
+                                </pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  

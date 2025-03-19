@@ -4,10 +4,13 @@ import { Router } from '@angular/router';
 import { BookdetailsService } from '../../app/_services/bookdetails.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
+
+import { NgxPaginationModule } from 'ngx-pagination';
+
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,NgxPaginationModule],
   templateUrl: './books.component.html',
   styleUrl: './books.component.css'
 })
@@ -51,6 +54,10 @@ export class BooksComponent {
   activeTab = 0;
   mobileTabsVisible = false;
 
+    // Pagination properties
+    itemsPerPage: number = 2; // Number of items per page
+    currentPage: number = 1;
+
     // Total categories
     totalCategories: number = this.categories.length;
 
@@ -65,8 +72,9 @@ export class BooksComponent {
 
   changeTab(index: number) {
     this.activeTab = index;
-    this.mobileTabsVisible = false; // Close mobile menu on selection
+    this.mobileTabsVisible = false;
   }
+  
   books: any[] = [];
   constructor(private bookdetailsService: BookdetailsService, private router: Router) { }
 
@@ -91,4 +99,8 @@ export class BooksComponent {
     this.filteredTabContent = this.tabContent.map((tab) =>
       tab.filter((item) => item.name.toLowerCase().includes(query))
     );
-  }}
+  }
+  onPageChange(event: number) {
+    this.currentPage = event; // Update the current page when pagination changes
+}
+}
