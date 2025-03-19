@@ -20,6 +20,7 @@ import { BooksDetailsComponent } from './books-details/books-details.component';
 import { ActivityComponent } from './activity/activity.component';
 import { QuranDetailsComponent } from './quran/quran-details/quran-details.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -31,6 +32,8 @@ export const routes: Routes = [
 
     {path: 'activity', component: ActivityComponent},
     {path: 'aboutus', component: AboutusComponent},
+    {path: 'feedback', component: FeedbackComponent},
+
 
 
     {path: 'contact', component: ContactComponent},
