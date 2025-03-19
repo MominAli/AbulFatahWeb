@@ -39,5 +39,8 @@ export class HomeComponent {
   goToManqabat() {
     this.router.navigate(['/media']);
   }
+  goToFeedBack() {
+    this.router.navigate(['/feedback']);
+  }
  
 }
