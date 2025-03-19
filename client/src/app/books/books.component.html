@@ -1,23 +1,50 @@
-<!-- Books Start -->
-<div class="container-fluid activities" style="margin-top: 200px;">
-    <div class="container" style="max-width: 1100px !important;">
-        <h1 class="display-6 pt-3 mb-5" data-wow-delay="0.1s">Islamic <span class="text-primary">Books</span></h1>
-        <div class="row g-4">
-            <div class="input-group mb-4">
-                <div class="input-group mb-4"> <input type="text" class="form-control"
-                        placeholder="search islamic books" [(ngModel)]="searchQuery" (ngModelChange)="searchBooks()"
-                        style="border: 1px solid #157784;">
-                    <div class="input-group-append"> <button class="btn btn-secondary" type="button"
-                            style="border: 1px solid #157784; background-color: #157784;"> <i class="fa fa-search"></i>
-                        </button> </div>
-                </div>
-                <div class="col-lg-6 col-xl-3" *ngFor="let book of books">
-                    <div class="p-4" data-wow-delay="0.1s" style="flex-direction: column;">
-                        <img [src]="book.image" (click)="booksDetails(book)" class="img-fluid" alt="Book Image">
-                        <p class="book_name">{{ book.name }}</p>
-                    </div>
-                </div>
+
+<div class="bookSession pt-5">
+    
+    <div class="container mt-4">
+      <div class="tab-container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="menu-toggle mobiledown" (click)="toggleMenu()">Categories</h2>
+            <div class="mobileTabs" [class.show]="mobileTabsVisible">
+              <ul class="nav nav-tabs book-list-card">
+                <h2 class="categoriesName d-xl-none d-lg-none m-0">Categories</h2>
+            <p class="my-0 m-2 p-0">{{ totalCategories }} Categories</p>
+                <li *ngFor="let category of categories; let i = index" class="nav-item">
+                  <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category }}</a>
+                </li>
+              </ul>
             </div>
+          </div>
+  
+          <div class="col-md-8">
+            <div class="search-container">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search categories or books..."
+                  [(ngModel)]="searchQuery"
+                  (input)="filterResults()"
+                />
+            <div class="tab-content">
+              <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade" [class.show]="i === activeTab" [class.active]="i === activeTab">
+                <div class="row">
+                  <div *ngFor="let item of content" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+                    <div class="img tittle">
+                      <a (click)="booksDetails(item)" target="_blank">
+                        <img [src]="item.img" loading="lazy" class="img-fluid" />
+                      </a>
+                      <a href="#" target="_blank">
+                        <p class="book_name">{{ item.name }}</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Books End -->
+  </div>
+  
