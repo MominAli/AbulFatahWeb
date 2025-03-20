@@ -22,34 +22,42 @@ export class BooksComponent {
       { img: '../../assets/img/11.jpeg', name: 'book_01' },
       { img: '../../assets/img/12.jpeg', name: 'book_02' },
       { img: '../../assets/img/13.jpeg', name: 'book_03' },
-      { img: '../../assets/img/14.jpeg', name: 'book_04' }
-    ],
-    [
-      { img: '../../assets/img/15.jpeg', name: 'book_03' },
-      { img: '../../assets/img/15.jpeg', name: 'book_04' },
-      { img: '../../assets/img/15.jpeg', name: 'book_02' },
-      { img: '../../assets/img/15.jpeg', name: 'book_01' }
+      { img: '../../assets/img/14.jpeg', name: 'book_04' },
+      { img: '../../assets/img/12.jpeg', name: 'book_02' },
+      { img: '../../assets/img/11.jpeg', name: 'book_01' },
+      
+      { img: '../../assets/img/22.jpeg', name: 'book_03' },
+      { img: '../../assets/img/12.jpeg', name: 'book_04' },
+      { img: '../../assets/img/14.jpeg', name: 'book_02' },
+      { img: '../../assets/img/17.jpeg', name: 'book_01' }
 
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: 'book_02' },
-      { img: '../../assets/img/15.jpeg', name: 'book_04' },
-      { img: '../../assets/img/15.jpeg', name: 'book_02' }
+      { img: '../../assets/img/22.jpeg', name: 'book_03' },
+      { img: '../../assets/img/12.jpeg', name: 'book_04' },
+      { img: '../../assets/img/14.jpeg', name: 'book_02' },
+      { img: '../../assets/img/17.jpeg', name: 'book_01' }
+
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: 'book_01' }
+      { img: '../../assets/img/11.jpeg', name: 'book_02' },
+      { img: '../../assets/img/13.jpeg', name: 'book_04' },
+      { img: '../../assets/img/19.jpeg', name: 'book_02' }
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: 'book_01' },
-      { img: '../../assets/img/15.jpeg', name: 'book_03' },
+      { img: '../../assets/img/13.jpeg', name: 'book_01' }
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: 'book_04' },
-      { img: '../../assets/img/15.jpeg', name: 'book_02' },
+      { img: '../../assets/img/12.jpeg', name: 'book_01' },
+      { img: '../../assets/img/19.jpeg', name: 'book_03' },
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: 'book_01' },
-      { img: '../../assets/img/15.jpeg', name: 'book_03' },
+      { img: '../../assets/img/12.jpeg', name: 'book_04' },
+      { img: '../../assets/img/18.jpeg', name: 'book_02' },
+    ],
+    [
+      { img: '../../assets/img/12.jpeg', name: 'book_01' },
+      { img: '../../assets/img/14.jpeg', name: 'book_03' },
     ],
     
   ];
@@ -57,8 +65,8 @@ export class BooksComponent {
   mobileTabsVisible = false;
 
     // Pagination properties
-    itemsPerPage: number = 4; // Number of items per page
-    currentPage: number = 2;
+    itemsPerPage: number = 8; // Number of items per page
+    currentPage: number = 1;
 
     // Total categories
     totalCategories: number = this.categories.length;
