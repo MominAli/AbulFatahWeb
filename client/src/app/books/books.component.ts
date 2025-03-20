@@ -19,36 +19,37 @@ export class BooksComponent {
   categories = ['Al Munazrat', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
-      { img: '../../assets/img/11.jpeg', name: ' section 01' },
-      { img: '../../assets/img/12.jpeg', name: ' section 01' },
-      { img: '../../assets/img/13.jpeg', name: ' section 01' },
-      { img: '../../assets/img/14.jpeg', name: ' section 01' },
-      { img: '../../assets/img/15.jpeg', name: ' section 01' },
+      { img: '../../assets/img/11.jpeg', name: 'book_01' },
+      { img: '../../assets/img/12.jpeg', name: 'book_02' },
+      { img: '../../assets/img/13.jpeg', name: 'book_03' },
+      { img: '../../assets/img/14.jpeg', name: 'book_04' }
     ],
     [
-      { img: '../../assets/img/17.jpeg', name: ' section 02' },
-      { img: '../../assets/img/18.jpeg', name: ' section 02' },
-      { img: '../../assets/img/19.jpeg', name: ' section 02' },
-      { img: '../../assets/img/20.jpeg', name: ' section 02' }
+      { img: '../../assets/img/15.jpeg', name: 'book_03' },
+      { img: '../../assets/img/15.jpeg', name: 'book_04' },
+      { img: '../../assets/img/15.jpeg', name: 'book_02' },
+      { img: '../../assets/img/15.jpeg', name: 'book_01' }
+
     ],
     [
-      { img: '../../assets/img/11.jpeg', name: ' section 03' },
-      { img: '../../assets/img/14.jpeg', name: ' section 03' }
+      { img: '../../assets/img/15.jpeg', name: 'book_02' },
+      { img: '../../assets/img/15.jpeg', name: 'book_04' },
+      { img: '../../assets/img/15.jpeg', name: 'book_02' }
     ],
     [
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/15.jpeg', name: 'book_01' }
     ],
     [
-      { img: '../../assets/img/13.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/15.jpeg', name: 'book_01' },
+      { img: '../../assets/img/15.jpeg', name: 'book_03' },
     ],
     [
-      { img: '../../assets/img/11.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/13.jpeg', name: ' Mirate Husne Be Misal' },
+      { img: '../../assets/img/15.jpeg', name: 'book_04' },
+      { img: '../../assets/img/15.jpeg', name: 'book_02' },
     ],
     [
-      { img: '../../assets/img/18.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/16.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/15.jpeg', name: 'book_01' },
+      { img: '../../assets/img/15.jpeg', name: 'book_03' },
     ],
     
   ];
@@ -103,5 +104,13 @@ export class BooksComponent {
   }
   onPageChange(event: number) {
         this.currentPage = event; // Update the current page when pagination changes
+    }
+
+    downloadPDF(bookName: string) {
+      const pdfUrl = `../../assets/Books/${bookName}.pdf`; // Path to the PDF file
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = `${bookName}.pdf`;
+      link.click();
     }
 }
