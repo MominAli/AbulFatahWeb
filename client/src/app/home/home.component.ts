@@ -45,5 +45,8 @@ export class HomeComponent {
   goToDonation() {
     this.router.navigate(['/donation']);
   }
+  goToBiograhpy() {
+    this.router.navigate(['/biograhpy']);
+  }
   
 }

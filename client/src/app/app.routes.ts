@@ -22,6 +22,7 @@ import { QuranDetailsComponent } from './quran/quran-details/quran-details.compo
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { DonationComponent } from './donation/donation.component';
+import { BiograhpyComponent } from './biograhpy/biograhpy.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -35,6 +36,7 @@ export const routes: Routes = [
     {path: 'aboutus', component: AboutusComponent},
     {path: 'feedback', component: FeedbackComponent},
     {path: 'donation', component: DonationComponent},
+    {path: 'biograhpy', component: BiograhpyComponent},
 
     {path: 'contact', component: ContactComponent},
     {path: 'register', component: RegisterComponent},
