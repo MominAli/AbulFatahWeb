@@ -4,11 +4,11 @@
         <div class="tab-container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="menu-toggle mobiledown" (click)="toggleMenu()">Categories</h2>
+                    <h2 class="menu-toggle mobiledown text-primary" (click)="toggleMenu()">Categories</h2>
                     <div class="mobileTabs" [class.show]="mobileTabsVisible">
                         <ul class="nav nav-tabs book-list-card">
-                            <h2 class="categoriesName d-xl-none d-lg-none m-0">Categories</h2>
-                            <p class="my-0 m-2 p-0">{{ totalCategories }} Categories</p>
+                            <h2 class="categoriesName d-xl-none d-lg-none m-0" >Categories</h2>
+                            <p class="my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
                             <li *ngFor="let category of categories; let i = index" class="nav-item">
                                 <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category
                                     }}</a>
@@ -25,7 +25,7 @@
                             <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
                                 [class.show]="i === activeTab" [class.active]="i === activeTab">
                                 <div class="row">
-                                    <div *ngFor="let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+                                    <div *ngFor="let item of content | paginate: { id: 'content-pagination', itemsPerPage: 4, currentPage: currentPage }"
                                         class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
 
 

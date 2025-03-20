@@ -19,24 +19,21 @@ export class BooksComponent {
   categories = ['Al Munazrat', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
-      { img: '../../assets/img/11.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/12.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/13.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/15.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/16.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/17.jpeg', name: ' Mirate Husne Be Misal' }
-
+      { img: '../../assets/img/11.jpeg', name: ' section 01' },
+      { img: '../../assets/img/12.jpeg', name: ' section 01' },
+      { img: '../../assets/img/13.jpeg', name: ' section 01' },
+      { img: '../../assets/img/14.jpeg', name: ' section 01' },
+      { img: '../../assets/img/15.jpeg', name: ' section 01' },
     ],
     [
-      { img: '../../assets/img/15.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/16.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/17.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/17.jpeg', name: ' section 02' },
+      { img: '../../assets/img/18.jpeg', name: ' section 02' },
+      { img: '../../assets/img/19.jpeg', name: ' section 02' },
+      { img: '../../assets/img/20.jpeg', name: ' section 02' }
     ],
     [
-      { img: '../../assets/img/11.jpeg', name: ' Mirate Husne Be Misal' },
-      { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
+      { img: '../../assets/img/11.jpeg', name: ' section 03' },
+      { img: '../../assets/img/14.jpeg', name: ' section 03' }
     ],
     [
       { img: '../../assets/img/14.jpeg', name: ' Mirate Husne Be Misal' }
