@@ -38,10 +38,10 @@
                 <!-- ابوالفتح -->
                     <img src="assets/img/logo/logo.png  " style="width:120px;" class="img-fluid" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars text-primary"></span>
                 </button>
-                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="collapse navbar-collapse bg-white" [class.show]="!isNavbarCollapsed" id="navbarCollapse">
                     <div class="navbar-nav ms-lg-auto mx-xl-auto">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             @if (accountService.currentUser()) {
@@ -54,14 +54,14 @@
                             }
                         </ul>
 
-                        <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active">Home</a>
-                        <a routerLink="/books" routerLinkActive="active" class="nav-link">Books</a>
-                        <a routerLink="/media" routerLinkActive="active" class="nav-link">Media </a>
-                        <a routerLink="/quran" routerLinkActive="active" class="nav-link">Quran</a>
-                        <a routerLink="/activity" routerLinkActive="active" class="nav-link">Activity</a>
+                        <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active" (click)="closeNavbar()">Home</a>
+                        <a routerLink="/books" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Books</a>
+                        <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Media </a>
+                        <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Quran</a>
+                        <a routerLink="/activity" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Activity</a>
 
-                        <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
-                        <a routerLink="/aboutus" routerLinkActive="active" class="nav-link">About Us</a>
+                        <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Contact</a>
+                        <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">About Us</a>
                       
                     </div>
                     @if (accountService.currentUser()) {

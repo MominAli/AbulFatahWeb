@@ -43,5 +43,10 @@ export class NavComponent {
   cancelRegisterMode(event: boolean) {
     this.registerMode = event;
   }
+  isNavbarCollapsed = true;
+
+  closeNavbar() {
+    this.isNavbarCollapsed = true;
+  }
 }
 
