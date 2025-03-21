@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [CommonModule, FormsModule,NgxPaginationModule],
+  imports: [FooterComponent, CommonModule, FormsModule,NgxPaginationModule],
   templateUrl: './books.component.html',
   styleUrl: './books.component.css'
 })

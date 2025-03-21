@@ -2,10 +2,11 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Surah, Para, QurandetailsService } from '../_services/qurandetails.service';
 import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-quran',
   standalone: true,
-  imports: [CommonModule],
+  imports: [FooterComponent, CommonModule],
   templateUrl: './quran.component.html',
   styleUrl: './quran.component.css'
 })

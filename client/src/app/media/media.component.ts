@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { MediadetailsService, Media, FilterOptions } from '../_services/mediadetails.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FooterComponent, FormsModule, CommonModule],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })
