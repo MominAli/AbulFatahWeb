@@ -1,4 +1,4 @@
-<div class="book-section     pt-5">
+<div class="media-section     pt-5">
 
     <div class="container mt-4">
         <div class="tab-container">
@@ -6,7 +6,7 @@
                 <div class="col-md-4">
                     <h2 class="menu-toggle mobiledown text-primary" (click)="toggleMenu()">Categories</h2>
                     <div class="mobileTabs" [class.show]="mobileTabsVisible">
-                        <ul class="nav nav-tabs book-list-card">
+                        <ul class="nav nav-tabs media-list-card">
                             <h2 class="categoriesName d-xl-none d-lg-none m-0" >Categories</h2>
                             <p class="my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
                             <li *ngFor="let category of categories; let i = index" class="nav-item">
@@ -19,7 +19,7 @@
 
                 <div class="col-md-8">
                     <div class="search-container">
-                        <input type="text" class="form-control" placeholder="Search categories or books..."
+                        <input type="text" class="form-control" placeholder="Search categories or media..."
                             [(ngModel)]="searchQuery" (input)="filterResults()" />
                         <div class="tab-content">
                             <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
@@ -30,11 +30,11 @@
 
 
                                         <div class="img tittle">
-                                            <a (click)="booksDetails(item)" target="_blank">
-                                                <img [src]="item.img" loading="lazy" class="img-fluid"  />
+                                            <a target="_blank">
+                                                <img [src]="item.img" loading="lazy" class="img-fluid" (click)="redirectToVideo(item.url)" />
                                             </a>
                                             <a href="#" target="_blank">
-                                                <p class="book_name">{{ item.name }}</p>
+                                                <p class="media_name">{{ item.name }}</p>
                                             </a>
                                         </div>
                                     </div>

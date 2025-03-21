@@ -25,47 +25,14 @@ export class MediaComponent {
     'Ramadan','Shawwal','Dhu al-Qadah','Dhu al-Hijjah','Old Bayan',];
   tabContent = [
     [
-      { img: '../../assets/img/11.jpeg', name: 'book_01' },
-      { img: '../../assets/img/12.jpeg', name: 'book_02' },
-      { img: '../../assets/img/13.jpeg', name: 'book_03' },
-      { img: '../../assets/img/14.jpeg', name: 'book_04' },
-      { img: '../../assets/img/12.jpeg', name: 'book_02' },
-      { img: '../../assets/img/11.jpeg', name: 'book_01' },
-      
-      { img: '../../assets/img/22.jpeg', name: 'book_03' },
-      { img: '../../assets/img/12.jpeg', name: 'book_04' },
-      { img: '../../assets/img/14.jpeg', name: 'book_02' },
-      { img: '../../assets/img/17.jpeg', name: 'book_01' }
+      { img: '../../assets/img/11.jpeg', name: 'book_01' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
+      { img: '../../assets/img/12.jpeg', name: 'book_02' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
+      { img: '../../assets/img/13.jpeg', name: 'book_03' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
+      { img: '../../assets/img/14.jpeg', name: 'book_04' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
+      { img: '../../assets/img/15.jpeg', name: 'book_05' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
+      { img: '../../assets/img/16.jpeg', name: 'book_06' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'}
 
-    ],
-    [
-      { img: '../../assets/img/22.jpeg', name: 'book_03' },
-      { img: '../../assets/img/12.jpeg', name: 'book_04' },
-      { img: '../../assets/img/14.jpeg', name: 'book_02' },
-      { img: '../../assets/img/17.jpeg', name: 'book_01' }
-
-    ],
-    [
-      { img: '../../assets/img/11.jpeg', name: 'book_02' },
-      { img: '../../assets/img/13.jpeg', name: 'book_04' },
-      { img: '../../assets/img/19.jpeg', name: 'book_02' }
-    ],
-    [
-      { img: '../../assets/img/13.jpeg', name: 'book_01' }
-    ],
-    [
-      { img: '../../assets/img/12.jpeg', name: 'book_01' },
-      { img: '../../assets/img/19.jpeg', name: 'book_03' },
-    ],
-    [
-      { img: '../../assets/img/12.jpeg', name: 'book_04' },
-      { img: '../../assets/img/18.jpeg', name: 'book_02' },
-    ],
-    [
-      { img: '../../assets/img/12.jpeg', name: 'book_01' },
-      { img: '../../assets/img/14.jpeg', name: 'book_03' },
-    ],
-    
+    ]
   ];
   activeTab = 0;
   mobileTabsVisible = false;
@@ -98,11 +65,7 @@ export class MediaComponent {
   }
 
 
-  booksDetails(book: any) {
-    // Implement the function to show book details console.log(book);
-    this.router.navigate(['']);
-  }
-  filterResults() {
+    filterResults() {
     const query = this.searchQuery.toLowerCase();
 
     // Filter categories
@@ -117,5 +80,10 @@ export class MediaComponent {
   }
   onPageChange(event: number) {
         this.currentPage = event; // Update the current page when pagination changes
+    }
+    redirectToVideo(url: string): void {
+      if (url) {
+        window.open(url, '_blank'); // Opens the YouTube video in a new tab
+      }
     }
 }
