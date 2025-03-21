@@ -1,64 +1,64 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 col-xs-12 col-sm-12">
-            <form id="subcategory">
-                <input type="hidden" value="">
-                <input id="search" name="search" [(ngModel)]="searchQuery" (ngModelChange)="searchMedia()" type="text"
-                    class="form-control" placeholder="Search" />
-                <label>Topics</label>
-                <div class="checkbox" *ngFor="let topic of ['Naat', 'Bayan', 'Kawaali']">
-                    <label>
-                        <input name="kw" type="checkbox" class="checkbox" [value]="topic"
-                            (change)="updateFilter($event, 'topics', topic)" />
-                        {{ topic }}
-                    </label>
-                </div>
-                <label>VocalLists</label>
-                <div class="checkbox"
-                    *ngFor="let vocalist of ['Huzur Nasir Raza', 'Huzur Masoom Raza RA', 'Huzur Sanbil Raza']">
-                    <label>
-                        <input name="vocl" type="checkbox" class="checkbox" [value]="vocalist"
-                            (change)="updateFilter($event, 'vocalLists', vocalist)" />
-                        {{ vocalist }}
-                    </label>
-                </div>
-                <label>Month</label>
-                <div class="checkbox" *ngFor="let month of ['Muharram-ul-Haram', 'Safar-ul-Muzaffar', 'Rabi-ul-Awwal']">
-                    <label>
-                        <input name="mon" id="" type="checkbox" class="checkbox" [value]="month"
-                            (change)="updateFilter($event, 'months', month)" />
-                        {{ month }}
-                    </label>
-                </div>
-                <hr />
-                <label>Duration</label>
-                <br />
-                <select class="form-control" id="duration" name="d" (change)="updateDuration($event)">
-                    <option value="0" selected>Select</option>
-                    <option value="1">0 ~ 15min</option>
-                    <option value="900">15 ~ 30min</option>
-                    <option value="1800">30 ~ 45min</option>
-                </select>
-                <span id="search.errors" style="color: red; float: left;">Please provide value.</span>
-            </form>
-        </div>
-        <div class="col-md-9" >
+<div class="book-section     pt-5">
+
+    <div class="container mt-4">
+        <div class="tab-container">
             <div class="row">
-                <div class="col-md-4" *ngFor="let media of mediaList">
-                    <a [href]="media.contentURL" title="{{ media.title }}">
-                        <img style="height:150px !important;" class="group list-group-image" [src]=media.imageURL
-                            alt="Media Image" />
-                    </a>
-                    <div class="caption">
-                        <a style="height: 15vh;" href="#" class="text"><b>{{ media.title }}</b></a>
-                        <div><b>Duration: {{ media.duration }}</b></div>
-                        <hr />
-                    </div> 
+                <div class="col-md-4">
+                    <h2 class="menu-toggle mobiledown text-primary" (click)="toggleMenu()">Categories</h2>
+                    <div class="mobileTabs" [class.show]="mobileTabsVisible">
+                        <ul class="nav nav-tabs book-list-card">
+                            <h2 class="categoriesName d-xl-none d-lg-none m-0" >Categories</h2>
+                            <p class="my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
+                            <li *ngFor="let category of categories; let i = index" class="nav-item">
+                                <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category
+                                    }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="search-container">
+                        <input type="text" class="form-control" placeholder="Search categories or books..."
+                            [(ngModel)]="searchQuery" (input)="filterResults()" />
+                        <div class="tab-content">
+                            <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
+                                [class.show]="i === activeTab" [class.active]="i === activeTab">
+                                <div class="row">
+                                    <div *ngFor="let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+                                        class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+
+
+                                        <div class="img tittle">
+                                            <a (click)="booksDetails(item)" target="_blank">
+                                                <img [src]="item.img" loading="lazy" class="img-fluid"  />
+                                            </a>
+                                            <div class="icons_bar" style="background-color: gainsboro;">
+                                            <span>
+                                                <a class="caro-icon" href="javascript:void(0)" (click)="downloadPDF(item.name)">
+                                                    <i class="fas fa-file-pdf fa-fw"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                            <a href="#" target="_blank">
+                                                <p class="book_name">{{ item.name }}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pagination controls -->
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)" previousLabel="Previous"
+                                nextLabel="Next">
+                                </pagination-controls>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-           
-            
         </div>
     </div>
-</div>
 <app-footer></app-footer>
