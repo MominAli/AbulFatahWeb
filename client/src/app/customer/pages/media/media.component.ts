@@ -100,10 +100,9 @@ export class MediaComponent {
 
   booksDetails(book: any) {
     // Implement the function to show book details console.log(book);
-    this.router.navigate(['/books-details']);
+    this.router.navigate(['']);
   }
   filterResults() {
-    debugger;
     const query = this.searchQuery.toLowerCase();
 
     // Filter categories
@@ -118,13 +117,5 @@ export class MediaComponent {
   }
   onPageChange(event: number) {
         this.currentPage = event; // Update the current page when pagination changes
-    }
-
-    downloadPDF(bookName: string) {
-      const pdfUrl = `../../assets/Books/${bookName}.pdf`; // Path to the PDF file
-      const link = document.createElement('a');
-      link.href = pdfUrl;
-      link.download = `${bookName}.pdf`;
-      link.click();
     }
 }
