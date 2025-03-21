@@ -12,12 +12,12 @@ export class CarouselComponent {
   carouselTwoInterval = 3000; // Interval in milliseconds
 
   carouselOneItems = [
-    { src: '../../../assets/img/slider/img-01.jpeg', alt: 'Slide 1' },
-    { src: '../../../assets/img/slider/img-02.jpg', alt: 'Slide 2' }
+    { src: '../../../../assets/img/slider/img-01.jpeg', alt: 'Slide 1' },
+    { src: '../../../../assets/img/slider/img-02.jpg', alt: 'Slide 2' }
   ];
 
   carouselTwoItems = [
-    { src: '../../../assets/img/slider/img-01.jpeg', alt: 'Slide 1' },
-    { src: '../../../assets/img/slider/img-02.jpg', alt: 'Slide 2' }
+    { src: '../../../../assets/img/slider/img-01.jpeg', alt: 'Slide 1' },
+    { src: '../../../../assets/img/slider/img-02.jpg', alt: 'Slide 2' }
   ];
 }
