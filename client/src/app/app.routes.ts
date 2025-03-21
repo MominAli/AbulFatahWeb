@@ -1,28 +1,41 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { MemberListComponent } from './members/member-list/member-list.component';
-import { MemberDetailComponent } from './members/member-detail/member-detail.component';
-import { authGuard } from './_guards/auth.guard';
-import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
-import { NotFoundComponent } from './errors/not-found/not-found.component';
-import { ServerErrorComponent } from './errors/server-error/server-error.component';
-import { MemberEditComponent } from './members/member-edit/member-edit.component';
-import { preventUnsavedChangesGuard } from './_guards/prevent-unsaved-changes.guard';
-import { memberDetailedResolver } from './_resolvers/member-detailed.resolver';
-import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
-import { adminGuard } from './_guards/admin.guard';
-import { BooksComponent } from './books/books.component';
-import { MediaComponent } from './media/media.component';
-import { QuranComponent } from './quran/quran.component';
-import { ContactComponent } from './contact/contact.component';
-import { RegisterComponent } from './register/register.component';
-import { BooksDetailsComponent } from './books-details/books-details.component';
-import { ActivityComponent } from './activity/activity.component';
-import { QuranDetailsComponent } from './quran/quran-details/quran-details.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { DonationComponent } from './donation/donation.component';
-import { BiograhpyComponent } from './biograhpy/biograhpy.component';
+
+/* admin module */
+
+import { MemberListComponent } from '../app/admin/pages/members/member-list/member-list.component';
+import { MemberDetailComponent } from '../app/admin/pages/members/member-detail/member-detail.component';
+import { RegisterComponent } from '../app/admin/pages/register/register.component';
+import { MemberEditComponent } from '../app/admin/pages/members/member-edit/member-edit.component';
+import { memberDetailedResolver } from '../app/core/guards/_resolvers/member-detailed.resolver';
+import { AdminPanelComponent } from '../app/admin/pages/admin-panel/admin-panel.component';
+
+/* customer module */
+
+import { HomeComponent } from '../app/customer/pages/home/home.component';
+import { BooksDetailsComponent } from '../app/customer/pages/books-details/books-details.component';
+import { ActivityComponent } from '../app/customer/pages/activity/activity.component';
+import { QuranDetailsComponent } from '../app/customer/pages/quran/quran-details/quran-details.component';
+import { AboutComponent } from '../app/customer/pages/about/about.component';
+import { FeedbackComponent } from '../app/customer/pages/feedback/feedback.component';
+import { DonationComponent } from '../app/customer/pages/donation/donation.component';
+import { BiograhpyComponent } from '../app/customer/pages/biograhpy/biograhpy.component';
+import { BooksComponent } from '../app/customer/pages/books/books.component';
+import { MediaComponent } from '../app/customer/pages/media/media.component';
+import { QuranComponent } from '../app/customer/pages/quran/quran.component';
+import { ContactComponent } from '../app/customer/pages/contact/contact.component';
+
+/* shared module */
+
+import { TestErrorsComponent } from '../app/shared/components/errors/test-errors/test-errors.component';
+import { NotFoundComponent } from '../app/shared/components/errors/not-found/not-found.component';
+import { ServerErrorComponent } from '../app/shared/components/errors/server-error/server-error.component';
+
+/* core module */
+
+import { authGuard } from '../app/core/guards/_guards/auth.guard';
+import { preventUnsavedChangesGuard } from '../app/core/guards/_guards/prevent-unsaved-changes.guard';
+import { adminGuard } from '../app/core/guards/_guards/admin.guard';
+
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -33,11 +46,10 @@ export const routes: Routes = [
     {path: 'quran-details', component: QuranDetailsComponent},
 
     {path: 'activity', component: ActivityComponent},
-    {path: 'aboutus', component: AboutusComponent},
+    {path: 'aboutus', component: AboutComponent},
     {path: 'feedback', component: FeedbackComponent},
     {path: 'donation', component: DonationComponent},
     {path: 'biograhpy', component: BiograhpyComponent},
-
     {path: 'contact', component: ContactComponent},
     {path: 'register', component: RegisterComponent},
 

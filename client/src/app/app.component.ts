@@ -1,15 +1,9 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavComponent } from "./nav/nav.component";
-import { AccountService } from './_services/account.service';
-import { HomeComponent } from "./home/home.component";
+import { NavComponent } from "../app/shared/components/nav/nav.component";
+import { AccountService } from '../app/admin/services/account.service';
 import { NgxSpinnerComponent } from 'ngx-spinner';
-import { RegisterComponent } from './register/register.component';
-import { FooterComponent } from './footer/footer.component';
-import { EventsComponent } from './events/events.component';
-import { BooksComponent } from './books/books.component';
-import { MediaComponent } from './media/media.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselComponent } from '../app/shared/components/carousel/carousel.component';
 
 @Component({
     selector: 'app-root',
