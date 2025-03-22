@@ -17,7 +17,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 })
 export class BooksComponent {
 
-  categories = ['Al Munazrat', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
+  categories = ['Futuhaat e Abul Fatah', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
       { img: '../../assets/img/11.jpeg', name: 'book_01' },
