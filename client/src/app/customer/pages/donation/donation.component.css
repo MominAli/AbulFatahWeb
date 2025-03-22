@@ -1,12 +1,12 @@
 
-.bank-box {
+.donation-box {
    box-shadow: 0 0 15px rgba(0, 0, 0, .144);
    border-radius: 10px;
    overflow: hidden;
    padding: 20px;
 }
 
-.bank-box h2 {
+.donation-box h2 {
    font-size: 35px;
    text-transform: uppercase;
    font-weight: 700;
@@ -14,7 +14,7 @@
    text-align: center;
 }
 
-.bank-box .accordion-button {
+.donation-box .accordion-button {
    box-shadow: none !important;
    background-color: #ededed !important;
    color: #157784 !important;
@@ -23,22 +23,22 @@
    margin: 0px 0px 10px;
    border-radius: 9px !important;
 }
-.bank-box .accordion-button::after {
+.donation-box .accordion-button::after {
    color: #fff !important;
 }
 
-.bank-box .accordion-item {
+.donation-box .accordion-item {
    border: none;
 }
 
-.bank-img {
+.donation-img {
    width: fit-content;
    margin: 0 auto;
    border-radius: 20px;
    border: 2px solid #157784;
    overflow: hidden;
 }
-.bank-img img {
+.donation-img img {
    width: 120px;
 }
 .content-text {
@@ -46,10 +46,10 @@
    border-top: 1px solid;
    padding: 15px;
 }
-.content-text .bank-text {
+.content-text .donation-text {
    font-size: 16px;
 }
-.bank-card {
+.donation-card {
    padding-top: 20px;
    border-radius: 20px;
    height: 100% !important;

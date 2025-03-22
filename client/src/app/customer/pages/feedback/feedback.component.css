@@ -1,0 +1,20 @@
+.container {
+    margin-top: 4rem;
+    padding-top: 5rem;
+}
+
+.text-primary {
+    color: #157784;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background: white !important;
+}
+
+.btn-primary {
+    background-color: #157784;
+    border-color: #157784;
+}
