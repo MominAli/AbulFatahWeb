@@ -1,12 +1,10 @@
 
 /************************************************************************
-
 Template Name: 
 URI: 
 Description: 
 Author:  Theme
 Author URI: Version: 1.2
-
 *************************************************************************
 
 
@@ -262,16 +260,6 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 /*** Hero Header ***/
 
-
-/*** About Start ***/
-.about a.btn.btn-light:hover {
-    background: var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
-    border: 0;
-}
-/*** About End ***/
-
-
 /*** Activities Start ***/
 .activities .activities-item {
     height: 100%;
@@ -319,51 +307,3 @@ h4, h5, h6, .h4, .h5, .h6 {
     opacity: 0.5s;
 }
 /*** Events End ***/
-
-
-
-/*** Footer Start ***/
-.footer {
-    margin-top: 1rem;
-    background:#157784; 
-    color: white;
-    /* background:#157784; var(--bs-dark);  */
-
-}
-
-.footer .footer-item p {
-    font-size: 16px;
-    line-height: 35px;
-}
-
-.footer .border-top,
-.footer .border-bottom {
-    border-color: rgba(255, 255, 255, .08) !important;
-}
-
-.footer button {
-    border: 0;
-    transition: 0.5s;
-}
-
-.footer button:hover {
-    background: var(--bs-dark);
-    color: var(--bs-primary);
-}
-
-.footer-item a.btn.btn-light:hover {
-    background: var(--bs-primary);
-    color: var(--bs-dark) !important;
-    border: var(--bs-primary);
-}
-
-.footer-item a,
-.footer-item a i {
-    transition: 0.5s;
-}
-
-.footer-item a:hover,
-.footer-item a i:hover {
-    color: var(--bs-primary) !important;
-}
-/*** Footer End ***/
