@@ -20,7 +20,7 @@ export class BooksComponent {
   categories = ['Futuhaat e Abul Fatah', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: '03_Haibat_e_Qah_Haria' },
       { img: '../../assets/Futuhaat_e_Abul_Fatah/books/02_Munazra_Naunihal.jpeg', name: 'Munazra Naunihal' },
       { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
       { img: '../../assets/Futuhaat_e_Abul_Fatah/books/04_Munazra_Laucknow.jpeg', name: 'Munazra Laucknow' },
@@ -65,7 +65,7 @@ export class BooksComponent {
   mobileTabsVisible = false;
 
     // Pagination properties
-    itemsPerPage: number = 8; // Number of items per page
+    itemsPerPage: number = 12; // Number of items per page
     currentPage: number = 1;
 
     // Total categories
@@ -116,7 +116,7 @@ export class BooksComponent {
 
     downloadPDF(bookName: string) {
       debugger;
-      const pdfUrl = `../../assets/books/${bookName}.pdf`; // Path to the PDF file
+      const pdfUrl = `../../assets/Futuhaat_e_Abul_Fatah/books/${bookName}.pdf`; // Path to the PDF file
       const link = document.createElement('a');
       link.href = pdfUrl;
       link.download = `${bookName}.pdf`;
