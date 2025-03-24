@@ -20,17 +20,16 @@ export class BooksComponent {
   categories = ['Futuhaat e Abul Fatah', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
-      { img: '../../assets/img/11.jpeg', name: 'book_01' },
-      { img: '../../assets/img/12.jpeg', name: 'book_02' },
-      { img: '../../assets/img/13.jpeg', name: 'book_03' },
-      { img: '../../assets/img/14.jpeg', name: 'book_04' },
-      { img: '../../assets/img/12.jpeg', name: 'book_02' },
-      { img: '../../assets/img/11.jpeg', name: 'book_01' },
-      
-      { img: '../../assets/img/22.jpeg', name: 'book_03' },
-      { img: '../../assets/img/12.jpeg', name: 'book_04' },
-      { img: '../../assets/img/14.jpeg', name: 'book_02' },
-      { img: '../../assets/img/17.jpeg', name: 'book_01' }
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/02_Munazra_Naunihal.jpeg', name: 'Munazra Naunihal' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/04_Munazra_Laucknow.jpeg', name: 'Munazra Laucknow' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/05_Munazra_Mumbai_Vol_1.jpeg', name: 'Munazra_Mumbai Vol 1' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/06_Munazra_Mumbai_Vol_2.jpeg', name: 'Munazra_Mumbai Vol 2' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/07_Munazra_Padra_Vol_1.jpeg', name: 'Munazra Padra Vol 1' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/08_Munazra_Padra_Vol_2.jpeg', name: 'Munazra Padra Vol 2' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/09_Munazra_Rander.jpeg', name: 'Munazra Rander' },
+      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/010_Munazra_Malegaon.jpeg', name: 'Munazra Malegaon' }
 
     ],
     [
@@ -116,7 +115,8 @@ export class BooksComponent {
     }
 
     downloadPDF(bookName: string) {
-      const pdfUrl = `../../assets/Books/${bookName}.pdf`; // Path to the PDF file
+      debugger;
+      const pdfUrl = `../../assets/books/${bookName}.pdf`; // Path to the PDF file
       const link = document.createElement('a');
       link.href = pdfUrl;
       link.download = `${bookName}.pdf`;

@@ -16,12 +16,12 @@ export class MultiLangService {
       switch (language) {
         case "en":
           return "en";
-        case "es":
-          return "es";
-        case "fr":
-          return "fr";
-        case "ru":
-          return "ru";
+        case "hi":
+          return "hi";
+        case "ur":
+          return "ur";
+        case "ar":
+          return "ar";
         default:
           return "en";
       }

@@ -1,52 +1,6 @@
-<!-- Topbar start -->
-<div class="container-fluid fixed-top">
-    <div class="container topbar d-none d-lg-block">
-        <div class="topbar-inner">
-            <div class="row gx-0">
-                <div class="col-lg-7 text-start">
-                    <div class="h-100 d-inline-flex align-items-center me-4">
-                        <span class="fa fa-phone-alt me-2 text-dark"></span>
-                        <a href="#" class="text-secondary"><span>+012 345 6789</span></a>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <span class="far fa-envelope me-2 text-dark"></span>
-                        <a href="#" class="text-secondary"><span>infoabulfatah.in</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-end">
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <span class="text-body">Follow Us:</span>
-                        <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="text-body ps-4" href=""><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
-                    </div>
 
-                </div>
-              
-                  
-            </div>
-        </div>
-    </div>
 
-    <div class="dropdown">
-        <button class="btn btn-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="fi fi-us"></span> English
-        </button>
-        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
-          <li *ngFor="let language of ['en', 'fr', 'ru', 'es']">
-            <a
-              class="dropdown-item"
-              (click)="toggleLanguage(language)"
-              [ngClass]="{'active': multiLangService.languageSingnal() === language}"
-            >
-              <span class="fi" [ngClass]="getLanguageIconClass(language)"></span>
-              {{ getLanguageName(language) }}
-            </a>
-          </li>
-        </ul>
-      </div>    
+    
 
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-3">
@@ -74,19 +28,21 @@
                         }
                     </ul>
 
-                    <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active"
+                    <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active" style="font-family: 'Amiri', 'Scheherazade', 'Noto Naskh Arabic', sans-serif;
+"
                         (click)="closeNavbar()">{{'navbar.home' | translate}}</a>
-                    <a routerLink="/books" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Books</a>
-                    <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Media </a>
-                    <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Quran</a>
+                    <a routerLink="/books" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">{{'navbar.book' | translate}}</a>
+                    <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">{{'navbar.media' | translate}} </a>
+                    <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">{{'navbar.quran' | translate}}</a>
                     <a routerLink="/activity" routerLinkActive="active" class="nav-link"
-                        (click)="closeNavbar()">Activity</a>
+                        (click)="closeNavbar()">{{'navbar.activity' | translate}}</a>
 
                     <a routerLink="/contact" routerLinkActive="active" class="nav-link"
-                        (click)="closeNavbar()">Contact</a>
-                    <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">About
-                        Us</a>
-
+                        (click)="closeNavbar()">{{'navbar.contact' | translate}}</a>
+                    <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">{{'navbar.about' | translate}}</a>
+                   
+                      
+                      
                 </div>
                 @if (accountService.currentUser()) {
                 <div dropdown class="dropdown">
@@ -112,8 +68,25 @@
                 </form>
                 }
 
+              
+
             </div>
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="fi" [ngClass]="getLanguageIconClass(multiLangService.languageSingnal())"></span> {{ selectedLanguageName }}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+                  <li *ngFor="let language of ['en', 'ur', 'hi', 'ar']">
+                    <a
+                      class="dropdown-item"
+                      (click)="toggleLanguage(language)"
+                      [ngClass]="{'active': multiLangService.languageSingnal() === language}"
+                    >
+                      <span class="fi" [ngClass]="getLanguageIconClass(language)"></span>
+                      {{ getLanguageName(language) }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
         </nav>
     </div>
-</div>
-<!-- Topbar End -->

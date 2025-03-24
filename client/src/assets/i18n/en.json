@@ -1,7 +1,11 @@
 {
     "navbar":{
         "home":"Home",
-        "about":"About",
-        "contact":"Contact"
+        "book":"Book",
+        "media":"Media",
+        "quran":"Quran",
+        "activity":"Activity",
+        "contact":"Contact",
+        "about":"About Us"
     }
 }

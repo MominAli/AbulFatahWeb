@@ -10,6 +10,7 @@ import { MultiLangService } from '../../../multi-lang.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
+// Refernce vido https://www.youtube.com/watch?v=YE2fXVFq3lo&t=1349ss
 @Component({
   selector: 'app-nav',
   standalone: true,
@@ -20,41 +21,39 @@ import { CommonModule } from '@angular/common';
 export class NavComponent {
 
   multiLangService = inject(MultiLangService);
+  selectedLanguageName: string = 'English'; // Default language name
 
+  
   toggleLanguage(language: string): void {
     if (this.multiLangService.languageSingnal() !== language) {
       this.multiLangService.updateLanguage(language);
+      this.selectedLanguageName = this.getLanguageName(language);
       console.log('Language changed to ', language);
+
     }
   }
+  // Method to get language name based on language code
+  getLanguageName(language: string): string {
+    const languageNames: { [key: string]: string } = {
+      en: 'English',
+      ur: 'Urdu',
+      hi: 'Hindi',
+      ar: 'Arabic'
+    };
+    return languageNames[language] || 'Unknown';
+  }
+  
+  // Method to get CSS class for language icons
   getLanguageIconClass(language: string): string {
-    switch (language) {
-      case "en":
-        return "fi fi-us";
-      case "fr":
-        return "fi i-fr";
-      case "es":
-        return "fi fi-es";
-      case "ru":
-        return "fi fi-ru";
-      default:
-        return "fi fi-us";
-    }
+    const languageIcons: { [key: string]: string } = {
+      en: 'fi-us',
+      ur: 'fi-pk',
+      hi: 'fi-in',
+      ar: 'fi-sa'
+    };
+    return languageIcons[language] || '';
   }
-  getLanguageName(langName: string): string {
-    switch (langName) {
-      case "en":
-        return "English";
-      case "fr":
-        return "French";
-      case "es":
-        return "Spanish";
-      case "ru":
-        return "Russian";
-      default:
-        return "English";
-    }
-  }
+  
   accountService = inject(AccountService);
   private router = inject(Router)
   private toastr = inject(ToastrService);
