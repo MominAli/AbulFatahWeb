@@ -1,99 +1,119 @@
-
-
-     <!-- Topbar start -->
-      <div class="container-fluid fixed-top">
-        <div class="container topbar d-none d-lg-block">
-            <div class="topbar-inner">
-                <div class="row gx-0">
-                    <div class="col-lg-7 text-start">
-                        <div class="h-100 d-inline-flex align-items-center me-4">
-                            <span class="fa fa-phone-alt me-2 text-dark"></span>
-                            <a href="#" class="text-secondary"><span>+012 345 6789</span></a>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center">
-                            <span class="far fa-envelope me-2 text-dark"></span>
-                            <a href="#" class="text-secondary"><span>infoabulfatah.in</span></a>
-                        </div>
+<!-- Topbar start -->
+<div class="container-fluid fixed-top">
+    <div class="container topbar d-none d-lg-block">
+        <div class="topbar-inner">
+            <div class="row gx-0">
+                <div class="col-lg-7 text-start">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <span class="fa fa-phone-alt me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>+012 345 6789</span></a>
                     </div>
-                    <div class="col-lg-5 text-end">
-                        <div class="h-100 d-inline-flex align-items-center">
-                            <span class="text-body">Follow Us:</span>
-                            <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
-                            <a  class="text-body ps-4" href="" ><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
-                        </div>
-
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 text-dark"></span>
+                        <a href="#" class="text-secondary"><span>infoabulfatah.in</span></a>
                     </div>
                 </div>
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="text-body">Follow Us:</span>
+                        <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="text-body ps-4" href=""><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
+                    </div>
+
+                </div>
+              
+                  
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <nav class="navbar navbar-light navbar-expand-lg py-3">
-                <a href="index.html" >
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="fi fi-us"></span> English
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+          <li *ngFor="let language of ['en', 'fr', 'ru', 'es']">
+            <a
+              class="dropdown-item"
+              (click)="toggleLanguage(language)"
+              [ngClass]="{'active': multiLangService.languageSingnal() === language}"
+            >
+              <span class="fi" [ngClass]="getLanguageIconClass(language)"></span>
+              {{ getLanguageName(language) }}
+            </a>
+          </li>
+        </ul>
+      </div>    
+
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-3">
+            <a href="index.html">
                 <!-- <h1 class="mb-0"><span class="text-primary"> ابوالفتح</span> </h1> -->
                 <!-- مظہر اعلیٰ حضرت -->
                 <!-- ابوالفتح -->
-                    <img src="assets/img/logo/logo.png  " style="width:120px;" class="img-fluid" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars text-primary"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-white" [class.show]="!isNavbarCollapsed" id="navbarCollapse">
-                    <div class="navbar-nav ms-lg-auto mx-xl-auto">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            @if (accountService.currentUser()) {
-                                <li class="nav-item">
-                                    <a routerLink="/members" routerLinkActive="active" class="nav-link">Memeber</a>
-                                </li>
-                                <li *appHasRole="['Admin', 'Moderator']" class="nav-item">
-                                    <a routerLink="/admin" routerLinkActive="active" class="nav-link">Admin</a>
-                                </li>
-                            }
-                        </ul>
-
-                        <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active" (click)="closeNavbar()">Home</a>
-                        <a routerLink="/books" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Books</a>
-                        <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Media </a>
-                        <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Quran</a>
-                        <a routerLink="/activity" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Activity</a>
-
-                        <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Contact</a>
-                        <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">About Us</a>
-                      
-                    </div>
-                    @if (accountService.currentUser()) {
-                        <div dropdown class="dropdown">
-                            <img 
-                                class="me-2"
-                                src="{{accountService.currentUser()?.photoUrl || './assets/user.png'}}" 
-                                alt="user main image" style="border-radius: 100%;">
-                            <a dropdownToggle class="dropdown-toggle  text-decoration-none">
-                                Welcome {{accountService.currentUser()?.knownAs}}
-                            </a>
-                            <div *dropdownMenu class="dropdown-menu">
-                                <a routerLink="/member/edit" class="dropdown-item">Edit profile</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" (click)="logout()">Logout</a>
-                            </div>
-                        </div>
+                <img src="assets/img/logo/logo.png  " style="width:120px;" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" [class.show]="!isNavbarCollapsed" id="navbarCollapse">
+                <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        @if (accountService.currentUser()) {
+                        <li class="nav-item">
+                            <a routerLink="/members" routerLinkActive="active" class="nav-link">Memeber</a>
+                        </li>
+                        <li *appHasRole="['Admin', 'Moderator']" class="nav-item">
+                            <a routerLink="/admin" routerLinkActive="active" class="nav-link">Admin</a>
+                        </li>
                         }
-                    @if (!accountService.currentUser()) {
-                        <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex" autocomplete="off">
-                            <input name="username" [(ngModel)]="model.username" class="form-control me-2" placeholder="Username">
-                            <input name="password" [(ngModel)]="model.password" class="form-control me-2" placeholder="Password"
-                                type="password">
-                            <button class="btn btn-success" type="submit">Login</button>
-                        </form>
-                        }
-                
+                    </ul>
+
+                    <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active"
+                        (click)="closeNavbar()">{{'navbar.home' | translate}}</a>
+                    <a routerLink="/books" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Books</a>
+                    <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Media </a>
+                    <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Quran</a>
+                    <a routerLink="/activity" routerLinkActive="active" class="nav-link"
+                        (click)="closeNavbar()">Activity</a>
+
+                    <a routerLink="/contact" routerLinkActive="active" class="nav-link"
+                        (click)="closeNavbar()">Contact</a>
+                    <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">About
+                        Us</a>
+
                 </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Topbar End -->
+                @if (accountService.currentUser()) {
+                <div dropdown class="dropdown">
+                    <img class="me-2" src="{{accountService.currentUser()?.photoUrl || './assets/user.png'}}"
+                        alt="user main image" style="border-radius: 100%;">
+                    <a dropdownToggle class="dropdown-toggle  text-decoration-none">
+                        Welcome {{accountService.currentUser()?.knownAs}}
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu">
+                        <a routerLink="/member/edit" class="dropdown-item">Edit profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" (click)="logout()">Logout</a>
+                    </div>
+                </div>
+                }
+                @if (!accountService.currentUser()) {
+                <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex" autocomplete="off">
+                    <input name="username" [(ngModel)]="model.username" class="form-control me-2"
+                        placeholder="Username">
+                    <input name="password" [(ngModel)]="model.password" class="form-control me-2" placeholder="Password"
+                        type="password">
+                    <button class="btn btn-success" type="submit">Login</button>
+                </form>
+                }
 
-     
-    
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Topbar End -->

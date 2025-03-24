@@ -6,15 +6,55 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { HasRoleDirective } from '../../../shared/directives/has-role.directive';
 import { RegisterComponent } from '../../../admin/pages/register/register.component';
+import { MultiLangService } from '../../../multi-lang.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [FormsModule, BsDropdownModule, RouterLink, RouterLinkActive, HasRoleDirective,RegisterComponent],
+  imports: [TranslateModule, CommonModule ,FormsModule, BsDropdownModule, RouterLink, RouterLinkActive, HasRoleDirective, RegisterComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+
+  multiLangService = inject(MultiLangService);
+
+  toggleLanguage(language: string): void {
+    if (this.multiLangService.languageSingnal() !== language) {
+      this.multiLangService.updateLanguage(language);
+      console.log('Language changed to ', language);
+    }
+  }
+  getLanguageIconClass(language: string): string {
+    switch (language) {
+      case "en":
+        return "fi fi-us";
+      case "fr":
+        return "fi i-fr";
+      case "es":
+        return "fi fi-es";
+      case "ru":
+        return "fi fi-ru";
+      default:
+        return "fi fi-us";
+    }
+  }
+  getLanguageName(langName: string): string {
+    switch (langName) {
+      case "en":
+        return "English";
+      case "fr":
+        return "French";
+      case "es":
+        return "Spanish";
+      case "ru":
+        return "Russian";
+      default:
+        return "English";
+    }
+  }
   accountService = inject(AccountService);
   private router = inject(Router)
   private toastr = inject(ToastrService);
