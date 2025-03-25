@@ -20,16 +20,17 @@ export class BooksComponent {
   categories = ['Futuhaat e Abul Fatah', 'Quran-o-Tafseer', 'Hadees-o-Usool-e-Hadees', 'Fiqh-o-Usool-e-Fiqh', 'Seerat', 'Tasawwuf'];
   tabContent = [
     [
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: '03_Haibat_e_Qah_Haria' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/02_Munazra_Naunihal.jpeg', name: 'Munazra Naunihal' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/04_Munazra_Laucknow.jpeg', name: 'Munazra Laucknow' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/05_Munazra_Mumbai_Vol_1.jpeg', name: 'Munazra_Mumbai Vol 1' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/06_Munazra_Mumbai_Vol_2.jpeg', name: 'Munazra_Mumbai Vol 2' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/07_Munazra_Padra_Vol_1.jpeg', name: 'Munazra Padra Vol 1' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/08_Munazra_Padra_Vol_2.jpeg', name: 'Munazra Padra Vol 2' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/09_Munazra_Rander.jpeg', name: 'Munazra Rander' },
-      { img: '../../assets/Futuhaat_e_Abul_Fatah/books/010_Munazra_Malegaon.jpeg', name: 'Munazra Malegaon' }
+      { img: '../../assets/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat_e_Qah_Haria' },
+      { img: '../../assets/books/02_Munazra_Naunihal.jpeg', name: 'Munazra Naunihal' },
+      { img: '../../assets/books/03_Haibat_e_Qah_Haria.jpeg', name: 'Haibat e Qah Haria' },
+      { img: '../../assets/books/04_Munazra_Laucknow.jpeg', name: 'Munazra Laucknow' },
+      { img: '../../assets/books/05_Munazra_Mumbai_Vol_1.jpeg', name: 'Munazra_Mumbai Vol 1' },
+      { img: '../../assets/books/06_Munazra_Mumbai_Vol_2.jpeg', name: 'Munazra_Mumbai Vol 2' },
+      { img: '../../assets/books/07_Munazra_Padra_Vol_1.jpeg', name: 'Munazra Padra Vol 1' },
+      { img: '../../assets/books/08_Munazra_Padra_Vol_2.jpeg', name: 'Munazra Padra Vol 2' },
+      { img: '../../assets/books/09_Munazra_Rander.jpeg', name: 'Munazra Rander' },
+      { img: '../../assets/books/010_Munazra_Malegaon.jpeg', name: 'Munazra Malegaon' },
+      { img: '../../assets/books/011 Munazra Shambhal.jpeg', name: 'Munazra Shambhal' }
 
     ],
     [
@@ -116,7 +117,7 @@ export class BooksComponent {
 
     downloadPDF(bookName: string) {
       debugger;
-      const pdfUrl = `../../assets/Futuhaat_e_Abul_Fatah/books/${bookName}.pdf`; // Path to the PDF file
+      const pdfUrl = `../../assets/books/${bookName}.pdf`; // Path to the PDF file
       const link = document.createElement('a');
       link.href = pdfUrl;
       link.download = `${bookName}.pdf`;
