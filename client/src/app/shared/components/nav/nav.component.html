@@ -1,9 +1,9 @@
 
 
     
-<button (click)="toggleTheme()">Toggle Theme</button>
 
     <div class="container">
+        <button class="btn btn-success" (click)="toggleTheme()">Toggle Theme</button>
         <nav class="navbar navbar-light navbar-expand-lg py-3">
             <a href="index.html">
                 <!-- <h1 class="mb-0"><span class="text-primary"> ابوالفتح</span> </h1> -->
@@ -45,6 +45,7 @@
                       
                       
                 </div>
+
                 @if (accountService.currentUser()) {
                 <div dropdown class="dropdown">
                     <img class="me-2" src="{{accountService.currentUser()?.photoUrl || './assets/user.png'}}"
@@ -89,5 +90,6 @@
                   </li>
                 </ul>
               </div>
+
         </nav>
     </div>
