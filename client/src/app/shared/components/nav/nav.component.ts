@@ -20,6 +20,21 @@ import { CommonModule } from '@angular/common';
 })
 export class NavComponent {
 
+  currentTheme: string = 'light-theme';
+  
+  toggleTheme() {
+    const body = document.body;
+    if (this.currentTheme === 'light-theme') {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+      this.currentTheme = 'dark-theme';
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+      this.currentTheme = 'light-theme';
+    }
+  }
+
   multiLangService = inject(MultiLangService);
   selectedLanguageName: string = 'English'; // Default language name
 

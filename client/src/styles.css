@@ -47,5 +47,10 @@
   .nav-tabs {
       --bs-nav-tabs-border-width: 0px;
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  
+  body {
+    background-color: var(--background-color); /* Applies background color dynamically */
+    color: var(--text-color); /* Sets text color dynamically */
+  }
+  
+  
