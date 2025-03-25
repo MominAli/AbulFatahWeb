@@ -9,31 +9,20 @@ import { RegisterComponent } from '../../../admin/pages/register/register.compon
 import { MultiLangService } from '../../../multi-lang.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 // Refernce vido https://www.youtube.com/watch?v=YE2fXVFq3lo&t=1349ss
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [TranslateModule, CommonModule ,FormsModule, BsDropdownModule, RouterLink, RouterLinkActive, HasRoleDirective, RegisterComponent],
+  imports: [
+    TranslateModule, CommonModule,FormsModule, BsDropdownModule,
+     RouterLink, RouterLinkActive, HasRoleDirective,
+     RegisterComponent,ThemeToggleComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
-  currentTheme: string = 'light-theme';
-  
-  toggleTheme() {
-    const body = document.body;
-    if (this.currentTheme === 'light-theme') {
-      body.classList.remove('light-theme');
-      body.classList.add('dark-theme');
-      this.currentTheme = 'dark-theme';
-    } else {
-      body.classList.remove('dark-theme');
-      body.classList.add('light-theme');
-      this.currentTheme = 'light-theme';
-    }
-  }
 
   multiLangService = inject(MultiLangService);
   selectedLanguageName: string = 'English'; // Default language name

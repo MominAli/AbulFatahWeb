@@ -1,10 +1,30 @@
-:root {
-    --background-color: #ffffff; /* Light theme background */
-    --text-color: #000000; /* Light theme text */
+/* Light Theme */
+.light-theme {
+    --primary-color: #1976d2;
+    --accent-color: #ff4081;
+    --bg-color: #ffffff;
+    --text-color: #000000;
   }
   
+  /* Dark Theme */
   .dark-theme {
-    --background-color: #1e1e1e; /* Dark theme background */
-    --text-color: white; /* Dark theme text */
+    --primary-color: #bb86fc;
+    --accent-color: #03dac6;
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    color: var(--accent-color);
   }
   

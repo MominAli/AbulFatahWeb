@@ -48,9 +48,4 @@
       --bs-nav-tabs-border-width: 0px;
   }
   
-  body {
-    background-color: var(--background-color); /* Applies background color dynamically */
-    color: var(--text-color); /* Sets text color dynamically */
-  }
-  
   
