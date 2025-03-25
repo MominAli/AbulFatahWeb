@@ -14,14 +14,23 @@ export class QuranComponent {
   
   surahLists: Surah[] = [];
   paraLists: Para[] = [];
+  loading: boolean = true;
 
   constructor(private router: Router , private qurandetailsService:QurandetailsService){ }
 
   ngOnInit(): void {
-     this.qurandetailsService.getSurahLists().subscribe((data) => { this.surahLists = data; }); 
-     this.qurandetailsService.getParaLists().subscribe((data) => { this.paraLists = data; }); 
+    // Fetch Surah List
+    this.qurandetailsService.getSurahLists().subscribe((data) => {
+      this.surahLists = data;
+    });
 
-    }
+    // Fetch Para List
+    this.qurandetailsService.getParaLists().subscribe((data) => {
+      this.paraLists = data;
+    });
+    this.loading = false; // Data loaded
+
+  }
 
   quranDetails()
   {
