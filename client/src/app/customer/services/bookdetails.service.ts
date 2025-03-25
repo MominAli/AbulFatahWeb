@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +9,16 @@ import { Injectable } from '@angular/core';
 
 export class BookdetailsService {
 
-  constructor() { }
+  private dataUrl = 'assets/books.json'; // Path to the JSON file
+
+  constructor(private http: HttpClient) {}
+
+  getBookPage(): Observable<any> {
+    console.log('Fetching books.json from:', this.dataUrl);
+    return this.http.get<any>(this.dataUrl);
+  }
+
+
 
   private bookDetails = [
     {

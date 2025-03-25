@@ -1,5 +1,6 @@
 <div class="book-section pt-5">
-
+    <div *ngIf="loading">Loading...</div>
+    <div *ngIf="!loading">
     <div class="container mt-4">
         <div class="tab-container">
             <div class="row">
@@ -62,3 +63,4 @@
         </div>
     </div>
 <app-footer></app-footer>
+</div>
