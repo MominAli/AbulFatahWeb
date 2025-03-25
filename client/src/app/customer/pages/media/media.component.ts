@@ -7,47 +7,28 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
+import { MediadetailsService } from '../../services/mediadetails.service';
 
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [FooterComponent, CommonModule, FormsModule,NgxPaginationModule],
+  imports: [FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })
 export class MediaComponent {
 
-  categories = [
-    'Naat',
-    'Bayan',
-    'Muharram', 'Safar', 'Rabi al-Awwal', 'Rabi al-Thani',
-    'Jumada al-Awwal', 'Jumada al-Thani','Rajab','Shaban',
-    'Ramadan','Shawwal','Dhu al-Qadah','Dhu al-Hijjah','Old Bayan',];
-  tabContent = [
-    [
-      { img: '../../assets/img/11.jpeg', name: 'book_01' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
-      { img: '../../assets/img/12.jpeg', name: 'book_02' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
-      { img: '../../assets/img/13.jpeg', name: 'book_03' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
-      { img: '../../assets/img/14.jpeg', name: 'book_04' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
-      { img: '../../assets/img/15.jpeg', name: 'book_05' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'},
-      { img: '../../assets/img/16.jpeg', name: 'book_06' ,url:'https://www.youtube.com/watch?v=tYw6MCuZazs'}
-
-    ]
-  ];
+  categories: string[] = [];
+  tabContent: any[] = [];
   activeTab = 0;
+  searchQuery = '';
+  filteredCategories: string[] = [];
+  filteredTabContent: any[] = [];
   mobileTabsVisible = false;
-
-    // Pagination properties
-    itemsPerPage: number = 8; // Number of items per page
-    currentPage: number = 1;
-
-    // Total categories
-    totalCategories: number = this.categories.length;
-
-    searchQuery = ''; // To bind the search input
-    filteredCategories = [...this.categories]; // Filtered categories
-    filteredTabContent = [...this.tabContent]; // Filtered tab content
-  
+  itemsPerPage: number = 12; // Number of items per page
+  currentPage: number = 1;
+  totalCategories: number = this.categories.length;
+  loading: boolean = true;
 
   toggleMenu() {
     this.mobileTabsVisible = !this.mobileTabsVisible;
@@ -57,33 +38,38 @@ export class MediaComponent {
     this.activeTab = index;
     this.mobileTabsVisible = false;
   }
-  
+
   books: any[] = [];
-  constructor(private bookdetailsService: BookdetailsService, private router: Router) { }
+  constructor(private mediadetailsService: MediadetailsService, private router: Router) { }
 
   ngOnInit(): void {
+    this.mediadetailsService.getMediaList().subscribe(data => {
+      this.categories = data.categories;
+      this.totalCategories = this.categories.length;
+      this.loading = false; // Data loaded
+      this.tabContent = data.tabContent;
+      this.filteredCategories = [...this.categories];
+      this.filteredTabContent = [...this.tabContent];
+    });
   }
 
-
-    filterResults() {
+  filterResults(): any {
     const query = this.searchQuery.toLowerCase();
-
-    // Filter categories
-    this.filteredCategories = this.categories.filter((category) =>
+    this.filteredCategories = this.categories.filter(category =>
       category.toLowerCase().includes(query)
     );
 
-    // Filter books (update for each tab's content if needed)
-    this.filteredTabContent = this.tabContent.map((tab) =>
-      tab.filter((item) => item.name.toLowerCase().includes(query))
-    );
+    // this.filteredTabContent = this.tabContent.map(tab =>
+    //   tab.filter(item => item.name.toLowerCase().includes(query))
+    // );
   }
+  
   onPageChange(event: number) {
-        this.currentPage = event; // Update the current page when pagination changes
+    this.currentPage = event; // Update the current page when pagination changes
+  }
+  redirectToVideo(url: string): void {
+    if (url) {
+      window.open(url, '_blank'); // Opens the YouTube video in a new tab
     }
-    redirectToVideo(url: string): void {
-      if (url) {
-        window.open(url, '_blank'); // Opens the YouTube video in a new tab
-      }
-    }
+  }
 }

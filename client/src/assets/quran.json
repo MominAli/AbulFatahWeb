@@ -1,0 +1,839 @@
+{
+    "surahs": [
+        {
+            "surahNumber": 1,
+            "suranameEng": "Al Fatiha",
+            "suranameArabic": "اَلْفَاتِحَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Fatiha"
+        },
+        {
+            "surahNumber": 2,
+            "suranameEng": "Al Baqarah",
+            "suranameArabic": "اَلْبَقَرَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Baqarah"
+        },
+        {
+            "surahNumber": 3,
+            "suranameEng": "Al Imran",
+            "suranameArabic": "اٰلِ عِمْرَان",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Imran"
+        },
+        {
+            "surahNumber": 4,
+            "suranameEng": "An Nisa",
+            "suranameArabic": "اَلنِّسَآء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Nisa"
+        },
+        {
+            "surahNumber": 5,
+            "suranameEng": "Al Maidah",
+            "suranameArabic": "اَلْمَـآئِدَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Maidah"
+        },
+        {
+            "surahNumber": 6,
+            "suranameEng": "Al Anam",
+            "suranameArabic": "اَلْاَ نْعَام",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Anam"
+        },
+        {
+            "surahNumber": 7,
+            "suranameEng": "Al Araf",
+            "suranameArabic": "اَلْاَعْرَاف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Araf"
+        },
+        {
+            "surahNumber": 8,
+            "suranameEng": "Al Anfal",
+            "suranameArabic": "اَلْاَنْفَال",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Anfal"
+        },
+        {
+            "surahNumber": 9,
+            "suranameEng": "At Tawbah",
+            "suranameArabic": "اَلتَّوْبَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Tawbah"
+        },
+        {
+            "surahNumber": 10,
+            "suranameEng": "Yunus",
+            "suranameArabic": "يُوْنُس",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Yunus"
+        },
+        {
+            "surahNumber": 11,
+            "suranameEng": "Hud",
+            "suranameArabic": "هُود",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Hud"
+        },
+        {
+            "surahNumber": 12,
+            "suranameEng": "Yusuf",
+            "suranameArabic": "يُوْسُف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Yusuf"
+        },
+        {
+            "surahNumber": 13,
+            "suranameEng": "Ar Rad",
+            "suranameArabic": "اَلرَّعْد",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ar Rad"
+        },
+        {
+            "surahNumber": 14,
+            "suranameEng": "Ibrahim",
+            "suranameArabic": "اِبْرٰهِيم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ibrahim"
+        },
+        {
+            "surahNumber": 15,
+            "suranameEng": "Al Hijr",
+            "suranameArabic": "اَلْحِجْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Hijr"
+        },
+        {
+            "surahNumber": 16,
+            "suranameEng": "An Nahl",
+            "suranameArabic": "اَلنَّحْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Nahl"
+        },
+        {
+            "surahNumber": 17,
+            "suranameEng": "Al Isra",
+            "suranameArabic": "اَلْإِسْرَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Isra"
+        },
+        {
+            "surahNumber": 18,
+            "suranameEng": "Al Kahf",
+            "suranameArabic": "اَلْكَهْف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Kahf"
+        },
+        {
+            "surahNumber": 19,
+            "suranameEng": "Maryam",
+            "suranameArabic": "مَرْيَم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Maryam"
+        },
+        {
+            "surahNumber": 20,
+            "suranameEng": "Taha",
+            "suranameArabic": "طٰهٰ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Taha"
+        },
+        {
+            "surahNumber": 21,
+            "suranameEng": "Al Anbiya",
+            "suranameArabic": "اَلْأَنْبِيَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Anbiya"
+        },
+        {
+            "surahNumber": 22,
+            "suranameEng": "Al Hajj",
+            "suranameArabic": "اَلْحَجّ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Hajj"
+        },
+        {
+            "surahNumber": 23,
+            "suranameEng": "Al Muminoon",
+            "suranameArabic": "اَلْمُؤْمِنُون",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Muminoon"
+        },
+        {
+            "surahNumber": 24,
+            "suranameEng": "An Noor",
+            "suranameArabic": "اَلنُّوْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Noor"
+        },
+        {
+            "surahNumber": 25,
+            "suranameEng": "Al Furqan",
+            "suranameArabic": "اَلْفُرْقَان",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Furqan"
+        },
+        {
+            "surahNumber": 26,
+            "suranameEng": "Ash Shuara",
+            "suranameArabic": "اَلشُّعَرَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ash Shuara"
+        },
+        {
+            "surahNumber": 27,
+            "suranameEng": "An Naml",
+            "suranameArabic": "اَلنَّمْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Naml"
+        },
+        {
+            "surahNumber": 28,
+            "suranameEng": "Al Qasas",
+            "suranameArabic": "اَلْقَصَص",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qasas"
+        },
+        {
+            "surahNumber": 29,
+            "suranameEng": "Al Ankabut",
+            "suranameArabic": "اَلْعَنْكَبُوْت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ankabut"
+        },
+        {
+            "surahNumber": 30,
+            "suranameEng": "Ar Rum",
+            "suranameArabic": "اَلرُّوْم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ar Rum"
+        }
+    ],
+    "paras": [
+        {
+            "paraNumber": 1,
+            "paraName": "الٓمّٓ"
+        },
+        {
+            "paraNumber": 2,
+            "paraName": "سَیَقُوْلُ"
+        },
+        {
+            "paraNumber": 3,
+            "paraName": "تِلْكَ الرُّسُلُ"
+        },
+        {
+            "paraNumber": 4,
+            "paraName": "لَنْ تَنَالُوا"
+        },
+        {
+            "paraNumber": 5,
+            "paraName": "وَالمُحْصَنٰتُ"
+        },
+        {
+            "paraNumber": 6,
+            "paraName": "لاَ يُحِبُّ اللّهُ"
+        },
+        {
+            "paraNumber": 7,
+            "paraName": "وَإِذَا سَمِعُوا"
+        },
+        {
+            "paraNumber": 8,
+            "paraName": "وَلَوْ أَنَّنَا"
+        },
+        {
+            "paraNumber": 9,
+            "paraName": "قَدْ أَفْلَحَ"
+        },
+        {
+            "paraNumber": 10,
+            "paraName": "وَاعْلَمُوا"
+        },
+        {
+            "paraNumber": 11,
+            "paraName": "يَعْتَذِرُونَ"
+        },
+        {
+            "paraNumber": 12,
+            "paraName": "وَمَا مِنْ دَآبَّةٍ"
+        },
+        {
+            "paraNumber": 13,
+            "paraName": "رُبَمَا"
+        },
+        {
+            "paraNumber": 14,
+            "paraName": "أَلَمْ تَرَ"
+        },
+        {
+            "paraNumber": 15,
+            "paraName": "سُبْحَانَ الَّذِى"
+        },
+        {
+            "paraNumber": 16,
+            "paraName": "قَالَ أَلَمْ"
+        },
+        {
+            "paraNumber": 17,
+            "paraName": "اقْتَرَبَ لِلنَّاسِ"
+        },
+        {
+            "paraNumber": 18,
+            "paraName": "قَدْ أَفْلَحَ"
+        },
+        {
+            "paraNumber": 19,
+            "paraName": "وَقَالَ الَّذِينَ"
+        },
+        {
+            "paraNumber": 20,
+            "paraName": "أَمَّنْ خَلَقَ"
+        },
+        {
+            "paraNumber": 21,
+            "paraName": "اتْلُ مَا"
+        },
+        {
+            "paraNumber": 22,
+            "paraName": "وَمَنْ يَقْنُتْ"
+        },
+        {
+            "paraNumber": 23,
+            "paraName": "وَمَآ أَنْزَلَ"
+        },
+        {
+            "paraNumber": 24,
+            "paraName": "فَمَنْ أَظْلَمُ"
+        },
+        {
+            "paraNumber": 25,
+            "paraName": "إِلَيْهِ يُرَدُّ"
+        },
+        {
+            "paraNumber": 26,
+            "paraName": "حَمٓ"
+        },
+        {
+            "paraNumber": 27,
+            "paraName": "قَالَ فَمَا خَطْبُكُم"
+        },
+        {
+            "paraNumber": 28,
+            "paraName": "قَدْ أَفْلَحَ"
+        },
+        {
+            "paraNumber": 29,
+            "paraName": "عَمَّ يَتَسَاءَلُونَ"
+        },
+        {
+            "paraNumber": 30,
+            "paraName": "عَمَّ يَتَسَاءَلُونَ"
+        }
+    ],
+   "ddlPara": [
+    { "value": 1, "name": "1 - Alif-Laam-Meem - المّ" },
+    { "value": 2, "name": "2 - Sayaqoolu - سيقول" },
+    { "value": 3, "name": "3 - Tilkal Rusulu - تلك الرسل" },
+    { "value": 4, "name": "4 - Lan Tanaalu - لن تنالو" },
+    { "value": 5, "name": "5 - Wal Mohsanat - والمحسنات" },
+    { "value": 6, "name": "6 - La Yuhibullah - لا يحب الله" },
+    { "value": 7, "name": "7 - Wa Iza Samiu - وإذا سمعوا" },
+    { "value": 8, "name": "8 - Wa Lau Annana - ولو أننا" },
+    { "value": 9, "name": "9 - Qad Aflaha - قد أفلح" },
+    { "value": 10, "name": "10 - Wa A'lamu - واعلموا" },
+    { "value": 11, "name": "11 - Ya'tadhiruna - يعتذرون" },
+    { "value": 12, "name": "12 - Wa Mamin Da'abba - وما من دابة" },
+    { "value": 13, "name": "13 - Rubama - ربما" },
+    { "value": 14, "name": "14 - Alam Taraa - ألم تر" },
+    { "value": 15, "name": "15 - Subhanallazi - سبحان الذي" },
+    { "value": 16, "name": "16 - Qal Alam - قال ألم" },
+    { "value": 17, "name": "17 - Aqtarabat - اقتربت" },
+    { "value": 18, "name": "18 - Qadd Aflaha - قد أفلح" },
+    { "value": 19, "name": "19 - Wa Qalallazina - وقال الذين" },
+    { "value": 20, "name": "20 - A'mman Khalaq - أمن خلق" },
+    { "value": 21, "name": "21 - Utlu Ma - اتل ما" },
+    { "value": 22, "name": "22 - Wa Manyaqnut - ومن يقنت" },
+    { "value": 23, "name": "23 - Wama Anzalna - وما أنزلنا" },
+    { "value": 24, "name": "24 - Faman Azlam - فمن أظلم" },
+    { "value": 25, "name": "25 - Ilahe Yuraddu - إليه يرد" },
+    { "value": 26, "name": "26 - Ha Meem - حم" },
+    { "value": 27, "name": "27 - Qala Fama Khatbukum - قال فما خطبكم" },
+    { "value": 28, "name": "28 - Qadd Aflaha - قد أفلح" },
+    { "value": 29, "name": "29 - Amma Yatasa'alun - عم يتساءلون" },
+    { "value": 30, "name": "30 - Amma Yatasa'alun - عم يتساءلون" }
+]
+,
+   "ddlSurah": [
+    {
+        "value": 1,
+        "name": "1 - Surah Al-Fatihah - الفاتحة"
+    },
+    {
+        "value": 2,
+        "name": "2 - Surah Al-Baqarah - البقرة"
+    },
+    {
+        "value": 3,
+        "name": "3 - Surah Aal-E-Imran - آل عمران"
+    },
+    {
+        "value": 4,
+        "name": "4 - Surah An-Nisa - النساء"
+    },
+    {
+        "value": 5,
+        "name": "5 - Surah Al-Maidah - المائدة"
+    },
+    {
+        "value": 6,
+        "name": "6 - Surah Al-Anam - الأنعام"
+    },
+    {
+        "value": 7,
+        "name": "7 - Surah Al-Araf - الأعراف"
+    },
+    {
+        "value": 8,
+        "name": "8 - Surah Al-Anfal - الأنفال"
+    },
+    {
+        "value": 9,
+        "name": "9 - Surah At-Tawbah - التوبة"
+    },
+    {
+        "value": 10,
+        "name": "10 - Surah Yunus - يونس"
+    },
+    {
+        "value": 11,
+        "name": "11 - Surah Hud - هود"
+    },
+    {
+        "value": 12,
+        "name": "12 - Surah Yusuf - يوسف"
+    },
+    {
+        "value": 13,
+        "name": "13 - Surah Ar-Rad - الرعد"
+    },
+    {
+        "value": 14,
+        "name": "14 - Surah Ibrahim - إبراهيم"
+    },
+    {
+        "value": 15,
+        "name": "15 - Surah Al-Hijr - الحجر"
+    },
+    {
+        "value": 16,
+        "name": "16 - Surah An-Nahl - النحل"
+    },
+    {
+        "value": 17,
+        "name": "17 - Surah Al-Isra - الإسراء"
+    },
+    {
+        "value": 18,
+        "name": "18 - Surah Al-Kahf - الكهف"
+    },
+    {
+        "value": 19,
+        "name": "19 - Surah Maryam - مريم"
+    },
+    {
+        "value": 20,
+        "name": "20 - Surah Ta-Ha - طه"
+    },
+    {
+        "value": 21,
+        "name": "21 - Surah Al-Anbiya - الأنبياء"
+    },
+    {
+        "value": 22,
+        "name": "22 - Surah Al-Hajj - الحج"
+    },
+    {
+        "value": 23,
+        "name": "23 - Surah Al-Muminun - المؤمنون"
+    },
+    {
+        "value": 24,
+        "name": "24 - Surah An-Nur - النور"
+    },
+    {
+        "value": 25,
+        "name": "25 - Surah Al-Furqan - الفرقان"
+    },
+    {
+        "value": 26,
+        "name": "26 - Surah Ash-Shuara - الشعراء"
+    },
+    {
+        "value": 27,
+        "name": "27 - Surah An-Naml - النمل"
+    },
+    {
+        "value": 28,
+        "name": "28 - Surah Al-Qasas - القصص"
+    },
+    {
+        "value": 29,
+        "name": "29 - Surah Al-Ankabut - العنكبوت"
+    },
+    {
+        "value": 30,
+        "name": "30 - Surah Ar-Rum - الروم"
+    },
+    {
+        "value": 31,
+        "name": "31 - Surah Luqman - لقمان"
+    },
+    {
+        "value": 32,
+        "name": "32 - Surah As-Sajda - السجدة"
+    },
+    {
+        "value": 33,
+        "name": "33 - Surah Al-Ahzab - الأحزاب"
+    },
+    {
+        "value": 34,
+        "name": "34 - Surah Saba - سبأ"
+    },
+    {
+        "value": 35,
+        "name": "35 - Surah Fatir - فاطر"
+    },
+    {
+        "value": 36,
+        "name": "36 - Surah Ya-Sin - يس"
+    },
+    {
+        "value": 37,
+        "name": "37 - Surah As-Saffat - الصافات"
+    },
+    {
+        "value": 38,
+        "name": "38 - Surah Sad - ص"
+    },
+    {
+        "value": 39,
+        "name": "39 - Surah Az-Zumar - الزمر"
+    },
+    {
+        "value": 40,
+        "name": "40 - Surah Ghafir - غافر"
+    },
+    {
+        "value": 41,
+        "name": "41 - Surah Fussilat - فصلت"
+    },
+    {
+        "value": 42,
+        "name": "42 - Surah Ash-Shura - الشورى"
+    },
+    {
+        "value": 43,
+        "name": "43 - Surah Az-Zukhruf - الزخرف"
+    },
+    {
+        "value": 44,
+        "name": "44 - Surah Ad-Dukhan - الدخان"
+    },
+    {
+        "value": 45,
+        "name": "45 - Surah Al-Jathiya - الجاثية"
+    },
+    {
+        "value": 46,
+        "name": "46 - Surah Al-Ahqaf - الأحقاف"
+    },
+    {
+        "value": 47,
+        "name": "47 - Surah Muhammad - محمد"
+    },
+    {
+        "value": 48,
+        "name": "48 - Surah Al-Fath - الفتح"
+    },
+    {
+        "value": 49,
+        "name": "49 - Surah Al-Hujurat - الحجرات"
+    },
+    {
+        "value": 50,
+        "name": "50 - Surah Qaf - ق"
+    },
+    {
+        "value": 51,
+        "name": "51 - Surah Adh-Dhariyat - الذاريات"
+    },
+    {
+        "value": 52,
+        "name": "52 - Surah At-Tur - الطور"
+    },
+    {
+        "value": 53,
+        "name": "53 - Surah An-Najm - النجم"
+    },
+    {
+        "value": 54,
+        "name": "54 - Surah Al-Qamar - القمر"
+    },
+    {
+        "value": 55,
+        "name": "55 - Surah Ar-Rahman - الرحمن"
+    },
+    {
+        "value": 56,
+        "name": "56 - Surah Al-Waqia - الواقعة"
+    },
+    {
+        "value": 57,
+        "name": "57 - Surah Al-Hadid - الحديد"
+    },
+    {
+        "value": 58,
+        "name": "58 - Surah Al-Mujadilah - المجادلة"
+    },
+    {
+        "value": 59,
+        "name": "59 - Surah Al-Hashr - الحشر"
+    },
+    {
+        "value": 60,
+        "name": "60 - Surah Al-Mumtahina - الممتحنة"
+    },
+    {
+        "value": 61,
+        "name": "61 - Surah As-Saff - الصف"
+    },
+    {
+        "value": 62,
+        "name": "62 - Surah Al-Jumuah - الجمعة"
+    },
+    {
+        "value": 63,
+        "name": "63 - Surah Al-Munafiqun - المنافقون"
+    },
+    {
+        "value": 64,
+        "name": "64 - Surah At-Taghabun - التغابن"
+    },
+    {
+        "value": 65,
+        "name": "65 - Surah At-Talaq - الطلاق"
+    },
+    {
+        "value": 66,
+        "name": "66 - Surah At-Tahrim - التحريم"
+    },
+    {
+        "value": 67,
+        "name": "67 - Surah Al-Mulk - الملك"
+    },
+    {
+        "value": 68,
+        "name": "68 - Surah Al-Qalam - القلم"
+    },
+    {
+        "value": 69,
+        "name": "69 - Surah Al-Haqqah - الحاقة"
+    },
+    {
+        "value": 70,
+        "name": "70 - Surah Al-Maarij - المعارج"
+    },
+    {
+        "value": 71,
+        "name": "71 - Surah Nuh - نوح"
+    },
+    {
+        "value": 72,
+        "name": "72 - Surah Al-Jinn - الجن"
+    },
+    {
+        "value": 73,
+        "name": "73 - Surah Al-Muzzammil - المزمل"
+    },
+    {
+        "value": 74,
+        "name": "74 - Surah Al-Muddaththir - المدثر"
+    },
+    {
+        "value": 75,
+        "name": "75 - Surah Al-Qiyamah - القيامة"
+    },
+    {
+        "value": 76,
+        "name": "76 - Surah Al-Insan - الانسان"
+    },
+    {
+        "value": 77,
+        "name": "77 - Surah Al-Mursalat - المرسلات"
+    },
+    {
+        "value": 78,
+        "name": "78 - Surah An-Naba - النبأ"
+    },
+    {
+        "value": 79,
+        "name": "79 - Surah An-Naziat - النازعات"
+    },
+    {
+        "value": 80,
+        "name": "80 - Surah Abasa - عبس"
+    },
+    {
+        "value": 81,
+        "name": "81 - Surah At-Takwir - التكوير"
+    },
+    {
+        "value": 82,
+        "name": "82 - Surah Al-Infitar - الانفطار"
+    },
+    {
+        "value": 83,
+        "name": "83 - Surah Al-Mutaffifin - المطففين"
+    },
+    {
+        "value": 84,
+        "name": "84 - Surah Al-Inshiqaq - الانشقاق"
+    },
+    {
+        "value": 85,
+        "name": "85 - Surah Al-Buruj - البروج"
+    },
+    {
+        "value": 86,
+        "name": "86 - Surah At-Tariq - الطارق"
+    },
+    {
+        "value": 87,
+        "name": "87 - Surah Al-Ala - الأعلى"
+    },
+    {
+        "value": 88,
+        "name": "88 - Surah Al-Ghashiya - الغاشية"
+    },
+    {
+        "value": 89,
+        "name": "89 - Surah Al-Fajr - الفجر"
+    },
+    {
+        "value": 90,
+        "name": "90 - Surah Al-Balad - البلد"
+    },
+    {
+        "value": 91,
+        "name": "91 - Surah Ash-Shams - الشمس"
+    },
+    {
+        "value": 92,
+        "name": "92 - Surah Al-Lail - الليل"
+    },
+    {
+        "value": 93,
+        "name": "93 - Surah Ad-Duhaa - الضحى"
+    },
+    {
+        "value": 94,
+        "name": "94 - Surah Ash-Sharh - الشرح"
+    },
+    {
+        "value": 95,
+        "name": "95 - Surah At-Tin - التين"
+    },
+    {
+        "value": 96,
+        "name": "96 - Surah Al-Alaq - العلق"
+    },
+    {
+        "value": 97,
+        "name": "97 - Surah Al-Qadr - القدر"
+    },
+    {
+        "value": 98,
+        "name": "98 - Surah Al-Bayyina - البينة"
+    },
+    {
+        "value": 99,
+        "name": "99 - Surah Az-Zalzalah - الزلزلة"
+    },
+    {
+        "value": 100,
+        "name": "100 - Surah Al-Adiyat - العاديات"
+    },
+    {
+        "value": 101,
+        "name": "101 - Surah Al-Qaria - القارعة"
+    },
+    {
+        "value": 102,
+        "name": "102 - Surah At-Takathur - التكاثر"
+    },
+    {
+        "value": 103,
+        "name": "103 - Surah Al-Asr - العصر"
+    },
+    {
+        "value": 104,
+        "name": "104 - Surah Al-Humazah - الهمزة"
+    },
+    {
+        "value": 105,
+        "name": "105 - Surah Al-Fil - الفيل"
+    },
+    {
+        "value": 106,
+        "name": "106 - Surah Quraish - قريش"
+    },
+    {
+        "value": 107,
+        "name": "107 - Surah Al-Maun - الماعون"
+    },
+    {
+        "value": 108,
+        "name": "108 - Surah Al-Kawthar - الكوثر"
+    },
+    {
+        "value": 109,
+        "name": "109 - Surah Al-Kafiroon - الكافرون"
+    },
+    {
+        "value": 110,
+        "name": "110 - Surah An-Nasr - النصر"
+    },
+    {
+        "value": 111,
+        "name": "111 - Surah Al-Masad - المسد"
+    },
+    {
+        "value": 112,
+        "name": "112 - Surah Al-Ikhlas - الإخلاص"
+    },
+    {
+        "value": 113,
+        "name": "113 - Surah Al-Falaq - الفلق"
+    },
+    {
+        "value": 114,
+        "name": "114 - Surah An-Nas - الناس"
+    }
+
+]
+,
+    "ddlQari": [
+        {
+            "value": 1,
+            "name": "1 - Qari 01"
+        },
+        {
+            "value": 2,
+            "name": "2 - Qari 02"
+        }
+    ]
+}
