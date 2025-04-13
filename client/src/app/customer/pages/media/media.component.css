@@ -80,4 +80,29 @@
      left: 0;
    }
  }
- 
+ /* General styles */
+.grid-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Desktop View (default) - 4 images per row */
+@media (min-width: 992px) {
+  .grid-item {
+    width: 25%; /* 100% / 4 = 25% */
+  }
+}
+
+/* Tablet View - adjust if necessary */
+@media (max-width: 991px) and (min-width: 768px) {
+  .grid-item {
+    width: 33.33%; /* 100% / 3 = ~33% */
+  }
+}
+
+/* Mobile View - 2 images per row */
+@media (max-width: 767px) {
+  .grid-item {
+    width: 50%; /* 100% / 2 = 50% */
+  }
+}

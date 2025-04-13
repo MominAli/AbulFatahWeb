@@ -25,7 +25,7 @@ export class MediaComponent {
   filteredCategories: string[] = [];
   filteredTabContent: any[] = [];
   mobileTabsVisible = false;
-  itemsPerPage: number = 12; // Number of items per page
+  itemsPerPage: number = 8; // Number of items per page
   currentPage: number = 1;
   totalCategories: number = this.categories.length;
   loading: boolean = true;

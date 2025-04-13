@@ -23,19 +23,22 @@
         { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
         { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
         { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        
+        { "img": "../../assets/img/11.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/12.jpeg", "name": "Media 02", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+
+        
+        { "img": "../../assets/img/11.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/12.jpeg", "name": "Media 02", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
+        { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
         { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" }
-      ],
-      [
-        { "img": "../../assets/img/14.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" }
-
-      ],
-      [
-        { "img": "../../assets/img/14.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" }
-
-      ],
-      [
-        { "img": "../../assets/img/14.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" }
-
       ]
     ]
   }
