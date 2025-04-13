@@ -1,66 +1,45 @@
-<div class="book-section pt-5">
-    <div *ngIf="loading">Loading...</div>
-    <div *ngIf="!loading">
-    <div class="container mt-4">
-        <div class="tab-container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="menu-toggle mobiledown text-primary" (click)="toggleMenu()">Categories</h2>
-                    <div class="mobileTabs" [class.show]="mobileTabsVisible">
-                        <ul class="nav nav-tabs book-list-card">
-                            <h2 class="categoriesName d-xl-none d-lg-none m-0" >Categories</h2>
-                            <p class="my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
-                            <li *ngFor="let category of categories; let i = index" class="nav-item">
-                                <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category
-                                    }}</a>
-                            </li>
-                        </ul>
-                    </div>
+<div class="container">
+    <!-- Book Grid -->
+    <div class="row">
+        <!-- Search Box -->
+        <div class="search-box my-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Search books..."
+            />
+        </div>
+        <div
+            *ngFor="let item of books | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+            class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2">
+            <div class="card book-card" tabindex="0">
+                <div class="card-img-wrapper">
+                    <img [src]="item.img" [alt]="item.name || 'Book Image'" loading="lazy" class="card-img-top" />
                 </div>
-
-                <div class="col-md-8">
-                    <div class="search-container">
-                        <input type="text" class="form-control" placeholder="Search categories or books..."
-                            [(ngModel)]="searchQuery" (input)="filterResults()" />
-                        <div class="tab-content">
-                            <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
-                                [class.show]="i === activeTab" [class.active]="i === activeTab">
-                                <div class="row">
-                                    <div *ngFor="let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
-                                        class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
-
-
-                                        <div class="img tittle">
-                                            <a (click)="booksDetails(item)" target="_blank">
-                                                <img [src]="item.img" loading="lazy" class="img-fluid"  />
-                                            </a>
-                                            <div class="icons_bar" style="background-color: gainsboro;">
-                                            <span>
-                                                <a class="caro-icon" href="javascript:void(0)" (click)="downloadPDF(item.name)">
-                                                    <i class="fas fa-file-pdf fa-fw"></i>
-                                                </a>
-                                            </span>
-                                        </div>
-                                            <a href="#" target="_blank">
-                                                <p class="book_name">{{ item.name }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Pagination controls -->
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)" previousLabel="Previous"
-                                nextLabel="Next">
-                                </pagination-controls>
-                            </div>
-                        </div>
+                <div class="card-body">
+                    <h5 class="card-title text-truncate" [attr.title]="item.name">{{ item.name }}</h5>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button class="btn btn-outline-dark btn-sm" (click)="booksDetails(item)">
+                            Details
+                        </button>
+                        <button class="btn btn-success btn-sm" (click)="downloadPDF(item.name)">
+                            <i class="fas fa-file-pdf fa-fw"></i> Download
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<app-footer></app-footer>
+
+    <!-- Pagination -->
+    <div class="pagination-wrapper mt-4 d-flex justify-content-center">
+        <pagination-controls
+            id="content-pagination"
+            (pageChange)="currentPage = $event"
+            class="pagination"
+            previousLabel="Pervious"
+            nextLabel="Next"
+        >
+        </pagination-controls>
+    </div>
 </div>

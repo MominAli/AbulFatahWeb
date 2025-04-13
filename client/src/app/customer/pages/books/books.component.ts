@@ -15,59 +15,27 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
   styleUrl: './books.component.css'
 })
 export class BooksComponent {
-
-  categories: string[] = [];
-  tabContent: any[] = [];
-  activeTab = 0;
+  
   searchQuery = '';
-  filteredCategories: string[] = [];
-  filteredTabContent: any[] = [];
   mobileTabsVisible = false;
   itemsPerPage: number = 12; // Number of items per page
   currentPage: number = 1;
-  totalCategories: number = this.categories.length;
   loading: boolean = true;
-
-
-  toggleMenu() {
-    this.mobileTabsVisible = !this.mobileTabsVisible;
-  }
-
-  changeTab(index: number):void {
-    this.activeTab = index;
-    this.mobileTabsVisible = false;
-  }
 
   books: any[] = [];
   constructor(private bookdetailsService: BookdetailsService, private router: Router) { }
 
   ngOnInit(): void {
     this.bookdetailsService.getBookPage().subscribe(data => {
-      this.categories = data.categories;
-      this.totalCategories = this.categories.length;
+      this.books = data.books;
       this.loading = false; // Data loaded
-      this.tabContent = data.tabContent;
-      this.filteredCategories = [...this.categories];
-      this.filteredTabContent = [...this.tabContent];
     });
   }
 
   filterResults(): any {
-    const query = this.searchQuery.toLowerCase();
-    this.filteredCategories = this.categories.filter(category =>
-      category.toLowerCase().includes(query)
-    );
-
-    // this.filteredTabContent = this.tabContent.map(tab =>
-    //   tab.filter(item => item.name.toLowerCase().includes(query))
-    // );
   }
 
-  onPageChange(event: number) {
-    this.currentPage = event; // Update the current page when pagination changes
-  }
-
- downloadPDF(bookName: string): void {
+   downloadPDF(bookName: string): void {
     const pdfUrl = `../../assets/books/${bookName}.pdf`;
     const link = document.createElement('a');
     link.href = pdfUrl;
