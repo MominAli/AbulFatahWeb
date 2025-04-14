@@ -39,16 +39,13 @@
                   </div>
                 </div>
               </div>
-              <div class="pagination-wrapper mt-4 d-flex justify-content-center">
-                <pagination-controls
-                    id="content-pagination"
-                    (pageChange)="currentPage = $event"
-                    class="pagination"
-                    previousLabel="Pervious"
-                    nextLabel="Next"
-                >
-                </pagination-controls>
-            </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)"
+                    previousLabel="Previous" nextLabel="Next">
+                  </pagination-controls>
+                </div>
+              </div>
             </div>
           </div>
         </div>
