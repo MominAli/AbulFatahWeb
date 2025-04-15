@@ -2,11 +2,13 @@
     "books": [
         {
             "img": "../../assets/books/FutuhaatAbulFatah/FutuhaatAbulFatah.jpeg",
-            "name": "Futuhaat E AbulFatah"
+            "name": "Futuhaat E AbulFatah",
+            "levels": ["Level 01", "Level 02"]
         },
         {
             "img": "../../assets/books/02_Munazra_Naunihal.jpeg",
-            "name": "Munazra Naunihal"
+            "name": "Munazra Naunihal",
+            "levels": []
         },
         {
             "img": "../../assets/books/04_Munazra_Laucknow.jpeg",

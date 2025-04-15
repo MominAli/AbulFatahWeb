@@ -23,6 +23,7 @@ import { BooksComponent } from '../app/customer/pages/books/books.component';
 import { MediaComponent } from '../app/customer/pages/media/media.component';
 import { QuranComponent } from '../app/customer/pages/quran/quran.component';
 import { ContactComponent } from '../app/customer/pages/contact/contact.component';
+import { LevelComponent } from './customer/pages/level/level.component';
 
 /* shared module */
 
@@ -41,6 +42,7 @@ export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'books', component: BooksComponent},
     {path: 'books-details', component: BooksDetailsComponent},
+    {path: 'book-level', component: LevelComponent},
     {path: 'media', component: MediaComponent},
     {path: 'quran', component: QuranComponent},
     {path: 'quran-details', component: QuranDetailsComponent},

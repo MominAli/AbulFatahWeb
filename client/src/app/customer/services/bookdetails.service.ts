@@ -18,6 +18,11 @@ export class BookdetailsService {
     return this.http.get<any>(this.dataUrl);
   }
 
+  getBookPage1(): Observable<any> {
+    console.log('Fetching books.json from:', this.dataUrl);
+    return this.http.get<any>(this.dataUrl);
+  }
+
 
 
   private bookDetails = [

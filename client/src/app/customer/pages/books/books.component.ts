@@ -48,6 +48,16 @@ export class BooksComponent {
     // Implement the function to show book details console.log(book);
     this.router.navigate(['/books-details']);
   }
-
+  navigateToLevels(book: any): void {
+    if (book.levels && book.levels.length > 0) {
+      const levels = JSON.stringify(book.levels); // Convert levels array to JSON string
+      this.router.navigate(['/book-level'], { queryParams: { bookName: book.name, levels: levels } });
+    } else {
+      // Redirect to book-details component if levels are empty
+      this.router.navigate(['/books-details'], { queryParams: { bookId: book.id } });
+    }
+  }
+  
+  
   
 }
