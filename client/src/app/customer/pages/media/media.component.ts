@@ -9,6 +9,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { MediadetailsService } from '../../services/mediadetails.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-media',
   standalone: true,
@@ -16,6 +17,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })
+
 export class MediaComponent {
 
   categories: string[] = [];
@@ -30,11 +32,6 @@ export class MediaComponent {
   totalCategories: number = this.categories.length;
   loading: boolean = true;
 
-  paginationInstance = {
-    itemsPerPage: this.itemsPerPage,
-    currentPage: this.currentPage
-  };
-
   toggleMenu() {
     this.mobileTabsVisible = !this.mobileTabsVisible;
   }
@@ -45,25 +42,24 @@ export class MediaComponent {
     this.currentPage = 1; // Reset to first page
   }
 
-  books: any[] = [];
   constructor(
     private mediadetailsService: MediadetailsService,
-     private router: Router,
-     private sanitizer: DomSanitizer
-    ) { }
+    private router: Router,
+    private sanitizer: DomSanitizer
+  ) { }
 
-    sanitizeUrl(url: string): SafeResourceUrl {
-      console.log("Original URL:", url);
-      if (url.includes("watch?v=")) {
-        url = url.replace("watch?v=", "embed/");
-      }
-      console.log("Updated URL:", url);
-      return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  sanitizeUrl(url: string): SafeResourceUrl {
+    console.log("Original URL:", url);
+    if (url.includes("watch?v=")) {
+      url = url.replace("watch?v=", "embed/");
     }
-    extractVideoId(url: string): string {
-      const match = url.match(/embed\/([^?]+)/);
-      return match ? match[1] : '';
-    }
+    console.log("Updated URL:", url);
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+  extractVideoId(url: string): string {
+    const match = url.match(/embed\/([^?]+)/);
+    return match ? match[1] : '';
+  }
 
   ngOnInit(): void {
     this.mediadetailsService.getMediaList().subscribe(data => {
@@ -79,20 +75,20 @@ export class MediaComponent {
     this.currentPage = 1; // Reset pagination when filtering
     const query = this.searchQuery.toLowerCase();
     console.log("Search Query:", query);
-    
+
     this.filteredCategories = this.categories.filter(category =>
       category.toLowerCase().includes(query)
     );
-  
+
     this.filteredTabContent = this.tabContent.map(tab =>
       tab.filter((item: { name: string; }) => item.name.toLowerCase().includes(query))
     );
-  
+
     console.log("Filtered Data:", this.filteredTabContent);
   }
-  
+
   onPageChange(event: number) {
     this.currentPage = event; // Update the current page when pagination changes
   }
- 
+
 }
