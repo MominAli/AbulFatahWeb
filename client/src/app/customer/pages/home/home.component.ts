@@ -17,8 +17,13 @@ import { CarouselComponent } from '../../../shared/components/carousel/carousel.
 })
 export class HomeComponent {
   registerMode = false;
+  loading: boolean = true;
 
   constructor(private router: Router){ }
+
+  ngOnInit(): void {
+      this.loading = false; // Data loaded
+    }
 
   registerToggle() {
     this.registerMode = !this.registerMode
