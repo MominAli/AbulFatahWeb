@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BookdetailsService } from '../../../customer/services/bookdetails.service';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
@@ -17,7 +18,7 @@ interface PopularBook {
 @Component({
   selector: 'app-books-details',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule,FormsModule,NgxExtendedPdfViewerModule],
   templateUrl: './books-details.component.html',
   styleUrl: './books-details.component.css'
 })
