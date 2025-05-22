@@ -1,45 +1,78 @@
 {
-    "categories": [
-      "Naat",
-      "Bayan",
-      "Old Bayan",
-      "Muharram (محرم)",
-      "Safar (صفر)",
-      "Rabi al-Awwal (ربيع الأول)",
-      "Rabi al-Thani (ربيع الثاني)",
-      "Jumada al-Awwal (جمادى الأولى)",
-      "Jumada al-Thani (جمادى الآخرة)",
-      "Rajab (رجب)",
-      "Shaban (شعبان)",
-      "Ramadan (رمضان)",
-      "Shawwal (شوال)",
-      "Dhu al-Qadah (ذو القعدة)",
-      "Dhu al-Hijjah (ذو الحجة)"
-    ],
-    "tabContent": [
-      [
-        { "img": "../../assets/img/11.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/12.jpeg", "name": "Media 02", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        
-        { "img": "../../assets/img/11.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/12.jpeg", "name": "Media 02", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-
-        
-        { "img": "../../assets/img/11.jpeg", "name": "Media 01", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/12.jpeg", "name": "Media 02", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/13.jpeg", "name": "Media 03", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/14.jpeg", "name": "Media 04", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/15.jpeg", "name": "Media 05", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" },
-        { "img": "../../assets/img/16.jpeg", "name": "Media 06", "url": "https://www.youtube.com/watch?v=tYw6MCuZazs" }
-      ]
+  "categories": [
+    "Naat",
+    "Bayan",
+    "Old Bayan",
+    "Muharram (محرم)",
+    "Safar (صفر)",
+    "Rabi al-Awwal (ربيع الأول)",
+    "Rabi al-Thani (ربيع الثاني)",
+    "Jumada al-Awwal (جمادى الأولى)",
+    "Jumada al-Thani (جمادى الآخرة)",
+    "Rajab (رجب)",
+    "Shaban (شعبان)",
+    "Ramadan (رمضان)",
+    "Shawwal (شوال)",
+    "Dhu al-Qadah (ذو القعدة)",
+    "Dhu al-Hijjah (ذو الحجة)"
+  ],
+  "tabContent": [
+    [
+      {
+        "img": "../../assets/img/11.jpeg",
+        "name": "Faaslon ko taqalluf hai humse agar",
+        "url": "https://www.youtube.com/embed/GZkbK1NXuas"
+      },
+      {
+        "img": "../../assets/img/12.jpeg",
+        "name": "Huzoor Aisa Koi Intezam Hojaye",
+        "url": "https://www.youtube.com/embed/yIOo1gRbb-U"
+      },
+      {
+        "img": "../../assets/img/13.jpeg",
+        "name": "Maula Ya Salli Wa sallim - Qaseeda Burda Shareef",
+        "url": "https://www.youtube.com/embed/y4LerDDGoNM"
+      },
+      {
+        "img": "../../assets/img/14.jpeg",
+        "name": "Sabse Aula wa Aala hamara Nabi",
+        "url": "https://www.youtube.com/embed/ntOvZoTFTRY"
+      },
+      {
+        "img": "../../assets/img/15.jpeg",
+        "name": "Koi Duniya e Ata mai nahi Hamta Tera",
+        "url": "https://www.youtube.com/embed/i8YyekWrbhU"
+      },
+      {
+        "img": "../../assets/img/16.jpeg",
+        "name": "Dar Bada ho to sawali bhi khada sajta hai",
+        "url": "https://www.youtube.com/embed/-SZajol3vpI"
+      },
+      {
+        "img": "../../assets/img/12.jpeg",
+        "name": "Lutf Unka aam Ho hi jayega",
+        "url": "https://www.youtube.com/embed/bzFPkYc6AzM"
+      },
+      {
+        "img": "../../assets/img/13.jpeg",
+        "name": "Koi Gul baqi rahega na Chaman Reh jayega",
+        "url": "https://www.youtube.com/embed/imgpBLb6g0E"
+      },
+      {
+        "img": "../../assets/img/14.jpeg",
+        "name": "Subho taiba mai huwi Batta Hai baada Noor ka",
+        "url": "https://www.youtube.com/embed/FwP6SfqdVlM"
+      },
+      {
+        "img": "../../assets/img/15.jpeg",
+        "name": "Tere Qadmo mai aana mera kaam tha",
+        "url": "https://www.youtube.com/embed/BaPTR0SSXZo"
+      },
+      {
+        "img": "../../assets/img/16.jpeg",
+        "name": "Shere Sunnat Hain",
+        "url": "https://www.youtube.com/embed/kSOpCVJ-uxM"
+      }
     ]
-  }
-  
+  ]
+}

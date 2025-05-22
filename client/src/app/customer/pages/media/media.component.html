@@ -20,25 +20,21 @@
             <div class="search-container">
               <input type="text" class="form-control" placeholder="Search categories or media..."
                 [(ngModel)]="searchQuery" (input)="filterResults()" />
-              <div class="tabs-content">
-                <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
-                  [class.show]="i === activeTab" [class.active]="i === activeTab">
-                  <div class="row">
-                    <div *ngFor="
-                        let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }
-                      " class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
-                      <div class="media-card">
-                        <a target="_blank">
-                          <img [src]="item.img" loading="lazy" class="img-fluid" (click)="redirectToVideo(item.url)" />
-                        </a>
-                        <a href="#" target="_blank">
+                <div class="tabs-content">
+                  <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
+                    [class.show]="i === activeTab" [class.active]="i === activeTab">
+                    <div class="row">
+                      <div *ngFor="let item of content" class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+                        <div class="media-card">
+                          <iframe width="180" height="250" [src]="sanitizeUrl(item.url)" frameborder="0" allowfullscreen></iframe>
                           <p class="media-name">{{ item.name }}</p>
-                        </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                
+                
               <div class="row">
                 <div class="col-md-12 text-center">
                   <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)"

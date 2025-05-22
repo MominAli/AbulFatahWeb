@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { MediadetailsService } from '../../services/mediadetails.service';
-
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-media',
   standalone: true,
@@ -40,7 +40,20 @@ export class MediaComponent {
   }
 
   books: any[] = [];
-  constructor(private mediadetailsService: MediadetailsService, private router: Router) { }
+  constructor(
+    private mediadetailsService: MediadetailsService,
+     private router: Router,
+     private sanitizer: DomSanitizer
+    ) { }
+
+    sanitizeUrl(url: string): SafeResourceUrl {
+      console.log("Original URL:", url);
+      if (url.includes("watch?v=")) {
+        url = url.replace("watch?v=", "embed/");
+      }
+      console.log("Updated URL:", url);
+      return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
 
   ngOnInit(): void {
     this.mediadetailsService.getMediaList().subscribe(data => {
