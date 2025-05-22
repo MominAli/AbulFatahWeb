@@ -4,6 +4,7 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 interface BookData {
   id: number; name: string; author: string;
@@ -18,7 +19,7 @@ interface PopularBook {
 @Component({
   selector: 'app-books-details',
   standalone: true,
-  imports: [CommonModule,FormsModule,NgxExtendedPdfViewerModule],
+  imports: [CommonModule,FormsModule,NgxExtendedPdfViewerModule,FooterComponent],
   templateUrl: './books-details.component.html',
   styleUrl: './books-details.component.css'
 })

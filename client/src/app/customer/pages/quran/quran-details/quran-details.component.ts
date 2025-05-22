@@ -4,11 +4,12 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ddlPara, ddlSurah,ddlQari, QurandetailsService } from '../../../../customer/services/qurandetails.service';
+import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-quran-details',
   standalone: true,
-  imports: [CommonModule,RouterOutlet, NgxExtendedPdfViewerModule],
+  imports: [CommonModule,RouterOutlet, NgxExtendedPdfViewerModule,FooterComponent],
 
   templateUrl: './quran-details.component.html',
   styleUrl: './quran-details.component.css'
