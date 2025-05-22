@@ -30,6 +30,11 @@ export class MediaComponent {
   totalCategories: number = this.categories.length;
   loading: boolean = true;
 
+  paginationInstance = {
+    itemsPerPage: this.itemsPerPage,
+    currentPage: this.currentPage
+  };
+
   toggleMenu() {
     this.mobileTabsVisible = !this.mobileTabsVisible;
   }
@@ -37,6 +42,7 @@ export class MediaComponent {
   changeTab(index: number) {
     this.activeTab = index;
     this.mobileTabsVisible = false;
+    this.currentPage = 1; // Reset to first page
   }
 
   books: any[] = [];
@@ -65,24 +71,24 @@ export class MediaComponent {
       this.filteredTabContent = [...this.tabContent];
     });
   }
-
-  filterResults(): any {
+  filterResults(): void {
+    this.currentPage = 1; // Reset pagination when filtering
     const query = this.searchQuery.toLowerCase();
+    console.log("Search Query:", query);
+    
     this.filteredCategories = this.categories.filter(category =>
       category.toLowerCase().includes(query)
     );
-
-    // this.filteredTabContent = this.tabContent.map(tab =>
-    //   tab.filter(item => item.name.toLowerCase().includes(query))
-    // );
+  
+    this.filteredTabContent = this.tabContent.map(tab =>
+      tab.filter((item: { name: string; }) => item.name.toLowerCase().includes(query))
+    );
+  
+    console.log("Filtered Data:", this.filteredTabContent);
   }
   
   onPageChange(event: number) {
     this.currentPage = event; // Update the current page when pagination changes
   }
-  redirectToVideo(url: string): void {
-    if (url) {
-      window.open(url, '_blank'); // Opens the YouTube video in a new tab
-    }
-  }
+ 
 }
