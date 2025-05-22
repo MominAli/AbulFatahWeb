@@ -59,6 +59,12 @@
    padding: 7px;
    text-align: center;
  }
+ .loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
  
  @media (max-width: 768px) {
    .tabs-wrapper {

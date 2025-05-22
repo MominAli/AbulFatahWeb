@@ -6,7 +6,7 @@ import { ThemeService } from '../../../shared/services/theme.service';
   selector: 'app-theme-toggle',
   standalone: true,
   template: `
-    <button class="btn btn-success" (click)="toggleTheme()">Toggle Theme</button>
+    <!-- <button class="btn btn-success" (click)="toggleTheme()">Toggle Theme</button> -->
   `,
   styles: [
     `
