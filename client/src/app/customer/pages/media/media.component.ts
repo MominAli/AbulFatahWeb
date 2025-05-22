@@ -60,6 +60,10 @@ export class MediaComponent {
       console.log("Updated URL:", url);
       return this.sanitizer.bypassSecurityTrustResourceUrl(url);
     }
+    extractVideoId(url: string): string {
+      const match = url.match(/embed\/([^?]+)/);
+      return match ? match[1] : '';
+    }
 
   ngOnInit(): void {
     this.mediadetailsService.getMediaList().subscribe(data => {

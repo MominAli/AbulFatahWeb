@@ -29,22 +29,26 @@
                     <div *ngFor="
                         let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }
                       " class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
-
+                      
                       <div class="media-card">
-                        <iframe width="180" height="200" loading="lazy" [src]="sanitizeUrl(item.url)" allowfullscreen></iframe>
+                        <img *ngIf="!item.loaded"
+                          [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
+                          (click)="item.loaded = true" width="180" height="200" alt="Video thumbnail">
+                        <iframe *ngIf="item.loaded" width="180" height="200" [src]="sanitizeUrl(item.url)"
+                          allowfullscreen></iframe>
                         <p class="media-name">{{ item.name }}</p>
                       </div>
+
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <pagination-controls  id="content-pagination"
-                    (pageChange)="onPageChange($event)"
-                    previousLabel="Previous" nextLabel="Next">
-                  </pagination-controls>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)"
+                      previousLabel="Previous" nextLabel="Next">
+                    </pagination-controls>
+                  </div>
                 </div>
               </div>
             </div>
@@ -52,7 +56,6 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <app-footer></app-footer>
-</div>
+    <app-footer></app-footer>
+  </div>
