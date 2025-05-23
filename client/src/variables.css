@@ -1,0 +1,9 @@
+/* variables.css */
+:root {
+    --primary-color: #157784;
+    --secondary-color: #c0c0c4;
+    --text-color: #000;
+    --bg-color: #fff;
+    --button-bg: #157784;
+    --button-text: #fff;
+}

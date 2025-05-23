@@ -1,19 +1,19 @@
 /* Responsive Styling for Cards */
 .book-card {
-   border: 1px solid #e0e0e0;
+   border: 1px solid var(--secondary-color);
    border-radius: 12px;
-   background: #ffffff;
+   background:var(--bg-color);
    transition: transform 0.3s ease, box-shadow 0.3s ease;
    overflow: hidden;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 2px 4px var(--secondary-color);
    max-width: 100%; /* Ensure cards fit within smaller screens */
 }
 
 .book-card:hover {
    transform: translateY(-5px);
-   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 6px 12pxvar(--secondary-color);
    cursor: pointer;
-   background: #fafafa;
+   background:var(--bg-color);
 }
 
 /* Adjust Image Styling for Responsive Design */
@@ -22,7 +22,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background: #f8f9fa;
+   background:var(--bg-color);
    padding: 8px; /* Add padding to ensure space around the image */
 }
 
@@ -42,7 +42,7 @@
 .card-title {
    font-size: 14px; /* Smaller font size for mobile screens */
    font-weight: 600;
-   color: #212529;
+   color: var(--text-color);
    margin: 10px 0;
    text-align: center;
 }
@@ -56,26 +56,26 @@
 }
 
 .btn-outline-dark {
-   border: 1px solid #6c757d;
-   color: #6c757d;
+   border: 1px solidvar(--secondary-color);
+   color:var(--secondary-color);
    transition: background-color 0.2s, color 0.2s, transform 0.2s;
 }
 
 .btn-outline-dark:hover {
-   background-color: #6c757d;
-   color: #fff;
+   background-color:var(--secondary-color);
+   color: var(--bg-color);
    transform: translateY(-2px);
 }
 
 .btn-success {
-   background-color: #157784;
+   background-color: var(--primary-color);
    border: none;
-   color: #fff;
+   color: var(--bg-color);
    transition: background-color 0.2s ease-in-out, transform 0.2s;
 }
 
 .btn-success:hover {
-   background-color: #157784;
+   background-color: var(--primary-color);
    transform: translateY(-2px);
 }
 
@@ -114,12 +114,12 @@
 }
 
 .pagination .active a {
-   background-color: #007bff;
-   color: white;
+   background-color:var(--primary-color) !important;
+   color:var(--bg-color);
 }
 
 .pagination a {
-   color: #007bff;
+   color: var(--primary-color) !important;
    text-decoration: none;
 }
 
