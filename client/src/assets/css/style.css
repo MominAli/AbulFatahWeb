@@ -10,7 +10,7 @@ Author URI: Version: 1.3
 /*** common Start ***/
 
 html p {
-    font-family: Arial, Verdana, Sans-Serif;
+    font-family:math;
     font-size: 13pt;
     font-weight: normal;
     font-style: normal;
@@ -48,7 +48,7 @@ h3,
 .h2,
 .h3 {
     line-height: 1.4 !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: math !important;
 }
 
 h4,
@@ -58,7 +58,7 @@ h6,
 .h5,
 .h6 {
     font-weight: 600 !important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: math !important;
     color: var(--bg-color);
 }
 

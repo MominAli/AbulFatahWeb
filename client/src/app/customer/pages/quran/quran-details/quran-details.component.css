@@ -1,9 +1,9 @@
 .next-section {
-  background-color: #157784;
+  background-color: var(--primary-color);
   padding: 6px 6px;
   border-radius: 40px 0px 0px 40px;
-  color: white;
-  border: 5px solid #66a1a9;
+  color: var(--bg-color);
+  border: 5px solid var(--primary-color);
   font-size: 14px;
   width: 140px;
   float: left;
@@ -13,11 +13,11 @@
 }
 
 .previous-section {
-  background-color: #157784;
+  background-color: var(--primary-color);
   padding: 6px 6px;
   border-radius: 0px 40px 40px 0px;
-  color: white;
-  border: 5px solid #66a1a9;
+  color: var(--bg-color);
+  border: 5px solid var(--primary-color);
   font-size: 14px;
   width: 140px;
   float: right;
@@ -29,14 +29,14 @@
 .text-title p {
   font-family: Al-Qalam;
   font-size: 20px;
-  color: #3274a6;
+  color:var(--primary-color);
   font-weight: bold;
 }
 
 .text-title-ar {
   font-family: Al-Qalam;
   font-size: 20px;
-  color: #3274a6;
+  color:var(--primary-color);
   font-weight: bold;
   direction: rtl !important;
 }
@@ -51,9 +51,9 @@
 }
 
 .para-image-bg {
-  border: 10px solid #157784;
+  border: 10px solid var(--primary-color);
   text-align: justify;
-  background-color: #5595a21a;
+  background-color: var(--light-secondary-color);
   min-height: 55rem;
 }
 
@@ -69,7 +69,7 @@
 .section-header {
   display: inline-block;
   position: relative;
-  color: #ffffff;
+  color:var(--bg-color);
   height: 40px;
   padding: 0 20px;
   line-height: 40px;
@@ -83,7 +83,7 @@
 }
 
 .section-footer {
-  border-bottom: 4px solid #9d9c9c;
+  border-bottom: 4px solid var(--secondary-color);
 }
 
 .section-header:before {
@@ -94,7 +94,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 8px solid #9d9c9c;
+  border-top: 8px solid var(--secondary-color);
   border-left: 8px solid transparent;
 }
 
@@ -107,28 +107,28 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: #9d9c9c;
+  background-color: var(--secondary-color);
 }
 
 .side-panel-bg {
-  background: #efefef;
+  background: var(--light-secondary-color);
 }
 
 .select-box {
   line-height: 40px;
-  color: #009688;
+  color:var(--primary-color);
   text-align: right;
   font-family: Al-Qalam !important;
   font-size: 20px;
   display: block;
-  border-right: 5px solid #157784 !important;
+  border-right: 5px solid var(--primary-color) !important;
 }
 
 .label-style {
-  color: #157784;
+  color: var(--primary-color);
   font-weight: bold;
   margin-bottom: 0px;
-  background-color: #edf4f6;
+  background-color: var(--light-secondary-color);
   text-align: left;
   border-radius: 0px 0px;
   margin-left: -15px !important;
@@ -143,8 +143,8 @@
 }
 
 .action-button {
-  background: #157784;
-  color: white;
+  background: var(--primary-color);
+  color: var(--bg-color);
   padding: 6px 10px;
   width: 100%;
   float: left;
@@ -163,7 +163,7 @@
 }
 
 .form-switch .form-check-input {
-  background-color: #9d9c9c;
+  background-color: var(--secondary-color);
 }
 
 .form-check-input:checked, 
@@ -187,7 +187,7 @@
 
 .bottom-buttons a {
   color: #ffffff;
-  background-color: #008b8b;
+  background-color:var(--primary-color);
   width: 100%;
   padding: 10px 6px;
   border-radius: 5px 10px;
