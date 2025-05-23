@@ -1,6 +1,6 @@
 
 .biography-box {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .144);
+    box-shadow: 0 0 15px var(--secondary-color);
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
@@ -10,21 +10,21 @@
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #157784;;
+    color: var(--primary-color);
     text-align: center;
  }
  
  .biography-box .accordion-button {
     box-shadow: none !important;
-    background-color: #ededed !important;
-    color: #157784 !important;
+    background-color: var(--light-secondary-color) !important;
+    color: var(--primary-color) !important;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0px 0px 10px;
     border-radius: 9px !important;
  }
  .biography-box .accordion-button::after {
-    color: #fff !important;
+    color: var(--bg-color)!important;
  }
  
  .biography-box .accordion-item {
@@ -35,7 +35,7 @@
     width: fit-content;
     margin: 0 auto;
     border-radius: 20px;
-    border: 2px solid #157784;
+    border: 2px solid var(--primary-color);
     overflow: hidden;
  }
  .biography-img img {
@@ -62,12 +62,12 @@
     width: 40%;
     white-space: nowrap;
     font-weight: 700;
-    color: #3e3973;
+    color: var(--text-color);
  }
  .content-text .text {
     width: 60%;
     text-align: left;
-    color: #000;
+    color:var(--text-color);
  }
  .content-text h2 {
     font-size: 16px;

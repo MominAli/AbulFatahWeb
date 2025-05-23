@@ -1,5 +1,5 @@
 .media-section {
-   background-color: #f5f5f5;
+   background-color: var(--light-secondary-color);
  }
  
  .media-list li {
@@ -7,7 +7,7 @@
    margin: 5px 0;
    line-height: 18px;
    width: 100%;
-   border-left: 2px solid #157784;
+   border-left: 2px solid var(--primary-color);
    transition: 0.3s;
  }
  
@@ -17,20 +17,20 @@
  
  .nav-tabs.media-list li a {
    text-decoration: none;
-   color: #157784;
+   color: var(--primary-color);
    font-size: 18px;
    display: block;
    padding: 7px;
-   background: #fff;
+   background:var(--bg-color);
  }
  
  .nav-tabs.media-list li:hover a {
-   background: #157784;
-   color: #fff;
+   background: var(--primary-color);
+   color:var(--bg-color);
  }
  
  .media-card {
-   background: #fff;
+   background:var(--bg-color);
    padding: 15px;
    border-radius: 10px;
    text-align: center;
@@ -39,7 +39,7 @@
  .media-name {
    font-size: 15px;
    font-weight: 600;
-   color: #000;
+   color:var(--bg-color);
    margin: 10px 0;
    text-transform: capitalize;
  }
@@ -48,14 +48,14 @@
    font-size: 26px;
    font-weight: bold;
    padding: 10px;
-   background: #fff;
-   color: #000;
+   background:var(--bg-color);
+   color:var(--text-color);
    text-align: center;
  }
  
  .categories-title {
-   background-color: #157784;
-   color: #fff;
+   background-color: var(--primary-color);
+   color:var(--bg-color);
    padding: 7px;
    text-align: center;
  }
@@ -76,8 +76,8 @@
      left: -250px;
      width: 250px;
      height: 100%;
-     background: #fff;
-     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+     background:var(--bg-color);
+     box-shadow: 2px 0 10px var(--light-secondary-color);
      transition: left 0.4s ease-in-out;
      z-index: 1000;
      overflow-y: auto;

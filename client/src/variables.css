@@ -1,7 +1,8 @@
 /* variables.css */
 :root {
     --primary-color: #157784;
-    --secondary-color: #c0c0c4;
+    --secondary-color: #6b6b6e;
+    --light-secondary-color:#f5f5f5;
     --text-color: #000;
     --bg-color: #fff;
     --button-bg: #157784;
