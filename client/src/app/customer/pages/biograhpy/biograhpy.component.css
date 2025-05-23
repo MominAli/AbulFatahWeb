@@ -1,12 +1,12 @@
 
-.donation-box {
+.biography-box {
     box-shadow: 0 0 15px rgba(0, 0, 0, .144);
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
  }
  
- .donation-box h2 {
+ .biography-box h2 {
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 700;
@@ -14,7 +14,7 @@
     text-align: center;
  }
  
- .donation-box .accordion-button {
+ .biography-box .accordion-button {
     box-shadow: none !important;
     background-color: #ededed !important;
     color: #157784 !important;
@@ -23,22 +23,22 @@
     margin: 0px 0px 10px;
     border-radius: 9px !important;
  }
- .donation-box .accordion-button::after {
+ .biography-box .accordion-button::after {
     color: #fff !important;
  }
  
- .donation-box .accordion-item {
+ .biography-box .accordion-item {
     border: none;
  }
  
- .donation-img {
+ .biography-img {
     width: fit-content;
     margin: 0 auto;
     border-radius: 20px;
     border: 2px solid #157784;
     overflow: hidden;
  }
- .donation-img img {
+ .biography-img img {
     width: 120px;
  }
  .content-text {
@@ -46,10 +46,10 @@
     border-top: 1px solid;
     padding: 15px;
  }
- .content-text .donation-text {
+ .content-text .biography-text {
     font-size: 16px;
  }
- .donation-card {
+ .biography-card {
     padding-top: 20px;
     border-radius: 20px;
     height: 100% !important;
