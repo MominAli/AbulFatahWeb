@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ddlPara, ddlSurah,ddlQari, QurandetailsService } from '../../../../customer/services/qurandetails.service';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-quran-details',
@@ -20,12 +21,18 @@ export class QuranDetailsComponent {
   ddlPara: ddlSurah[] = [];
   ddlQari: ddlQari[] = [];
 
-  constructor(private qurandetailsService:QurandetailsService){ }
+  pdfSrc: string = '';
+
+  constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
   ngOnInit(): void {
     this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlSurah = data; }); 
     this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlPara = data; }); 
-    this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; }); 
+    this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; });
+    
+     this.route.queryParams.subscribe(params => {
+    this.pdfSrc = params['src'];
+  });
    }
 
 }

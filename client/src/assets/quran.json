@@ -1,338 +1,63 @@
 {
-    "surahs": [
-        {
-            "surahNumber": 1,
-            "suranameEng": "Al Fatiha",
-            "suranameArabic": "اَلْفَاتِحَة",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Fatiha"
-        },
-        {
-            "surahNumber": 2,
-            "suranameEng": "Al Baqarah",
-            "suranameArabic": "اَلْبَقَرَة",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Baqarah"
-        },
-        {
-            "surahNumber": 3,
-            "suranameEng": "Al Imran",
-            "suranameArabic": "اٰلِ عِمْرَان",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Imran"
-        },
-        {
-            "surahNumber": 4,
-            "suranameEng": "An Nisa",
-            "suranameArabic": "اَلنِّسَآء",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "An Nisa"
-        },
-        {
-            "surahNumber": 5,
-            "suranameEng": "Al Maidah",
-            "suranameArabic": "اَلْمَـآئِدَة",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Maidah"
-        },
-        {
-            "surahNumber": 6,
-            "suranameEng": "Al Anam",
-            "suranameArabic": "اَلْاَ نْعَام",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Anam"
-        },
-        {
-            "surahNumber": 7,
-            "suranameEng": "Al Araf",
-            "suranameArabic": "اَلْاَعْرَاف",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Araf"
-        },
-        {
-            "surahNumber": 8,
-            "suranameEng": "Al Anfal",
-            "suranameArabic": "اَلْاَنْفَال",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Anfal"
-        },
-        {
-            "surahNumber": 9,
-            "suranameEng": "At Tawbah",
-            "suranameArabic": "اَلتَّوْبَة",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "At Tawbah"
-        },
-        {
-            "surahNumber": 10,
-            "suranameEng": "Yunus",
-            "suranameArabic": "يُوْنُس",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Yunus"
-        },
-        {
-            "surahNumber": 11,
-            "suranameEng": "Hud",
-            "suranameArabic": "هُود",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Hud"
-        },
-        {
-            "surahNumber": 12,
-            "suranameEng": "Yusuf",
-            "suranameArabic": "يُوْسُف",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Yusuf"
-        },
-        {
-            "surahNumber": 13,
-            "suranameEng": "Ar Rad",
-            "suranameArabic": "اَلرَّعْد",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Ar Rad"
-        },
-        {
-            "surahNumber": 14,
-            "suranameEng": "Ibrahim",
-            "suranameArabic": "اِبْرٰهِيم",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Ibrahim"
-        },
-        {
-            "surahNumber": 15,
-            "suranameEng": "Al Hijr",
-            "suranameArabic": "اَلْحِجْر",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Hijr"
-        },
-        {
-            "surahNumber": 16,
-            "suranameEng": "An Nahl",
-            "suranameArabic": "اَلنَّحْل",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "An Nahl"
-        },
-        {
-            "surahNumber": 17,
-            "suranameEng": "Al Isra",
-            "suranameArabic": "اَلْإِسْرَاء",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Isra"
-        },
-        {
-            "surahNumber": 18,
-            "suranameEng": "Al Kahf",
-            "suranameArabic": "اَلْكَهْف",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Kahf"
-        },
-        {
-            "surahNumber": 19,
-            "suranameEng": "Maryam",
-            "suranameArabic": "مَرْيَم",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Maryam"
-        },
-        {
-            "surahNumber": 20,
-            "suranameEng": "Taha",
-            "suranameArabic": "طٰهٰ",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Taha"
-        },
-        {
-            "surahNumber": 21,
-            "suranameEng": "Al Anbiya",
-            "suranameArabic": "اَلْأَنْبِيَاء",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Anbiya"
-        },
-        {
-            "surahNumber": 22,
-            "suranameEng": "Al Hajj",
-            "suranameArabic": "اَلْحَجّ",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Hajj"
-        },
-        {
-            "surahNumber": 23,
-            "suranameEng": "Al Muminoon",
-            "suranameArabic": "اَلْمُؤْمِنُون",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Muminoon"
-        },
-        {
-            "surahNumber": 24,
-            "suranameEng": "An Noor",
-            "suranameArabic": "اَلنُّوْر",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "An Noor"
-        },
-        {
-            "surahNumber": 25,
-            "suranameEng": "Al Furqan",
-            "suranameArabic": "اَلْفُرْقَان",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Furqan"
-        },
-        {
-            "surahNumber": 26,
-            "suranameEng": "Ash Shuara",
-            "suranameArabic": "اَلشُّعَرَاء",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Ash Shuara"
-        },
-        {
-            "surahNumber": 27,
-            "suranameEng": "An Naml",
-            "suranameArabic": "اَلنَّمْل",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "An Naml"
-        },
-        {
-            "surahNumber": 28,
-            "suranameEng": "Al Qasas",
-            "suranameArabic": "اَلْقَصَص",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Qasas"
-        },
-        {
-            "surahNumber": 29,
-            "suranameEng": "Al Ankabut",
-            "suranameArabic": "اَلْعَنْكَبُوْت",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Al Ankabut"
-        },
-        {
-            "surahNumber": 30,
-            "suranameEng": "Ar Rum",
-            "suranameArabic": "اَلرُّوْم",
-            "imgSrc": "assets/img/quran/makkah-img.ico",
-            "imgAlt": "Ar Rum"
-        }
-    ],
-    "paras": [
-        {
-            "paraNumber": 1,
-            "paraName": "الٓمّٓ"
-        },
-        {
-            "paraNumber": 2,
-            "paraName": "سَیَقُوْلُ"
-        },
-        {
-            "paraNumber": 3,
-            "paraName": "تِلْكَ الرُّسُلُ"
-        },
-        {
-            "paraNumber": 4,
-            "paraName": "لَنْ تَنَالُوا"
-        },
-        {
-            "paraNumber": 5,
-            "paraName": "وَالمُحْصَنٰتُ"
-        },
-        {
-            "paraNumber": 6,
-            "paraName": "لاَ يُحِبُّ اللّهُ"
-        },
-        {
-            "paraNumber": 7,
-            "paraName": "وَإِذَا سَمِعُوا"
-        },
-        {
-            "paraNumber": 8,
-            "paraName": "وَلَوْ أَنَّنَا"
-        },
-        {
-            "paraNumber": 9,
-            "paraName": "قَدْ أَفْلَحَ"
-        },
-        {
-            "paraNumber": 10,
-            "paraName": "وَاعْلَمُوا"
-        },
-        {
-            "paraNumber": 11,
-            "paraName": "يَعْتَذِرُونَ"
-        },
-        {
-            "paraNumber": 12,
-            "paraName": "وَمَا مِنْ دَآبَّةٍ"
-        },
-        {
-            "paraNumber": 13,
-            "paraName": "رُبَمَا"
-        },
-        {
-            "paraNumber": 14,
-            "paraName": "أَلَمْ تَرَ"
-        },
-        {
-            "paraNumber": 15,
-            "paraName": "سُبْحَانَ الَّذِى"
-        },
-        {
-            "paraNumber": 16,
-            "paraName": "قَالَ أَلَمْ"
-        },
-        {
-            "paraNumber": 17,
-            "paraName": "اقْتَرَبَ لِلنَّاسِ"
-        },
-        {
-            "paraNumber": 18,
-            "paraName": "قَدْ أَفْلَحَ"
-        },
-        {
-            "paraNumber": 19,
-            "paraName": "وَقَالَ الَّذِينَ"
-        },
-        {
-            "paraNumber": 20,
-            "paraName": "أَمَّنْ خَلَقَ"
-        },
-        {
-            "paraNumber": 21,
-            "paraName": "اتْلُ مَا"
-        },
-        {
-            "paraNumber": 22,
-            "paraName": "وَمَنْ يَقْنُتْ"
-        },
-        {
-            "paraNumber": 23,
-            "paraName": "وَمَآ أَنْزَلَ"
-        },
-        {
-            "paraNumber": 24,
-            "paraName": "فَمَنْ أَظْلَمُ"
-        },
-        {
-            "paraNumber": 25,
-            "paraName": "إِلَيْهِ يُرَدُّ"
-        },
-        {
-            "paraNumber": 26,
-            "paraName": "حَمٓ"
-        },
-        {
-            "paraNumber": 27,
-            "paraName": "قَالَ فَمَا خَطْبُكُم"
-        },
-        {
-            "paraNumber": 28,
-            "paraName": "قَدْ أَفْلَحَ"
-        },
-        {
-            "paraNumber": 29,
-            "paraName": "عَمَّ يَتَسَاءَلُونَ"
-        },
-        {
-            "paraNumber": 30,
-            "paraName": "عَمَّ يَتَسَاءَلُونَ"
-        }
-    ],
+   "surahs": [
+  { "surahNumber": 1, "suranameEng": "Al Fatiha", "suranameArabic": "اَلْفَاتِحَة", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Fatiha", "pdfSrc": "assets/quran/surah/alqurankarim/surah1.pdf" },
+  { "surahNumber": 2, "suranameEng": "Al Baqarah", "suranameArabic": "اَلْبَقَرَة", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Baqarah", "pdfSrc": "assets/quran/surah/alqurankarim/surah2.pdf" },
+  { "surahNumber": 3, "suranameEng": "Al Imran", "suranameArabic": "اٰلِ عِمْرَان", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Imran", "pdfSrc": "assets/quran/surah/alqurankarim/surah3.pdf" },
+  { "surahNumber": 4, "suranameEng": "An Nisa", "suranameArabic": "اَلنِّسَآء", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "An Nisa", "pdfSrc": "assets/quran/surah/alqurankarim/surah4.pdf" },
+  { "surahNumber": 5, "suranameEng": "Al Maidah", "suranameArabic": "اَلْمَـآئِدَة", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Maidah", "pdfSrc": "assets/quran/surah/alqurankarim/surah5.pdf" },
+  { "surahNumber": 6, "suranameEng": "Al Anam", "suranameArabic": "اَلْاَ نْعَام", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Anam", "pdfSrc": "assets/quran/surah/alqurankarim/surah6.pdf" },
+  { "surahNumber": 7, "suranameEng": "Al Araf", "suranameArabic": "اَلْاَعْرَاف", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Araf", "pdfSrc": "assets/quran/surah/alqurankarim/surah7.pdf" },
+  { "surahNumber": 8, "suranameEng": "Al Anfal", "suranameArabic": "اَلْاَنْفَال", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Anfal", "pdfSrc": "assets/quran/surah/alqurankarim/surah8.pdf" },
+  { "surahNumber": 9, "suranameEng": "At Tawbah", "suranameArabic": "اَلتَّوْبَة", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "At Tawbah", "pdfSrc": "assets/quran/surah/alqurankarim/surah9.pdf" },
+  { "surahNumber": 10, "suranameEng": "Yunus", "suranameArabic": "يُوْنُس", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Yunus", "pdfSrc": "assets/quran/surah/alqurankarim/surah10.pdf" },
+  { "surahNumber": 11, "suranameEng": "Hud", "suranameArabic": "هُود", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Hud", "pdfSrc": "assets/quran/surah/alqurankarim/surah11.pdf" },
+  { "surahNumber": 12, "suranameEng": "Yusuf", "suranameArabic": "يُوْسُف", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Yusuf", "pdfSrc": "assets/quran/surah/alqurankarim/surah12.pdf" },
+  { "surahNumber": 13, "suranameEng": "Ar Rad", "suranameArabic": "اَلرَّعْد", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Ar Rad", "pdfSrc": "assets/quran/surah/alqurankarim/surah13.pdf" },
+  { "surahNumber": 14, "suranameEng": "Ibrahim", "suranameArabic": "اِبْرٰهِيم", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Ibrahim", "pdfSrc": "assets/quran/surah/alqurankarim/surah14.pdf" },
+  { "surahNumber": 15, "suranameEng": "Al Hijr", "suranameArabic": "اَلْحِجْر", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Hijr", "pdfSrc": "assets/quran/surah/alqurankarim/surah15.pdf" },
+  { "surahNumber": 16, "suranameEng": "An Nahl", "suranameArabic": "اَلنَّحْل", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "An Nahl", "pdfSrc": "assets/quran/surah/alqurankarim/surah16.pdf" },
+  { "surahNumber": 17, "suranameEng": "Al Isra", "suranameArabic": "اَلْإِسْرَاء", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Isra", "pdfSrc": "assets/quran/surah/alqurankarim/surah17.pdf" },
+  { "surahNumber": 18, "suranameEng": "Al Kahf", "suranameArabic": "اَلْكَهْف", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Kahf", "pdfSrc": "assets/quran/surah/alqurankarim/surah18.pdf" },
+  { "surahNumber": 19, "suranameEng": "Maryam", "suranameArabic": "مَرْيَم", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Maryam", "pdfSrc": "assets/quran/surah/alqurankarim/surah19.pdf" },
+  { "surahNumber": 20, "suranameEng": "Taha", "suranameArabic": "طٰهٰ", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Taha", "pdfSrc": "assets/quran/surah/alqurankarim/surah20.pdf" },
+  { "surahNumber": 21, "suranameEng": "Al Anbiya", "suranameArabic": "اَلْأَنْبِيَاء", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Anbiya", "pdfSrc": "assets/quran/surah/alqurankarim/surah21.pdf" },
+  { "surahNumber": 22, "suranameEng": "Al Hajj", "suranameArabic": "اَلْحَجّ", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Hajj", "pdfSrc": "assets/quran/surah/alqurankarim/surah22.pdf" },
+  { "surahNumber": 23, "suranameEng": "Al Muminoon", "suranameArabic": "اَلْمُؤْمِنُون", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Muminoon", "pdfSrc": "assets/quran/surah/alqurankarim/surah23.pdf" }
+],
+"paras": [
+  { "paraNumber": 1,  "paraName": "الٓمّٓ",                 "pdfSrc": "assets/quran/para/alahazrat/para01.pdf" },
+  { "paraNumber": 2,  "paraName": "سَیَقُوْلُ",             "pdfSrc": "assets/quran/para/alahazrat/para02.pdf" },
+  { "paraNumber": 3,  "paraName": "تِلْكَ الرُّسُلُ",        "pdfSrc": "assets/quran/para/alahazrat/para03.pdf" },
+  { "paraNumber": 4,  "paraName": "لَنْ تَنَالُوا",         "pdfSrc": "assets/quran/para/alahazrat/para04.pdf" },
+  { "paraNumber": 5,  "paraName": "وَالمُحْصَنٰتُ",          "pdfSrc": "assets/quran/para/alahazrat/para05.pdf" },
+  { "paraNumber": 6,  "paraName": "لاَ يُحِبُّ اللّهُ",      "pdfSrc": "assets/quran/para/alahazrat/para06.pdf" },
+  { "paraNumber": 7,  "paraName": "وَإِذَا سَمِعُوا",       "pdfSrc": "assets/quran/para/alahazrat/para07.pdf" },
+  { "paraNumber": 8,  "paraName": "وَلَوْ أَنَّنَا",         "pdfSrc": "assets/quran/para/alahazrat/para08.pdf" },
+  { "paraNumber": 9,  "paraName": "قَدْ أَفْلَحَ",           "pdfSrc": "assets/quran/para/alahazrat/para09.pdf" },
+  { "paraNumber": 10, "paraName": "وَاعْلَمُوا",            "pdfSrc": "assets/quran/para/alahazrat/para10.pdf" },
+  { "paraNumber": 11, "paraName": "يَعْتَذِرُونَ",           "pdfSrc": "assets/quran/para/alahazrat/para11.pdf" },
+  { "paraNumber": 12, "paraName": "وَمَا مِنْ دَآبَّةٍ",     "pdfSrc": "assets/quran/para/alahazrat/para12.pdf" },
+  { "paraNumber": 13, "paraName": "رُبَمَا",                 "pdfSrc": "assets/quran/para/alahazrat/para13.pdf" },
+  { "paraNumber": 14, "paraName": "أَلَمْ تَرَ",             "pdfSrc": "assets/quran/para/alahazrat/para14.pdf" },
+  { "paraNumber": 15, "paraName": "سُبْحَانَ الَّذِى",       "pdfSrc": "assets/quran/para/alahazrat/para15.pdf" },
+  { "paraNumber": 16, "paraName": "قَالَ أَلَمْ",           "pdfSrc": "assets/quran/para/alahazrat/para16.pdf" },
+  { "paraNumber": 17, "paraName": "اقْتَرَبَ لِلنَّاسِ",     "pdfSrc": "assets/quran/para/alahazrat/para17.pdf" },
+  { "paraNumber": 18, "paraName": "قَدْ أَفْلَحَ",           "pdfSrc": "assets/quran/para/alahazrat/para18.pdf" },
+  { "paraNumber": 19, "paraName": "وَقَالَ الَّذِينَ",       "pdfSrc": "assets/quran/para/alahazrat/para19.pdf" },
+  { "paraNumber": 20, "paraName": "أَمَّنْ خَلَقَ",          "pdfSrc": "assets/quran/para/alahazrat/para20.pdf" },
+  { "paraNumber": 21, "paraName": "اتْلُ مَا",               "pdfSrc": "assets/quran/para/alahazrat/para21.pdf" },
+  { "paraNumber": 22, "paraName": "وَمَنْ يَقْنُتْ",         "pdfSrc": "assets/quran/para/alahazrat/para22.pdf" },
+  { "paraNumber": 23, "paraName": "وَمَآ أَنْزَلَ",          "pdfSrc": "assets/quran/para/alahazrat/para23.pdf" },
+  { "paraNumber": 24, "paraName": "فَمَنْ أَظْلَمُ",         "pdfSrc": "assets/quran/para/alahazrat/para24.pdf" },
+  { "paraNumber": 25, "paraName": "إِلَيْهِ يُرَدُّ",         "pdfSrc": "assets/quran/para/alahazrat/para25.pdf" },
+  { "paraNumber": 26, "paraName": "حَمٓ",                    "pdfSrc": "assets/quran/para/alahazrat/para26.pdf" },
+  { "paraNumber": 27, "paraName": "قَالَ فَمَا خَطْبُكُم",   "pdfSrc": "assets/quran/para/alahazrat/para27.pdf" },
+  { "paraNumber": 28, "paraName": "قَدْ أَفْلَحَ",           "pdfSrc": "assets/quran/para/alahazrat/para28.pdf" },
+  { "paraNumber": 29, "paraName": "عَمَّ يَتَسَاءَلُونَ",     "pdfSrc": "assets/quran/para/alahazrat/para29.pdf" },
+  { "paraNumber": 30, "paraName": "عَمَّ يَتَسَاءَلُونَ",     "pdfSrc": "assets/quran/para/alahazrat/para30.pdf" }
+]
+
+,
    "ddlPara": [
     { "value": 1, "name": "1 - Alif-Laam-Meem - المّ" },
     { "value": 2, "name": "2 - Sayaqoolu - سيقول" },
