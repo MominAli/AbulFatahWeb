@@ -24,7 +24,8 @@ export class QuranDetailsComponent {
   pdfSrc: string = '';
   selectedPara: string = '';
   selectedSurah: string = '';
-
+  audioUrl: string = '';
+  pdfUrl: string = '';
 
   constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
@@ -41,11 +42,12 @@ export class QuranDetailsComponent {
    }
 
    onParaChange(event: any) {
+    debugger;
     this.pdfSrc = event.target.value;
+      this.pdfUrl = `assets/quran/para/alahazrat${this.selectedPara}.pdf`;
   }
 
     onSurahChange(event: any) {
-      debugger;
     this.pdfSrc = event.target.value;
   }
 

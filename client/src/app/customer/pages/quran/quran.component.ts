@@ -33,9 +33,8 @@ export class QuranComponent {
   }
 
  quranDetails(para: any) {
-  debugger;
   this.router.navigate(['/quran-details'], {
-    queryParams: { src: para.pdfSrc }
+    queryParams: { src: para.pdfUrl }
   });
 }
 }
