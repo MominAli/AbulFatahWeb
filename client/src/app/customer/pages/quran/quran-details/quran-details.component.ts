@@ -26,6 +26,7 @@ export class QuranDetailsComponent {
   audioUrl: string = '';
   pdfUrl: string = '';
 
+
   constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
   ngOnInit(): void {
@@ -34,8 +35,13 @@ export class QuranDetailsComponent {
     this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; });
     
     this.route.queryParams.subscribe(params => {
-      if (params['src']) {
-        this.pdfUrl = params['src'];
+      debugger;
+        console.log('Incoming Query Params:', params);
+      if (params['pdf']) {
+        this.pdfUrl = params['pdf'];
+      }
+      if (params['audio']) {
+        this.audioUrl = params['audio'];
       }
     });
    }
@@ -46,6 +52,7 @@ export class QuranDetailsComponent {
 
     onSurahChange(event: any) {
     this.pdfUrl = event.target.value;
+
   }
 
 }

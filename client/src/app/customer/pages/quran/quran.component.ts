@@ -33,9 +33,14 @@ export class QuranComponent {
   }
 
  goToQuranDetails(para: any) {
-  debugger;
+  console.log('Full object:', para);
+  console.log('PDF URL:', para.pdfUrl);
+  console.log('Audio URL:', para.audioUrl);
   this.router.navigate(['/quran-details'], {
-    queryParams: { src: para.pdfUrl }
+    queryParams: {
+       pdf: para.pdfUrl ,
+       audio: para.audioUrl
+       }
   });
 }
 }
