@@ -1,7 +1,7 @@
 {
    "surahs": [
   { "surahNumber": 1, "suranameEng": "Al Fatiha", "suranameArabic": "اَلْفَاتِحَة", "imgSrc": "assets/img/quran/makkah-img.ico", "imgAlt": "Al Fatiha", "pdfUrl": "assets/quran/surah/alqurankarim/surah1.pdf" },
-  { "surahNumber": 2, "suranameEng": "Al Baqarah", "suranameArabic": "اَلْبَقَرَة", "imgSrc": "assets/img/quran/madina-img.ico", "imgAlt": "Al Baqarah", "pdfUrl": "assets/quran/surah/alqurankarim/2-surah-al-baqarah.pdf" },
+  { "surahNumber": 2, "suranameEng": "Al Baqarah", "suranameArabic": "اَلْبَقَرَة", "imgSrc": "assets/img/quran/madina-img.ico", "imgAlt": "Al Baqarah", "pdfUrl": "assets/quran/surah/alqurankarim/surah2.pdf" },
   { "surahNumber": 3, "suranameEng": "Al Imran", "suranameArabic": "اٰلِ عِمْرَان", "imgSrc": "assets/img/quran/madina-img.ico", "imgAlt": "Al Imran", "pdfUrl": "assets/quran/surah/alqurankarim/surah3.pdf" },
   { "surahNumber": 4, "suranameEng": "An Nisa", "suranameArabic": "اَلنِّسَآء", "imgSrc": "assets/img/quran/madina-img.ico", "imgAlt": "An Nisa", "pdfUrl": "assets/quran/surah/alqurankarim/surah4.pdf" },
   { "surahNumber": 5, "suranameEng": "Al Maidah", "suranameArabic": "اَلْمَـآئِدَة", "imgSrc": "assets/img/quran/madina-img.ico", "imgAlt": "Al Maidah", "pdfUrl": "assets/quran/surah/alqurankarim/surah5.pdf" },
