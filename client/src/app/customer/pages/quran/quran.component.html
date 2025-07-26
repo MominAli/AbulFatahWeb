@@ -33,7 +33,7 @@
               <div class="row g-3">
                 <div *ngFor="let surah of surahLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
                   <div class="card-list">
-                    <a class="text-decoration-none"  (click)="quranDetails(surah)">
+                    <a class="text-decoration-none"  (click)="goToQuranDetails(surah)">
                       <div class="row">
                         <div class="col-2 px-1 text-center">
                           <p class="serial-number m-0 p-0">{{ surah.surahNumber }}</p>
@@ -58,7 +58,7 @@
               <div class="row g-3">
                 <div *ngFor="let para of paraLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
                   <div class="card-list">
-                    <a class="text-decoration-none" (click)="quranDetails(para)">
+                    <a class="text-decoration-none" (click)="goToQuranDetails(para)">
                       <div class="row">
                         <div class="col-lg-4 col-md-5 col-5 pr-0">
                           <h5 class="para-name">Para {{ para.paraNumber }}</h5>

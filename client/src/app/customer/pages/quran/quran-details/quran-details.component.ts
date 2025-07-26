@@ -21,7 +21,6 @@ export class QuranDetailsComponent {
   ddlPara: ddlSurah[] = [];
   ddlQari: ddlQari[] = [];
 
-  pdfSrc: string = '';
   selectedPara: string = '';
   selectedSurah: string = '';
   audioUrl: string = '';
@@ -36,19 +35,17 @@ export class QuranDetailsComponent {
     
     this.route.queryParams.subscribe(params => {
       if (params['src']) {
-        this.pdfSrc = params['src'];
+        this.pdfUrl = params['src'];
       }
     });
    }
 
    onParaChange(event: any) {
-    debugger;
-    this.pdfSrc = event.target.value;
-      this.pdfUrl = `assets/quran/para/alahazrat${this.selectedPara}.pdf`;
+    this.pdfUrl = event.target.value;
   }
 
     onSurahChange(event: any) {
-    this.pdfSrc = event.target.value;
+    this.pdfUrl = event.target.value;
   }
 
 }
