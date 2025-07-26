@@ -22,6 +22,7 @@ export class QuranDetailsComponent {
   ddlQari: ddlQari[] = [];
 
   pdfSrc: string = '';
+  selectedPara: string = '';
 
   constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
@@ -30,9 +31,15 @@ export class QuranDetailsComponent {
     this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlPara = data; }); 
     this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; });
     
-     this.route.queryParams.subscribe(params => {
-    this.pdfSrc = params['src'];
-  });
+    this.route.queryParams.subscribe(params => {
+      if (params['src']) {
+        this.pdfSrc = params['src'];
+      }
+    });
    }
+
+   onParaChange(event: any) {
+    this.pdfSrc = event.target.value;
+  }
 
 }

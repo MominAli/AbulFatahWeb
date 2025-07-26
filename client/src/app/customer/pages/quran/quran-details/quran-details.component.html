@@ -4,7 +4,7 @@
             <div class="col-lg-8 col-md-12 pb-5">
                 <div class="para-image-bg my-4">
                     <ngx-extended-pdf-viewer 
-                        [src]="pdfSrc"  
+                        [src]="pdfSrc"
                         [textLayer]="true" 
                         [showHandToolButton]="true"
                         [showPresentationModeButton]="true" 
@@ -28,9 +28,9 @@
                     <div class="row">
                         <div class="col-9 pe-1">
                             <select name="quran-para" class="form-select select-box rounded-0"
-                                aria-label="Default select example">
-                                <option selected>Select Para</option>
-                                <option *ngFor="let para of ddlPara" [value]="para.value">{{ para.name }}</option>
+                                aria-label="Default select example" (change)="onParaChange($event)">
+                                 <option value="" disabled selected >Select Para</option>
+                                <option *ngFor="let para of ddlPara" [value]="para.value" >{{ para.name }}</option>
                             </select>
                         </div>
                         <div class="col-3">
