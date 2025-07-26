@@ -23,6 +23,8 @@ export class QuranDetailsComponent {
 
   pdfSrc: string = '';
   selectedPara: string = '';
+  selectedSurah: string = '';
+
 
   constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
@@ -39,6 +41,10 @@ export class QuranDetailsComponent {
    }
 
    onParaChange(event: any) {
+    this.pdfSrc = event.target.value;
+  }
+
+    onSurahChange(event: any) {
     this.pdfSrc = event.target.value;
   }
 
