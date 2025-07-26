@@ -186,459 +186,363 @@
 ,
    "ddlSurah": [
     {
-        "value": 1,
+        "value": "assets/quran/surah/alqurankarim/surah1.pdf",
         "name": "1 - Surah Al-Fatihah - الفاتحة"
     },
     {
-        "value": 2,
+        "value": "assets/quran/surah/alqurankarim/surah2.pdf",
         "name": "2 - Surah Al-Baqarah - البقرة"
     },
     {
-        "value": 3,
+       "value": "assets/quran/surah/alqurankarim/surah3.pdf",
         "name": "3 - Surah Aal-E-Imran - آل عمران"
     },
     {
-        "value": 4,
-        "name": "4 - Surah An-Nisa - النساء"
+        "value": "assets/quran/surah/alqurankarim/surah4.pdf",       "name": "4 - Surah An-Nisa - النساء"
     },
     {
-        "value": 5,
-        "name": "5 - Surah Al-Maidah - المائدة"
+        "value": "assets/quran/surah/alqurankarim/surah5.pdf",       "name": "5 - Surah Al-Maidah - المائدة"
     },
     {
-        "value": 6,
-        "name": "6 - Surah Al-Anam - الأنعام"
+        "value": "assets/quran/surah/alqurankarim/surah6.pdf",       "name": "6 - Surah Al-Anam - الأنعام"
     },
     {
-        "value": 7,
-        "name": "7 - Surah Al-Araf - الأعراف"
+        "value": "assets/quran/surah/alqurankarim/surah7.pdf",       "name": "7 - Surah Al-Araf - الأعراف"
     },
     {
-        "value": 8,
-        "name": "8 - Surah Al-Anfal - الأنفال"
+        "value": "assets/quran/surah/alqurankarim/surah8.pdf",       "name": "8 - Surah Al-Anfal - الأنفال"
     },
     {
-        "value": 9,
-        "name": "9 - Surah At-Tawbah - التوبة"
+        "value": "assets/quran/surah/alqurankarim/surah9.pdf",       "name": "9 - Surah At-Tawbah - التوبة"
     },
     {
-        "value": 10,
-        "name": "10 - Surah Yunus - يونس"
+        "value": "assets/quran/surah/alqurankarim/surah10.pdf",        "name": "10 - Surah Yunus - يونس"
     },
     {
-        "value": 11,
-        "name": "11 - Surah Hud - هود"
+        "value": "assets/quran/surah/alqurankarim/surah11.pdf",        "name": "11 - Surah Hud - هود"
     },
     {
-        "value": 12,
-        "name": "12 - Surah Yusuf - يوسف"
+        "value": "assets/quran/surah/alqurankarim/surah12.pdf",        "name": "12 - Surah Yusuf - يوسف"
     },
     {
-        "value": 13,
-        "name": "13 - Surah Ar-Rad - الرعد"
+        "value": "assets/quran/surah/alqurankarim/surah13.pdf",        "name": "13 - Surah Ar-Rad - الرعد"
     },
     {
-        "value": 14,
-        "name": "14 - Surah Ibrahim - إبراهيم"
+        "value": "assets/quran/surah/alqurankarim/surah14.pdf",        "name": "14 - Surah Ibrahim - إبراهيم"
     },
     {
-        "value": 15,
-        "name": "15 - Surah Al-Hijr - الحجر"
+        "value": "assets/quran/surah/alqurankarim/surah15.pdf",        "name": "15 - Surah Al-Hijr - الحجر"
     },
     {
-        "value": 16,
-        "name": "16 - Surah An-Nahl - النحل"
+        "value": "assets/quran/surah/alqurankarim/surah16.pdf",        "name": "16 - Surah An-Nahl - النحل"
     },
     {
-        "value": 17,
-        "name": "17 - Surah Al-Isra - الإسراء"
+        "value": "assets/quran/surah/alqurankarim/surah17.pdf",        "name": "17 - Surah Al-Isra - الإسراء"
     },
     {
-        "value": 18,
-        "name": "18 - Surah Al-Kahf - الكهف"
+        "value": "assets/quran/surah/alqurankarim/surah18.pdf",        "name": "18 - Surah Al-Kahf - الكهف"
     },
     {
-        "value": 19,
-        "name": "19 - Surah Maryam - مريم"
+        "value": "assets/quran/surah/alqurankarim/surah19.pdf",        "name": "19 - Surah Maryam - مريم"
     },
     {
-        "value": 20,
-        "name": "20 - Surah Ta-Ha - طه"
+        "value": "assets/quran/surah/alqurankarim/surah20.pdf",        "name": "20 - Surah Ta-Ha - طه"
     },
     {
-        "value": 21,
-        "name": "21 - Surah Al-Anbiya - الأنبياء"
+        "value": "assets/quran/surah/alqurankarim/surah21.pdf",        "name": "21 - Surah Al-Anbiya - الأنبياء"
     },
     {
-        "value": 22,
-        "name": "22 - Surah Al-Hajj - الحج"
+        "value": "assets/quran/surah/alqurankarim/surah22.pdf",        "name": "22 - Surah Al-Hajj - الحج"
     },
     {
-        "value": 23,
-        "name": "23 - Surah Al-Muminun - المؤمنون"
+        "value": "assets/quran/surah/alqurankarim/surah23.pdf",        "name": "23 - Surah Al-Muminun - المؤمنون"
     },
     {
-        "value": 24,
-        "name": "24 - Surah An-Nur - النور"
+        "value": "assets/quran/surah/alqurankarim/surah24.pdf",        "name": "24 - Surah An-Nur - النور"
     },
     {
-        "value": 25,
-        "name": "25 - Surah Al-Furqan - الفرقان"
+        "value": "assets/quran/surah/alqurankarim/surah25.pdf",        "name": "25 - Surah Al-Furqan - الفرقان"
     },
     {
-        "value": 26,
-        "name": "26 - Surah Ash-Shuara - الشعراء"
+        "value": "assets/quran/surah/alqurankarim/surah26.pdf",        "name": "26 - Surah Ash-Shuara - الشعراء"
     },
     {
-        "value": 27,
-        "name": "27 - Surah An-Naml - النمل"
+        "value": "assets/quran/surah/alqurankarim/surah27.pdf",        "name": "27 - Surah An-Naml - النمل"
     },
     {
-        "value": 28,
-        "name": "28 - Surah Al-Qasas - القصص"
+        "value": "assets/quran/surah/alqurankarim/surah28.pdf",        "name": "28 - Surah Al-Qasas - القصص"
     },
     {
-        "value": 29,
-        "name": "29 - Surah Al-Ankabut - العنكبوت"
+        "value": "assets/quran/surah/alqurankarim/surah29.pdf",        "name": "29 - Surah Al-Ankabut - العنكبوت"
     },
     {
-        "value": 30,
-        "name": "30 - Surah Ar-Rum - الروم"
+        "value": "assets/quran/surah/alqurankarim/surah30.pdf",        "name": "30 - Surah Ar-Rum - الروم"
     },
     {
-        "value": 31,
-        "name": "31 - Surah Luqman - لقمان"
+        "value": "assets/quran/surah/alqurankarim/surah31.pdf",        "name": "31 - Surah Luqman - لقمان"
     },
     {
-        "value": 32,
-        "name": "32 - Surah As-Sajda - السجدة"
+        "value": "assets/quran/surah/alqurankarim/surah32.pdf",        "name": "32 - Surah As-Sajda - السجدة"
     },
     {
-        "value": 33,
-        "name": "33 - Surah Al-Ahzab - الأحزاب"
+        "value": "assets/quran/surah/alqurankarim/surah33.pdf",        "name": "33 - Surah Al-Ahzab - الأحزاب"
     },
     {
-        "value": 34,
-        "name": "34 - Surah Saba - سبأ"
+        "value": "assets/quran/surah/alqurankarim/surah34.pdf",        "name": "34 - Surah Saba - سبأ"
     },
     {
-        "value": 35,
-        "name": "35 - Surah Fatir - فاطر"
+        "value": "assets/quran/surah/alqurankarim/surah35.pdf",        "name": "35 - Surah Fatir - فاطر"
     },
     {
-        "value": 36,
-        "name": "36 - Surah Ya-Sin - يس"
+        "value": "assets/quran/surah/alqurankarim/surah36.pdf",        "name": "36 - Surah Ya-Sin - يس"
     },
     {
-        "value": 37,
-        "name": "37 - Surah As-Saffat - الصافات"
+        "value": "assets/quran/surah/alqurankarim/surah37.pdf",        "name": "37 - Surah As-Saffat - الصافات"
     },
     {
-        "value": 38,
-        "name": "38 - Surah Sad - ص"
+        "value": "assets/quran/surah/alqurankarim/surah38.pdf",        "name": "38 - Surah Sad - ص"
     },
     {
-        "value": 39,
-        "name": "39 - Surah Az-Zumar - الزمر"
+        "value": "assets/quran/surah/alqurankarim/surah39.pdf",        "name": "39 - Surah Az-Zumar - الزمر"
     },
     {
-        "value": 40,
-        "name": "40 - Surah Ghafir - غافر"
+        "value": "assets/quran/surah/alqurankarim/surah40.pdf",        "name": "40 - Surah Ghafir - غافر"
     },
     {
-        "value": 41,
-        "name": "41 - Surah Fussilat - فصلت"
+        "value": "assets/quran/surah/alqurankarim/surah41.pdf",        "name": "41 - Surah Fussilat - فصلت"
     },
     {
-        "value": 42,
-        "name": "42 - Surah Ash-Shura - الشورى"
+        "value": "assets/quran/surah/alqurankarim/surah42.pdf",        "name": "42 - Surah Ash-Shura - الشورى"
     },
     {
-        "value": 43,
-        "name": "43 - Surah Az-Zukhruf - الزخرف"
+        "value": "assets/quran/surah/alqurankarim/surah43.pdf",        "name": "43 - Surah Az-Zukhruf - الزخرف"
     },
     {
-        "value": 44,
-        "name": "44 - Surah Ad-Dukhan - الدخان"
+        "value": "assets/quran/surah/alqurankarim/surah44.pdf",        "name": "44 - Surah Ad-Dukhan - الدخان"
     },
     {
-        "value": 45,
-        "name": "45 - Surah Al-Jathiya - الجاثية"
+        "value": "assets/quran/surah/alqurankarim/surah45.pdf",        "name": "45 - Surah Al-Jathiya - الجاثية"
     },
     {
-        "value": 46,
-        "name": "46 - Surah Al-Ahqaf - الأحقاف"
+        "value": "assets/quran/surah/alqurankarim/surah46.pdf",        "name": "46 - Surah Al-Ahqaf - الأحقاف"
     },
     {
-        "value": 47,
-        "name": "47 - Surah Muhammad - محمد"
+        "value": "assets/quran/surah/alqurankarim/surah47.pdf",        "name": "47 - Surah Muhammad - محمد"
     },
     {
-        "value": 48,
-        "name": "48 - Surah Al-Fath - الفتح"
+        "value": "assets/quran/surah/alqurankarim/surah48.pdf",        "name": "48 - Surah Al-Fath - الفتح"
     },
     {
-        "value": 49,
-        "name": "49 - Surah Al-Hujurat - الحجرات"
+        "value": "assets/quran/surah/alqurankarim/surah49.pdf",        "name": "49 - Surah Al-Hujurat - الحجرات"
     },
     {
-        "value": 50,
-        "name": "50 - Surah Qaf - ق"
+        "value": "assets/quran/surah/alqurankarim/surah50.pdf",        "name": "50 - Surah Qaf - ق"
     },
     {
-        "value": 51,
-        "name": "51 - Surah Adh-Dhariyat - الذاريات"
+        "value": "assets/quran/surah/alqurankarim/surah51.pdf",        "name": "51 - Surah Adh-Dhariyat - الذاريات"
     },
     {
-        "value": 52,
-        "name": "52 - Surah At-Tur - الطور"
+        "value": "assets/quran/surah/alqurankarim/surah52.pdf",        "name": "52 - Surah At-Tur - الطور"
     },
     {
-        "value": 53,
-        "name": "53 - Surah An-Najm - النجم"
+        "value": "assets/quran/surah/alqurankarim/surah53.pdf",        "name": "53 - Surah An-Najm - النجم"
     },
     {
-        "value": 54,
-        "name": "54 - Surah Al-Qamar - القمر"
+        "value": "assets/quran/surah/alqurankarim/surah54.pdf",        "name": "54 - Surah Al-Qamar - القمر"
     },
     {
-        "value": 55,
-        "name": "55 - Surah Ar-Rahman - الرحمن"
+        "value": "assets/quran/surah/alqurankarim/surah55.pdf",        "name": "55 - Surah Ar-Rahman - الرحمن"
     },
     {
-        "value": 56,
-        "name": "56 - Surah Al-Waqia - الواقعة"
+        "value": "assets/quran/surah/alqurankarim/surah56.pdf",        "name": "56 - Surah Al-Waqia - الواقعة"
     },
     {
-        "value": 57,
-        "name": "57 - Surah Al-Hadid - الحديد"
+        "value": "assets/quran/surah/alqurankarim/surah57.pdf",        "name": "57 - Surah Al-Hadid - الحديد"
     },
     {
-        "value": 58,
-        "name": "58 - Surah Al-Mujadilah - المجادلة"
+        "value": "assets/quran/surah/alqurankarim/surah58.pdf",        "name": "58 - Surah Al-Mujadilah - المجادلة"
     },
     {
-        "value": 59,
-        "name": "59 - Surah Al-Hashr - الحشر"
+        "value": "assets/quran/surah/alqurankarim/surah59.pdf",        "name": "59 - Surah Al-Hashr - الحشر"
     },
     {
-        "value": 60,
-        "name": "60 - Surah Al-Mumtahina - الممتحنة"
+        "value": "assets/quran/surah/alqurankarim/surah60.pdf",        "name": "60 - Surah Al-Mumtahina - الممتحنة"
     },
     {
-        "value": 61,
-        "name": "61 - Surah As-Saff - الصف"
+        "value": "assets/quran/surah/alqurankarim/surah61.pdf",        "name": "61 - Surah As-Saff - الصف"
     },
     {
-        "value": 62,
-        "name": "62 - Surah Al-Jumuah - الجمعة"
+        "value": "assets/quran/surah/alqurankarim/surah62.pdf",        "name": "62 - Surah Al-Jumuah - الجمعة"
     },
     {
-        "value": 63,
-        "name": "63 - Surah Al-Munafiqun - المنافقون"
+        "value": "assets/quran/surah/alqurankarim/surah63.pdf",        "name": "63 - Surah Al-Munafiqun - المنافقون"
     },
     {
-        "value": 64,
-        "name": "64 - Surah At-Taghabun - التغابن"
+        "value": "assets/quran/surah/alqurankarim/surah64.pdf",        "name": "64 - Surah At-Taghabun - التغابن"
     },
     {
-        "value": 65,
-        "name": "65 - Surah At-Talaq - الطلاق"
+        "value": "assets/quran/surah/alqurankarim/surah65.pdf",        "name": "65 - Surah At-Talaq - الطلاق"
     },
     {
-        "value": 66,
-        "name": "66 - Surah At-Tahrim - التحريم"
+        "value": "assets/quran/surah/alqurankarim/surah66.pdf",        "name": "66 - Surah At-Tahrim - التحريم"
     },
     {
-        "value": 67,
-        "name": "67 - Surah Al-Mulk - الملك"
+        "value": "assets/quran/surah/alqurankarim/surah67.pdf",        "name": "67 - Surah Al-Mulk - الملك"
     },
     {
-        "value": 68,
-        "name": "68 - Surah Al-Qalam - القلم"
+        "value": "assets/quran/surah/alqurankarim/surah68.pdf",        "name": "68 - Surah Al-Qalam - القلم"
     },
     {
-        "value": 69,
-        "name": "69 - Surah Al-Haqqah - الحاقة"
+        "value": "assets/quran/surah/alqurankarim/surah69.pdf",        "name": "69 - Surah Al-Haqqah - الحاقة"
     },
     {
-        "value": 70,
-        "name": "70 - Surah Al-Maarij - المعارج"
+        "value": "assets/quran/surah/alqurankarim/surah70.pdf",        "name": "70 - Surah Al-Maarij - المعارج"
     },
     {
-        "value": 71,
-        "name": "71 - Surah Nuh - نوح"
+        "value": "assets/quran/surah/alqurankarim/surah71.pdf",        "name": "71 - Surah Nuh - نوح"
     },
     {
-        "value": 72,
-        "name": "72 - Surah Al-Jinn - الجن"
+        "value": "assets/quran/surah/alqurankarim/surah72.pdf",        "name": "72 - Surah Al-Jinn - الجن"
     },
     {
-        "value": 73,
-        "name": "73 - Surah Al-Muzzammil - المزمل"
+        "value": "assets/quran/surah/alqurankarim/surah73.pdf",        "name": "73 - Surah Al-Muzzammil - المزمل"
     },
     {
-        "value": 74,
-        "name": "74 - Surah Al-Muddaththir - المدثر"
+        "value": "assets/quran/surah/alqurankarim/surah74.pdf",        "name": "74 - Surah Al-Muddaththir - المدثر"
     },
     {
-        "value": 75,
-        "name": "75 - Surah Al-Qiyamah - القيامة"
+        "value": "assets/quran/surah/alqurankarim/surah75.pdf",        "name": "75 - Surah Al-Qiyamah - القيامة"
     },
     {
-        "value": 76,
-        "name": "76 - Surah Al-Insan - الانسان"
+        "value": "assets/quran/surah/alqurankarim/surah76.pdf",        "name": "76 - Surah Al-Insan - الانسان"
     },
     {
-        "value": 77,
-        "name": "77 - Surah Al-Mursalat - المرسلات"
+        "value": "assets/quran/surah/alqurankarim/surah77.pdf",        "name": "77 - Surah Al-Mursalat - المرسلات"
     },
     {
-        "value": 78,
-        "name": "78 - Surah An-Naba - النبأ"
+        "value": "assets/quran/surah/alqurankarim/surah78.pdf",        "name": "78 - Surah An-Naba - النبأ"
     },
     {
-        "value": 79,
-        "name": "79 - Surah An-Naziat - النازعات"
+        "value": "assets/quran/surah/alqurankarim/surah79.pdf",        "name": "79 - Surah An-Naziat - النازعات"
     },
     {
-        "value": 80,
-        "name": "80 - Surah Abasa - عبس"
+        "value": "assets/quran/surah/alqurankarim/surah80.pdf",        "name": "80 - Surah Abasa - عبس"
     },
     {
-        "value": 81,
-        "name": "81 - Surah At-Takwir - التكوير"
+        "value": "assets/quran/surah/alqurankarim/surah81.pdf",        "name": "81 - Surah At-Takwir - التكوير"
     },
     {
-        "value": 82,
-        "name": "82 - Surah Al-Infitar - الانفطار"
+        "value": "assets/quran/surah/alqurankarim/surah82.pdf",        "name": "82 - Surah Al-Infitar - الانفطار"
     },
     {
-        "value": 83,
-        "name": "83 - Surah Al-Mutaffifin - المطففين"
+        "value": "assets/quran/surah/alqurankarim/surah83.pdf",        "name": "83 - Surah Al-Mutaffifin - المطففين"
     },
     {
-        "value": 84,
-        "name": "84 - Surah Al-Inshiqaq - الانشقاق"
+        "value": "assets/quran/surah/alqurankarim/surah84.pdf",        "name": "84 - Surah Al-Inshiqaq - الانشقاق"
     },
     {
-        "value": 85,
-        "name": "85 - Surah Al-Buruj - البروج"
+        "value": "assets/quran/surah/alqurankarim/surah85.pdf",        "name": "85 - Surah Al-Buruj - البروج"
     },
     {
-        "value": 86,
-        "name": "86 - Surah At-Tariq - الطارق"
+        "value": "assets/quran/surah/alqurankarim/surah86.pdf",        "name": "86 - Surah At-Tariq - الطارق"
     },
     {
-        "value": 87,
-        "name": "87 - Surah Al-Ala - الأعلى"
+        "value": "assets/quran/surah/alqurankarim/surah87.pdf",        "name": "87 - Surah Al-Ala - الأعلى"
     },
     {
-        "value": 88,
-        "name": "88 - Surah Al-Ghashiya - الغاشية"
+        "value": "assets/quran/surah/alqurankarim/surah88.pdf",        "name": "88 - Surah Al-Ghashiya - الغاشية"
     },
     {
-        "value": 89,
-        "name": "89 - Surah Al-Fajr - الفجر"
+        "value": "assets/quran/surah/alqurankarim/surah89.pdf",        "name": "89 - Surah Al-Fajr - الفجر"
     },
     {
-        "value": 90,
-        "name": "90 - Surah Al-Balad - البلد"
+        "value": "assets/quran/surah/alqurankarim/surah90.pdf",        "name": "90 - Surah Al-Balad - البلد"
     },
     {
-        "value": 91,
-        "name": "91 - Surah Ash-Shams - الشمس"
+        "value": "assets/quran/surah/alqurankarim/surah91.pdf",        "name": "91 - Surah Ash-Shams - الشمس"
     },
     {
-        "value": 92,
-        "name": "92 - Surah Al-Lail - الليل"
+        "value": "assets/quran/surah/alqurankarim/surah92.pdf",        "name": "92 - Surah Al-Lail - الليل"
     },
     {
-        "value": 93,
-        "name": "93 - Surah Ad-Duhaa - الضحى"
+        "value": "assets/quran/surah/alqurankarim/surah93.pdf",        "name": "93 - Surah Ad-Duhaa - الضحى"
     },
     {
-        "value": 94,
-        "name": "94 - Surah Ash-Sharh - الشرح"
+        "value": "assets/quran/surah/alqurankarim/surah94.pdf",        "name": "94 - Surah Ash-Sharh - الشرح"
     },
     {
-        "value": 95,
-        "name": "95 - Surah At-Tin - التين"
+        "value": "assets/quran/surah/alqurankarim/surah95.pdf",        "name": "95 - Surah At-Tin - التين"
     },
     {
-        "value": 96,
-        "name": "96 - Surah Al-Alaq - العلق"
+        "value": "assets/quran/surah/alqurankarim/surah96.pdf",        "name": "96 - Surah Al-Alaq - العلق"
     },
     {
-        "value": 97,
-        "name": "97 - Surah Al-Qadr - القدر"
+        "value": "assets/quran/surah/alqurankarim/surah97.pdf",        "name": "97 - Surah Al-Qadr - القدر"
     },
     {
-        "value": 98,
-        "name": "98 - Surah Al-Bayyina - البينة"
+        "value": "assets/quran/surah/alqurankarim/surah98.pdf",        "name": "98 - Surah Al-Bayyina - البينة"
     },
     {
-        "value": 99,
-        "name": "99 - Surah Az-Zalzalah - الزلزلة"
+        "value": "assets/quran/surah/alqurankarim/surah99.pdf",        "name": "99 - Surah Az-Zalzalah - الزلزلة"
     },
     {
-        "value": 100,
+        "value": "assets/quran/surah/alqurankarim/surah100.pdf",
         "name": "100 - Surah Al-Adiyat - العاديات"
     },
     {
-        "value": 101,
+        "value": "assets/quran/surah/alqurankarim/surah101.pdf",
         "name": "101 - Surah Al-Qaria - القارعة"
     },
     {
-        "value": 102,
+        "value": "assets/quran/surah/alqurankarim/surah102.pdf",
         "name": "102 - Surah At-Takathur - التكاثر"
     },
     {
-        "value": 103,
+        "value": "assets/quran/surah/alqurankarim/surah103.pdf",
         "name": "103 - Surah Al-Asr - العصر"
     },
     {
-        "value": 104,
+        "value": "assets/quran/surah/alqurankarim/surah104.pdf",
         "name": "104 - Surah Al-Humazah - الهمزة"
     },
     {
-        "value": 105,
+        "value": "assets/quran/surah/alqurankarim/surah105.pdf",
         "name": "105 - Surah Al-Fil - الفيل"
     },
     {
-        "value": 106,
+        "value": "assets/quran/surah/alqurankarim/surah106.pdf",
         "name": "106 - Surah Quraish - قريش"
     },
     {
-        "value": 107,
+        "value": "assets/quran/surah/alqurankarim/surah107.pdf",
         "name": "107 - Surah Al-Maun - الماعون"
     },
     {
-        "value": 108,
+        "value": "assets/quran/surah/alqurankarim/surah108.pdf",
         "name": "108 - Surah Al-Kawthar - الكوثر"
     },
     {
-        "value": 109,
+        "value": "assets/quran/surah/alqurankarim/surah109.pdf",
         "name": "109 - Surah Al-Kafiroon - الكافرون"
     },
     {
-        "value": 110,
+        "value": "assets/quran/surah/alqurankarim/surah110.pdf",
         "name": "110 - Surah An-Nasr - النصر"
     },
     {
-        "value": 111,
+        "value": "assets/quran/surah/alqurankarim/surah111.pdf",
         "name": "111 - Surah Al-Masad - المسد"
     },
     {
-        "value": 112,
+        "value": "assets/quran/surah/alqurankarim/surah112.pdf",
         "name": "112 - Surah Al-Ikhlas - الإخلاص"
     },
     {
-        "value": 113,
+        "value": "assets/quran/surah/alqurankarim/surah113.pdf",
         "name": "113 - Surah Al-Falaq - الفلق"
     },
     {
-        "value": 114,
+        "value": "assets/quran/surah/alqurankarim/surah114.pdf",
         "name": "114 - Surah An-Nas - الناس"
     }
 
