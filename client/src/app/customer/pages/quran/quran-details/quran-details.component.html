@@ -44,7 +44,7 @@
                         <div class="col-9 pe-1">
                             <select name="quran-surah" class="form-select select-box rounded-0"
                                 aria-label="Default select example" (change)="onSurahChange($event)">
-                                <option value="" disabled selected >Select Para</option>
+                                <option value="" disabled selected >Select Surah</option>
                                 <option *ngFor="let surah of ddlSurah" [value]="surah.value">{{ surah.name }}</option>
                             </select>
                         </div>

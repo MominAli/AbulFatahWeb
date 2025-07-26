@@ -29,7 +29,7 @@ export class QuranDetailsComponent {
   constructor(private qurandetailsService:QurandetailsService,private route: ActivatedRoute){ }
 
   ngOnInit(): void {
-    this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlSurah = data; }); 
+    this.qurandetailsService.getddlSurahLists().subscribe((data) => { this.ddlSurah = data; }); 
     this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlPara = data; }); 
     this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; });
     
@@ -45,6 +45,7 @@ export class QuranDetailsComponent {
   }
 
     onSurahChange(event: any) {
+      debugger;
     this.pdfSrc = event.target.value;
   }
 
