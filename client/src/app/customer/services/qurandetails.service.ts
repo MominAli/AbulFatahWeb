@@ -8,11 +8,16 @@ export interface Surah {
   suranameArabic: string;
   imgSrc: string;
   imgAlt: string;
+  pdfUrl:string,
+  audioUrl:string
 }
 
 export interface Para {
   paraNumber: number;
   paraName: string;
+  pdfUrl:string,
+  audioUrl:string,
+  type:string
 }
 export interface ddlPara {
   value: number;

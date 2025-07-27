@@ -32,15 +32,16 @@ export class QuranComponent {
 
   }
 
- goToQuranDetails(para: any) {
-  console.log('Full object:', para);
-  console.log('PDF URL:', para.pdfUrl);
-  console.log('Audio URL:', para.audioUrl);
+ goToQuranDetails(item: any) {
+    debugger;
+
   this.router.navigate(['/quran-details'], {
     queryParams: {
-       pdf: para.pdfUrl ,
-       audio: para.audioUrl
-       }
+      pdf: item.pdfUrl,
+      audio: item.audioUrl,
+      type: item.type,     // 'surah' or 'para'
+      value: item.paraNumber    // the dropdown match key
+    }
   });
 }
 }
