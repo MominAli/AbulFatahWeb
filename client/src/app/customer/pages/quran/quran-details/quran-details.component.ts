@@ -69,6 +69,7 @@ debugger;
       this.audioUrl = selected.audioUrl;
       this.selectedPara = selected.paraNumber.toString();
     }
+     this.selectedSurah='';
   }
 
   onSurahChange(event: any) {
@@ -78,6 +79,8 @@ debugger;
       this.audioUrl = selected.audioUrl;
       this.selectedSurah = selected.surahNumber.toString();
     }
+    this.selectedPara='';
+
   }
 
 

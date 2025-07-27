@@ -3,12 +3,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-12 pb-5">
                 <div class="para-image-bg my-4">
-                    <ngx-extended-pdf-viewer 
-                        [src]="pdfUrl"
-                        [textLayer]="true" 
-                        [showHandToolButton]="true"
-                        [showPresentationModeButton]="true" 
-                        [showDownloadButton]="true">
+                    <ngx-extended-pdf-viewer [src]="pdfUrl" [textLayer]="true" [showHandToolButton]="true"
+                        [showPresentationModeButton]="true" [showDownloadButton]="true">
                     </ngx-extended-pdf-viewer>
                 </div>
             </div>
@@ -28,9 +24,10 @@
                     <div class="row">
                         <div class="col-9 pe-1">
                             <select name="quran-para" class="form-select select-box rounded-0"
-                                aria-label="Default select example" (change)="onParaChange($event)" [(ngModel)]="selectedPara">
-                                 <option value="" disabled >Select Para</option>
-                                <option *ngFor="let para of ddlPara" [value]="para.value" >{{ para.name }}</option>
+                                aria-label="Default select example" (change)="onParaChange($event)"
+                                [(ngModel)]="selectedPara">
+                                <option value="" disabled>Select Para</option>
+                                <option *ngFor="let para of ddlPara" [value]="para.value">{{ para.name }}</option>
                             </select>
                         </div>
                         <div class="col-3">
@@ -43,7 +40,8 @@
                     <div class="row">
                         <div class="col-9 pe-1">
                             <select name="quran-surah" class="form-select select-box rounded-0"
-                                aria-label="Default select example" (change)="onSurahChange($event)" [(ngModel)]="selectedSurah">
+                                aria-label="Default select example" (change)="onSurahChange($event)"
+                                [(ngModel)]="selectedSurah">
                                 <option value="" disabled>Select Surah</option>
                                 <option *ngFor="let surah of ddlSurah" [value]="surah.value">{{ surah.name }}</option>
                             </select>
@@ -82,8 +80,8 @@
                 <div class="row">
                     <div class="col-md-12 pe-1">
                         <audio controls class="w-100">
-                            <source src="example.ogg" type="audio/ogg">
-                            <source src="example.mp3" type="audio/mpeg">
+                            <source [src]="audioUrl" type="audio/ogg">
+                            <source [src]="audioUrl" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
@@ -92,8 +90,8 @@
                 <div class="row">
                     <div class="col-md-12 pe-1">
                         <div class="d-flex justify-content-center">
-                           <a [href]="pdfUrl" download class="action-button me-5 no-decoration">PDF</a>
-                           <a [href]="audioUrl" download class="action-button no-decoration">Audio</a>
+                            <a [href]="pdfUrl" download class="action-button me-5 no-decoration">PDF</a>
+                            <a [href]="audioUrl" download class="action-button no-decoration">Audio</a>
                         </div>
                     </div>
                 </div>
@@ -103,14 +101,17 @@
         <div class="d-lg-none d-xl-none position-fixed bottom-0 start-0 px-1 bg-white py-1">
             <div class="bottom-buttons d-flex">
                 <div class="text-center me-1">
-                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#displayOption" href="#">Display Option</a>
+                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#displayOption" href="#">Display
+                        Option</a>
                 </div>
 
                 <div class="text-center me-1">
-                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#listen" href="#">Listen and Download</a>
+                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#listen" href="#">Listen and
+                        Download</a>
                 </div>
                 <div class="text-center">
-                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#readingModal" href="#">Reading Option</a>
+                    <a class="no-decoration" data-bs-toggle="modal" data-bs-target="#readingModal" href="#">Reading
+                        Option</a>
                 </div>
             </div>
         </div>
@@ -168,8 +169,8 @@
                 <div class="row">
                     <div class="col-md-12 pe-1">
                         <audio controls="" class="w-100">
-                            <source src="example.ogg" type="audio/ogg">
-                            <source src="example.mp3" type="audio/mpeg">
+                             <source [src]="audioUrl" type="audio/ogg">
+                             <source [src]="audioUrl" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                     </div>
