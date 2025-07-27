@@ -11,12 +11,12 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
   styleUrl: './quran.component.css'
 })
 export class QuranComponent {
-  
+
   surahLists: Surah[] = [];
   paraLists: Para[] = [];
   loading: boolean = true;
 
-  constructor(private router: Router , private qurandetailsService:QurandetailsService){ }
+  constructor(private router: Router, private qurandetailsService: QurandetailsService) { }
 
   ngOnInit(): void {
     // Fetch Surah List
@@ -32,16 +32,30 @@ export class QuranComponent {
 
   }
 
- goToQuranDetails(item: any) {
-    debugger;
+  goToParaDetails(item: any) {
 
-  this.router.navigate(['/quran-details'], {
-    queryParams: {
-      pdf: item.pdfUrl,
-      audio: item.audioUrl,
-      type: item.type,     // 'surah' or 'para'
-      value: item.paraNumber    // the dropdown match key
-    }
-  });
-}
+    this.router.navigate(['/quran-details'], {
+      queryParams: {
+        pdf: item.pdfUrl,
+        audio: item.audioUrl,
+        type: item.type,     // 'surah' or 'para'
+        value: item.paraNumber    // the dropdown match key
+      }
+    });
+  }
+
+
+  goToSurahDetails(item: any) {
+
+    this.router.navigate(['/quran-details'], {
+      queryParams: {
+        pdf: item.pdfUrl,
+        audio: item.audioUrl,
+        type: item.type,     // 'surah' or 'para'
+        value: item.surahNumber    // the dropdown match key
+      }
+    });
+  }
+  
+
 }
