@@ -17,7 +17,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Baqarah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah2.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/002.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/002.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "3",
@@ -26,7 +27,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Imran",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah3.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/003.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/003.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "4",
@@ -35,7 +37,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "An Nisa",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah4.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/004.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/004.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "5",
@@ -44,7 +47,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Maidah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah5.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/005.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/005.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "6",
@@ -53,7 +57,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Anam",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah6.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/006.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/006.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "7",
@@ -62,7 +67,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Araf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah7.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/007.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/007.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "8",
@@ -71,7 +77,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Anfal",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah8.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/008.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/008.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "9",
@@ -80,7 +87,9 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Tawbah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah9.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/009.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/009.mp3",
+            "type":"surah"
+            
         },
         {
             "surahNumber": "10",
@@ -89,7 +98,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Yunus",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah10.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/010.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/010.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "11",
@@ -98,7 +108,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Hud",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah11.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/011.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/011.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "12",
@@ -107,7 +118,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Yusuf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah12.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/012.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/012.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "13",
@@ -116,7 +128,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Ar Rad",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah13.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/013.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/013.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "14",
@@ -125,7 +138,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ibrahim",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah14.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/014.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/014.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "15",
@@ -134,7 +148,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Hijr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah15.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/015.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/015.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "16",
@@ -143,7 +158,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Nahl",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah16.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/016.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/016.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "17",
@@ -152,7 +168,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Isra",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah17.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/017.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/017.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "18",
@@ -161,7 +178,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Kahf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah18.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/018.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/018.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "19",
@@ -170,7 +188,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Maryam",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah19.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/019.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/019.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "20",
@@ -179,7 +198,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Taha",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah20.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/020.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/020.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "21",
@@ -188,7 +208,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Anbiya",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah21.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/021.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/021.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "22",
@@ -197,7 +218,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Hajj",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah22.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/022.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/022.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "23",
@@ -206,7 +228,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Muminoon",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah23.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/023.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/023.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "24",
@@ -215,7 +238,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "An Noor",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah24.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/024.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/024.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "25",
@@ -224,7 +248,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Furqan",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah25.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/025.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/025.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "26",
@@ -233,7 +258,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Surah Ash Shuara",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah26.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/026.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/026.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "27",
@@ -242,7 +268,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Naml",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah27.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/027.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/027.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "28",
@@ -251,7 +278,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qasas",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah28.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/028.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/028.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "29",
@@ -260,7 +288,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ankabut",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah29.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/029.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/029.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "30",
@@ -269,7 +298,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ar Rum",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah30.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/030.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/030.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "31",
@@ -278,7 +308,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Luqman",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah31.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/031.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/031.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "32",
@@ -287,7 +318,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "As Sajdah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah32.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/032.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/032.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "33",
@@ -296,7 +328,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ahzab",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah33.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/033.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/033.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "34",
@@ -305,7 +338,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Saba",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah34.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/034.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/034.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "35",
@@ -314,7 +348,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Fatir",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah35.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/035.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/035.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "36",
@@ -323,7 +358,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Yasin",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah36.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/036.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/036.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "37",
@@ -332,7 +368,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "As Saffat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah37.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/037.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/037.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "38",
@@ -341,7 +378,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Sad",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah38.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/038.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/038.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "39",
@@ -350,7 +388,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Az Zumar",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah39.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/039.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/039.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "40",
@@ -359,7 +398,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ghafir",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah40.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/040.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/040.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "41",
@@ -368,7 +408,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Fussilat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah41.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/041.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/041.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "42",
@@ -377,7 +418,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ash  Shura",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah42.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/042.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/042.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "43",
@@ -386,7 +428,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Az Zukhruf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah43.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/043.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/043.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "44",
@@ -395,7 +438,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ad Dukhan",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah44.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/044.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/044.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "45",
@@ -404,7 +448,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Jasia",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah45.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/045.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/045.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "46",
@@ -413,7 +458,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ahqaf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah46.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/046.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/046.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "47",
@@ -422,7 +468,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Muhammad",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah47.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/047.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/047.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "48",
@@ -431,7 +478,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Fath",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah48.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/048.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/048.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "49",
@@ -440,7 +488,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Hujurat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah49.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/049.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/049.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "50",
@@ -449,7 +498,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Qaf",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah50.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/050.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/050.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "51",
@@ -458,7 +508,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Az Zariyat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah51.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/051.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/051.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "52",
@@ -467,7 +518,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Tur",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah52.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/052.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/052.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "53",
@@ -476,7 +528,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Najm",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah53.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/053.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/053.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "54",
@@ -485,7 +538,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qamar",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah54.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/054.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/054.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "55",
@@ -494,7 +548,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ar Rahman",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah55.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/055.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/055.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "56",
@@ -503,7 +558,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Waqiah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah56.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/056.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/056.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "57",
@@ -512,7 +568,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Hadid",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah57.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/057.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/057.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "58",
@@ -521,7 +578,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Mujadilah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah58.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/058.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/058.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "59",
@@ -530,7 +588,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Hashr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah59.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/059.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/059.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "60",
@@ -539,7 +598,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Mumtahanah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah60.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/060.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/060.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "61",
@@ -548,7 +608,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "As Saff",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah61.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/061.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/061.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "62",
@@ -557,7 +618,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Juma",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah62.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/062.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/062.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "63",
@@ -566,7 +628,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Munafiqun",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah63.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/063.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/063.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "64",
@@ -575,7 +638,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "At Taghabun",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah64.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/064.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/064.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "65",
@@ -584,7 +648,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "At Talaq",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah65.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/065.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/065.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "66",
@@ -593,7 +658,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "At Tahrim",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah66.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/066.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/066.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "67",
@@ -602,7 +668,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Mulk",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah67.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/067.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/067.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "68",
@@ -611,7 +678,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qalam",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah68.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/068.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/068.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "69",
@@ -620,7 +688,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Haqqah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah69.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/069.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/069.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "70",
@@ -629,7 +698,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ma'arij",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah70.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/070.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/070.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "71",
@@ -638,7 +708,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Nuh",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah71.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/071.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/071.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "72",
@@ -647,7 +718,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Jin",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah72.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/072.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/072.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "73",
@@ -656,7 +728,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Muzzammil",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah73.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/073.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/073.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "74",
@@ -665,7 +738,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Mudassir",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah74.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/074.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/074.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "75",
@@ -674,7 +748,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qiyamah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah75.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/075.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/075.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "76",
@@ -683,7 +758,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Insan",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah76.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/076.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/076.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "77",
@@ -692,7 +768,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Mursalat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah77.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/077.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/077.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "78",
@@ -701,7 +778,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Naba",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah78.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/078.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/078.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "79",
@@ -710,7 +788,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Naziat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah79.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/079.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/079.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "80",
@@ -719,7 +798,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Abasa",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah80.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/080.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/080.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "81",
@@ -728,7 +808,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Takwir",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah81.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/081.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/081.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "82",
@@ -737,7 +818,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Infitar",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah82.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/082.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/082.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "83",
@@ -746,7 +828,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Mutaffifin",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah83.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/083.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/083.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "84",
@@ -755,7 +838,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Inshiqaq",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah84.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/084.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/084.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "85",
@@ -764,7 +848,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Buruj",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah85.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/085.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/085.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "86",
@@ -773,7 +858,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Tariq",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah86.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/086.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/086.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "87",
@@ -782,7 +868,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ala",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah87.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/087.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/087.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "88",
@@ -791,7 +878,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ghashiyah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah88.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/088.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/088.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "89",
@@ -800,7 +888,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Fajr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah89.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/089.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/089.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "90",
@@ -809,7 +898,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Balad",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah90.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/090.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/090.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "91",
@@ -818,7 +908,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ash Shams",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah91.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/091.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/091.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "92",
@@ -827,7 +918,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Lail",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah92.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/092.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/092.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "93",
@@ -836,7 +928,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Ad Duha",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah93.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/093.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/093.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "94",
@@ -845,7 +938,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Alam Nashrah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah94.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/094.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/094.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "95",
@@ -854,7 +948,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Tin",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah95.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/095.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/095.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "96",
@@ -863,7 +958,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Alaq",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah96.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/096.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/096.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "97",
@@ -872,7 +968,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qadr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah97.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/097.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/097.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "98",
@@ -881,7 +978,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Bayyinah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah98.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/098.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/098.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "99",
@@ -890,7 +988,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "Al Zalzalah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah99.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/099.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/099.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "100",
@@ -899,7 +998,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Adiyat",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah100.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/100.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/100.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "101",
@@ -908,7 +1008,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Qariah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah101.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/101.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/101.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "102",
@@ -917,7 +1018,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "At Takasur",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah102.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/102.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/102.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "103",
@@ -926,7 +1028,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Asr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah103.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/103.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/103.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "104",
@@ -935,7 +1038,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Humazah",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah104.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/104.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/104.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "105",
@@ -944,7 +1048,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Feel",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah105.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/105.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/105.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "106",
@@ -953,7 +1058,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Quraish",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah106.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/106.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/106.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "107",
@@ -962,7 +1068,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Maun",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah107.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/107.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/107.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "108",
@@ -971,7 +1078,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Kausar",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah108.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/108.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/108.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "109",
@@ -980,7 +1088,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Kafirun",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah109.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/109.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/109.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "110",
@@ -989,7 +1098,8 @@
             "imgSrc": "assets/img/quran/madina-img.ico",
             "imgAlt": "An Nasr",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah110.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/110.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/110.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "111",
@@ -998,7 +1108,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Lahab",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah111.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/111.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/111.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "112",
@@ -1007,7 +1118,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Ikhlas",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah112.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/112.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/112.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "113",
@@ -1016,7 +1128,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "Al Falaq",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah113.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/113.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/113.mp3",
+            "type":"surah"
         },
         {
             "surahNumber": "114",
@@ -1025,7 +1138,8 @@
             "imgSrc": "assets/img/quran/makkah-img.ico",
             "imgAlt": "An Nas",
             "pdfUrl": "assets/quran/surah/alqurankarim/surah114.pdf",
-            "audioUrl": "assets/quran/surah/alqurankarim/114.mp3"
+            "audioUrl": "assets/quran/surah/alqurankarim/114.mp3",
+            "type":"surah"
         }
     ],
     "paras": [
