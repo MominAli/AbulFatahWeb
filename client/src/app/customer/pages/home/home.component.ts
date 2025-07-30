@@ -6,13 +6,14 @@ import { EventsComponent } from '../events/events.component';
 import { MediaComponent } from '../media/media.component';
 import { Router } from '@angular/router';
 import { CarouselComponent } from '../../../shared/components/carousel/carousel.component';
+import { BookComponent } from '../../../book/book.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [RegisterComponent,FooterComponent,EventsComponent,MediaComponent,CarouselComponent]
+    imports: [RegisterComponent,FooterComponent,EventsComponent,MediaComponent,CarouselComponent,BookComponent]
 })
 export class HomeComponent {
   registerMode = false;
@@ -33,7 +34,7 @@ export class HomeComponent {
   }
 
   goToBooks() {
-    this.router.navigate(['/books']);
+    this.router.navigate(['/book']);
   }
   goToMedia() {
     this.router.navigate(['/media']);

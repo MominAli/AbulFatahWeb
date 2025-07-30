@@ -33,6 +33,9 @@ import { ServerErrorComponent } from '../app/shared/components/errors/server-err
 import { authGuard } from '../app/core/guards/_guards/auth.guard';
 import { preventUnsavedChangesGuard } from '../app/core/guards/_guards/prevent-unsaved-changes.guard';
 import { adminGuard } from '../app/core/guards/_guards/admin.guard';
+import { BookComponent } from './book/book.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { SubBookComponent } from './sub-book/sub-book.component';
 
 
 export const routes: Routes = [
@@ -40,7 +43,9 @@ export const routes: Routes = [
     {path: 'media', component: MediaComponent},
     {path: 'quran', component: QuranComponent},
     {path: 'quran-details', component: QuranDetailsComponent},
-
+   { path: 'book', component: BookComponent },
+   { path: 'sub-book/:id', component: SubBookComponent },
+  { path: 'book-details/:id', component: BookDetailsComponent },
     {path: 'activity', component: ActivityComponent},
     {path: 'aboutus', component: AboutComponent},
     {path: 'feedback', component: FeedbackComponent},
