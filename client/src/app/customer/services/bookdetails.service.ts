@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 export interface SubBook {
   id: number;
   title: string;
+  img: string;
 }
 
 export interface Book {
