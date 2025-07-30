@@ -12,18 +12,15 @@ import { AdminPanelComponent } from '../app/admin/pages/admin-panel/admin-panel.
 /* customer module */
 
 import { HomeComponent } from '../app/customer/pages/home/home.component';
-import { BooksDetailsComponent } from '../app/customer/pages/books-details/books-details.component';
 import { ActivityComponent } from '../app/customer/pages/activity/activity.component';
 import { QuranDetailsComponent } from '../app/customer/pages/quran/quran-details/quran-details.component';
 import { AboutComponent } from '../app/customer/pages/about/about.component';
 import { FeedbackComponent } from '../app/customer/pages/feedback/feedback.component';
 import { DonationComponent } from '../app/customer/pages/donation/donation.component';
 import { BiograhpyComponent } from '../app/customer/pages/biograhpy/biograhpy.component';
-import { BooksComponent } from '../app/customer/pages/books/books.component';
 import { MediaComponent } from '../app/customer/pages/media/media.component';
 import { QuranComponent } from '../app/customer/pages/quran/quran.component';
 import { ContactComponent } from '../app/customer/pages/contact/contact.component';
-import { LevelComponent } from './customer/pages/level/level.component';
 
 /* shared module */
 
@@ -40,9 +37,6 @@ import { adminGuard } from '../app/core/guards/_guards/admin.guard';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
-    {path: 'books', component: BooksComponent},
-    {path: 'books-details', component: BooksDetailsComponent},
-    {path: 'book-level', component: LevelComponent},
     {path: 'media', component: MediaComponent},
     {path: 'quran', component: QuranComponent},
     {path: 'quran-details', component: QuranDetailsComponent},

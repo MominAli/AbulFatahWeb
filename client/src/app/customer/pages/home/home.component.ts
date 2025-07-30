@@ -3,7 +3,6 @@ import { RegisterComponent } from "../../../admin/pages/register/register.compon
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 import { EventsComponent } from '../events/events.component';
-import { BooksComponent } from '../books/books.component';
 import { MediaComponent } from '../media/media.component';
 import { Router } from '@angular/router';
 import { CarouselComponent } from '../../../shared/components/carousel/carousel.component';
@@ -13,7 +12,7 @@ import { CarouselComponent } from '../../../shared/components/carousel/carousel.
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [RegisterComponent,FooterComponent,EventsComponent,BooksComponent,MediaComponent,CarouselComponent]
+    imports: [RegisterComponent,FooterComponent,EventsComponent,MediaComponent,CarouselComponent]
 })
 export class HomeComponent {
   registerMode = false;
