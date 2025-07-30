@@ -1,116 +1,50 @@
-{
-    "books": [
-        {
-            "img": "../../assets/books/FutuhaatAbulFatah/FutuhaatAbulFatah.jpeg",
-            "name": "Futuhaat E AbulFatah",
-            "levels": ["Level 01", "Level 02"]
-        },
-        {
-            "img": "../../assets/books/02_Munazra_Naunihal.jpeg",
-            "name": "Munazra Naunihal",
-            "levels": []
-        },
-        {
-            "img": "../../assets/books/04_Munazra_Laucknow.jpeg",
-            "name": "Munazra Laucknow"
-        },
-        {
-            "img": "../../assets/books/05_Munazra_Mumbai_Vol_1.jpeg",
-            "name": "Munazra Mumbai Vol 1"
-        },
-        {
-            "img": "../../assets/books/06_Munazra_Mumbai_Vol_2.jpeg",
-            "name": "Munazra Mumbai Vol 2"
-        },
-        {
-            "img": "../../assets/books/07_Munazra_Padra_Vol_1.jpeg",
-            "name": "Munazra Padra Vol 1"
-        },
-        {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        }, {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        },
-        {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        }, {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        },
-        {
-            "img": "../../assets/books/03_Haibat_e_Qah_Haria.jpeg",
-            "name": "Haibat e Qah Haria"
-        },
-        {
-            "img": "../../assets/books/02_Munazra_Naunihal.jpeg",
-            "name": "Munazra Naunihal"
-        },
-        {
-            "img": "../../assets/books/04_Munazra_Laucknow.jpeg",
-            "name": "Munazra Laucknow"
-        },
-        {
-            "img": "../../assets/books/05_Munazra_Mumbai_Vol_1.jpeg",
-            "name": "Munazra Mumbai Vol 1"
-        },
-        {
-            "img": "../../assets/books/06_Munazra_Mumbai_Vol_2.jpeg",
-            "name": "Munazra Mumbai Vol 2"
-        },
-        {
-            "img": "../../assets/books/07_Munazra_Padra_Vol_1.jpeg",
-            "name": "Munazra Padra Vol 1"
-        },
-        {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        }, {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        },
-        {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        }, {
-            "img": "../../assets/books/08_Munazra_Padra_Vol_2.jpeg",
-            "name": "Munazra Padra Vol 2"
-        },
-        {
-            "img": "../../assets/books/09_Munazra_Rander.jpeg",
-            "name": "Munazra Rander"
-        }
-  
-       
+[
+  {
+    "id": 1,
+    "title": "Futhwate E Abulfatah",
+    "hasChildren": true,
+    "img":"",
+    "subBooks": [
+      { "id": 101, "title": "Volume 1" },
+      { "id": 102, "title": "Volume 2" },
+      { "id": 103, "title": "Volume 3" },
+      { "id": 104, "title": "Volume 4" },
+      { "id": 105, "title": "Volume 5" },
+      { "id": 106, "title": "Volume 6" },
+      { "id": 107, "title": "Volume 7" },
+      { "id": 108, "title": "Volume 8" },
+      { "id": 109, "title": "Volume 9" },
+      { "id": 110, "title": "Volume 10" }
+
+
     ]
-}
+  },
+  {
+    "id": 2,
+    "title": "Simple Book 2",
+    "hasChildren": false,
+    "img":"",
+    "subBooks": []
+  },
+   {
+    "id": 3,
+    "title": "Simple Book 3",
+    "hasChildren": false,
+    "img":"",
+    "subBooks": []
+  },
+   {
+    "id": 4,
+    "title": "Simple Book 4",
+    "hasChildren": false,
+    "img":"",
+    "subBooks": []
+  },
+   {
+    "id": 5,
+    "title": "Simple Book 5",
+    "hasChildren": false,
+    "img":"",
+    "subBooks": []
+  }
+]
