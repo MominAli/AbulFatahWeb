@@ -48,4 +48,8 @@ export class BookComponent {
     link.click();
   }
 
+ goToSubBooks(bookId: number): void {
+  this.router.navigate(['/sub-book', bookId]);
+}
+
 }

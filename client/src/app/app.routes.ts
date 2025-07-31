@@ -47,7 +47,7 @@ export const routes: Routes = [
     { path: 'quran-details', component: QuranDetailsComponent },
 
     { path: 'book', component: BookComponent },
-    { path: 'sub-book/:id', component: SubBookComponent },
+    { path: 'sub-book/:bookId', component: SubBookComponent },
     { path: 'book-details/:id', component: BookDetailsComponent },
 
     { path: 'activity', component: ActivityComponent },

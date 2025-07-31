@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BookdetailsService } from '../../../src/app/customer/services/bookdetails.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
@@ -22,22 +22,33 @@ export class SubBookComponent {
   loading: boolean = true;
 
 
+  constructor(private bookdetailsService: BookdetailsService, private router: Router,private route: ActivatedRoute) { }
+
+  subBookId: number = 0;
+  subBook: any;
+
   books: any[] = [];
-  constructor(private bookdetailsService: BookdetailsService, private router: Router) { }
 
+ngOnInit(): void {
+  debugger;
+  const bookId = Number(this.route.snapshot.paramMap.get('bookId'));
 
-  ngOnInit(): void {
-    this.bookdetailsService.getBookList().subscribe({
-      next: data => {
-        this.books = data;
-        console.log('Books loaded:', data);
-      },
-      error: err => {
-        console.error('Error loading books:', err);
+  this.bookdetailsService.getBookList().subscribe({
+    next: books => {
+      const parent = books.find((b: { id: number; hasChildren: boolean }) => b.id === bookId && b.hasChildren);
+
+      if (parent) {
+        this.subBook = parent.subBooks;
+        console.log('Sub-books found:', this.subBook);  //  Now it'll log actual data
+      } else {
+        console.warn('No parent with children found for bookId:', bookId);
       }
-    });
-    console.log(this.books);
-  }
+    },
+    error: err => console.error('Book load error:', err)
+  });
+}
+
+
 
    downloadPDF(bookName: string): void {
     const pdfUrl = `../../assets/books/${bookName}.pdf`;
