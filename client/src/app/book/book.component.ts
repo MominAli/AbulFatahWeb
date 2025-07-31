@@ -52,4 +52,10 @@ export class BookComponent {
   this.router.navigate(['/sub-book', bookId]);
 }
 
+ onRead(book: any): void {
+  if (!book.hasChildren) {
+    this.router.navigate(['/book-details', book.id]);
+  }
 }
+}
+
