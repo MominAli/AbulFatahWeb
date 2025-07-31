@@ -21,6 +21,9 @@ import { BiograhpyComponent } from '../app/customer/pages/biograhpy/biograhpy.co
 import { MediaComponent } from '../app/customer/pages/media/media.component';
 import { QuranComponent } from '../app/customer/pages/quran/quran.component';
 import { ContactComponent } from '../app/customer/pages/contact/contact.component';
+import { BookComponent } from './book/book.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { SubBookComponent } from './sub-book/sub-book.component';
 
 /* shared module */
 
@@ -33,43 +36,48 @@ import { ServerErrorComponent } from '../app/shared/components/errors/server-err
 import { authGuard } from '../app/core/guards/_guards/auth.guard';
 import { preventUnsavedChangesGuard } from '../app/core/guards/_guards/prevent-unsaved-changes.guard';
 import { adminGuard } from '../app/core/guards/_guards/admin.guard';
-import { BookComponent } from './book/book.component';
-import { BookDetailsComponent } from './book-details/book-details.component';
-import { SubBookComponent } from './sub-book/sub-book.component';
+
 
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'media', component: MediaComponent},
-    {path: 'quran', component: QuranComponent},
-    {path: 'quran-details', component: QuranDetailsComponent},
-   { path: 'book', component: BookComponent },
-   { path: 'sub-book/:id', component: SubBookComponent },
-  { path: 'book-details/:id', component: BookDetailsComponent },
-    {path: 'activity', component: ActivityComponent},
-    {path: 'aboutus', component: AboutComponent},
-    {path: 'feedback', component: FeedbackComponent},
-    {path: 'donation', component: DonationComponent},
-    {path: 'biograhpy', component: BiograhpyComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'register', component: RegisterComponent},
+    { path: '', component: HomeComponent },
+    { path: 'media', component: MediaComponent },
+
+    { path: 'quran', component: QuranComponent },
+    { path: 'quran-details', component: QuranDetailsComponent },
+
+    { path: 'book', component: BookComponent },
+    { path: 'sub-book/:id', component: SubBookComponent },
+    { path: 'book-details/:id', component: BookDetailsComponent },
+
+    { path: 'activity', component: ActivityComponent },
+    { path: 'aboutus', component: AboutComponent },
+    { path: 'feedback', component: FeedbackComponent },
+    { path: 'donation', component: DonationComponent },
+    { path: 'biograhpy', component: BiograhpyComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'register', component: RegisterComponent },
 
     {
         path: '',
         runGuardsAndResolvers: 'always',
         // canActivate: [authGuard],
         children: [
-            {path: 'members', component: MemberListComponent},
+            { path: 'members', component: MemberListComponent },
 
-            {path: 'members/:username', component: MemberDetailComponent, 
-                resolve: {member: memberDetailedResolver}},
-            {path: 'member/edit', component: MemberEditComponent, 
-                canDeactivate: [preventUnsavedChangesGuard]},
-            {path: 'admin', component: AdminPanelComponent, canActivate: [adminGuard]}
+            {
+                path: 'members/:username', component: MemberDetailComponent,
+                resolve: { member: memberDetailedResolver }
+            },
+            {
+                path: 'member/edit', component: MemberEditComponent,
+                canDeactivate: [preventUnsavedChangesGuard]
+            },
+            { path: 'admin', component: AdminPanelComponent, canActivate: [adminGuard] }
         ]
     },
-    {path: 'errors', component: TestErrorsComponent},
-    {path: 'not-found', component: NotFoundComponent},
-    {path: 'server-error', component: ServerErrorComponent},
-    {path: '**', component: HomeComponent, pathMatch: 'full'},
+    { path: 'errors', component: TestErrorsComponent },
+    { path: 'not-found', component: NotFoundComponent },
+    { path: 'server-error', component: ServerErrorComponent },
+    { path: '**', component: HomeComponent, pathMatch: 'full' },
 ];
