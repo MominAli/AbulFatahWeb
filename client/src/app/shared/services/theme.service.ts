@@ -1,3 +1,15 @@
+/**
+ * -------------------------------------------------------------
+ * File Name    : theme.service.ts
+ * Description  : Centralized service to manage light and dark theme toggling
+ * Author       : Khan Ramzan Ali
+ * Created Date : 03-Aug-2025
+ * Updated Date : 03-Aug-2025
+ * Version      : 1.0.0
+ * -------------------------------------------------------------
+ */
+
+
 // src/app/services/theme.service.ts
 import { Injectable } from '@angular/core';
 

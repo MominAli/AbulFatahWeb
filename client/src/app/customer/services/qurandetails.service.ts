@@ -1,3 +1,13 @@
+/**
+ * -------------------------------------------------------------
+ * File Name    : qurandetails.service.ts
+ * Description  : Service to fetch Surah, Para, and dropdown lists from quran.json
+ * Author       : Khan Ramzan Ali
+ * Created Date : 03-Aug-2025
+ * Updated Date : 03-Aug-2025
+ * Version      : 1.0.1
+ * -------------------------------------------------------------
+ */
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable, of } from 'rxjs';

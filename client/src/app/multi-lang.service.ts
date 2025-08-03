@@ -1,3 +1,13 @@
+/**
+ * -------------------------------------------------------------
+ * File Name    : multi-lang.service.ts
+ * Description  : Signal-based multilingual service to sync UI language with ngx-translate and localStorage
+ * Author       : Khan Ramzan Ali
+ * Created Date : 03-Aug-2025
+ * Updated Date : 03-Aug-2025
+ * Version      : 1.0.0
+ * -------------------------------------------------------------
+ */
 import { Injectable, signal, inject, effect } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
