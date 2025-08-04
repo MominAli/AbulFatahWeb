@@ -1,80 +1,90 @@
 <app-loader [loading]="loading"></app-loader>
 
-<div *ngIf="!loading">
-  <div class="container-fluid px-0">
-    <div class="breadcrumb text-center">
-      <div class="w-100">
-
-        <h1 class="breadcrumb_title">Media Gallery</h1>
-      </div>
+<div *ngIf="!loading" class="container-fluid px-0">
+  <div class="breadcrumb text-center py-3">
+    <div class="w-100">
+      <h1 class="breadcrumb_title">Media Gallery</h1>
     </div>
   </div>
-
 
   <div class="media-section pt-5">
     <div class="container mt-4">
       <div class="tabs-wrapper">
         <div class="row">
+          <!-- Category Tabs -->
           <div class="col-md-4">
             <h2 class="menu-toggle text-primary" (click)="toggleMenu()">Categories</h2>
             <div class="mobile-tabs" [class.show]="mobileTabsVisible">
-              <ul class="nav nav-tabs media-list">
-                <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
-                <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
+              <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
+              <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
+              <ul class="nav nav-tabs media-list flex-column">
                 <li *ngFor="let category of categories; let i = index" class="nav-item">
-                  <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">{{ category }}</a>
+                  <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">
+                    {{ category.label }}
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
 
+          <!-- Content Section -->
           <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="search-box my-3 search-container">
-                  <input type="text" class="form-control" placeholder="Search categories or media..."
-                    [(ngModel)]="searchQuery" (input)="filterResults()" />
-                  <button class="search-btn" id="searchBtn">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </div>
+            <div class="search-box my-3 search-container">
+              <input type="text" class="form-control" placeholder="Search media..."
+                [(ngModel)]="searchQuery" (input)="filterResults()" />
+              <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+              </button>
             </div>
-            <div class="search-container">
-              <div class="tabs-content">
-                <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
-                  [class.show]="i === activeTab" [class.active]="i === activeTab">
-                  <div class="row">
-                    <div *ngFor="
-                        let item of content | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }
-                      " class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
 
-                      <div class="media-card">
-                        <img *ngIf="!item.loaded"
-                          [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
-                          (click)="item.loaded = true" width="180" height="200" alt="Video thumbnail">
-                        <iframe *ngIf="item.loaded" width="180" height="200" [src]="sanitizeUrl(item.url)"
-                          allowfullscreen></iframe>
-                        <p class="media-name">{{ item.name }}</p>
-                      </div>
+            <div class="tabs-content">
+              <div *ngFor="let category of categories; let i = index"
+                class="tab-pane fade"
+                [class.show]="i === activeTab"
+                [class.active]="i === activeTab"
+                [hidden]="i !== activeTab">
+                
+                <div class="row">
+                  <div *ngIf="filteredTabContent[category.label]?.length === 0"
+                    class="text-center w-100 text-muted py-5">
+                    No media available in this category.
+                  </div>
 
+                  <div *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
+                    class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+
+                    <div class="media-card">
+                      <img *ngIf="!item.loaded"
+                        [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
+                        (click)="item.loaded = true"
+                        width="180"
+                        height="200"
+                        alt="Video thumbnail">
+                      <iframe *ngIf="item.loaded" [src]="sanitizeUrl(item.url)"
+                        width="180"
+                        height="200"
+                        allowfullscreen></iframe>
+                      <p class="media-name">{{ item.name }}</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <pagination-controls id="content-pagination" (pageChange)="onPageChange($event)"
-                      previousLabel="Previous" nextLabel="Next">
-                    </pagination-controls>
-                  </div>
+                <div class="text-center mt-3">
+                  <pagination-controls
+                    id="{{ category.label }}"
+                    (pageChange)="onPageChange($event)"
+                    [responsive]="true"
+                    previousLabel="Previous"
+                    nextLabel="Next">
+                  </pagination-controls>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <app-footer></app-footer>
+      <app-footer></app-footer>
+    </div>
   </div>
+</div>

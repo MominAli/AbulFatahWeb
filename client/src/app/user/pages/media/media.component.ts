@@ -18,77 +18,84 @@ import { LoaderComponent } from '../../../shared/components/loader/loader.compon
   styleUrl: './media.component.css'
 })
 
-export class MediaComponent {
-
-  categories: string[] = [];
-  tabContent: any[] = [];
+export class MediaComponent implements OnInit {
+  categories: { title: string; label: string }[] = [];
+  tabContent: { [label: string]: any[] } = {};
+  filteredTabContent: { [label: string]: any[] } = {};
   activeTab = 0;
   searchQuery = '';
-  filteredCategories: string[] = [];
-  filteredTabContent: any[] = [];
+  itemsPerPage = 8;
+currentPages: { [label: string]: number } = {};
+  totalCategories = 0;
   mobileTabsVisible = false;
-  itemsPerPage: number = 8; // Number of items per page
-  currentPage: number = 1;
-  totalCategories: number = this.categories.length;
-  loading: boolean = true;
-
-  toggleMenu() {
-    this.mobileTabsVisible = !this.mobileTabsVisible;
-  }
-
-  changeTab(index: number) {
-    this.activeTab = index;
-    this.mobileTabsVisible = false;
-    this.currentPage = 1; // Reset to first page
-  }
+  loading = true;
 
   constructor(
     private mediadetailsService: MediadetailsService,
-    private router: Router,
     private sanitizer: DomSanitizer
-  ) { }
+  ) {}
+
+  ngOnInit(): void {
+    this.mediadetailsService.getMediaList().subscribe(data => {
+      this.categories = data.categories;
+      this.tabContent = this.initializeItems(data.tabContent);
+      this.filteredTabContent = { ...this.tabContent };
+      this.totalCategories = this.categories.length;
+      this.categories.forEach(cat => {
+  this.currentPages[cat.label] = 1;
+});
+      this.loading = false;
+    });
+  }
+
+  initializeItems(content: { [label: string]: any[] }): { [label: string]: any[] } {
+    const initialized: { [label: string]: any[] } = {};
+    for (const key in content) {
+      initialized[key] = content[key].map(item => ({
+        ...item,
+        loaded: false
+      }));
+    }
+    return initialized;
+  }
+
+  changeTab(index: number): void {
+    this.activeTab = index;
+    this.mobileTabsVisible = false;
+    // this.currentPage = 1;
+  }
+
+  toggleMenu(): void {
+    this.mobileTabsVisible = !this.mobileTabsVisible;
+  }
 
   sanitizeUrl(url: string): SafeResourceUrl {
-    console.log("Original URL:", url);
-    if (url.includes("watch?v=")) {
-      url = url.replace("watch?v=", "embed/");
+    if (url.includes('watch?v=')) {
+      url = url.replace('watch?v=', 'embed/');
     }
-    console.log("Updated URL:", url);
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
+
   extractVideoId(url: string): string {
     const match = url.match(/embed\/([^?]+)/);
     return match ? match[1] : '';
   }
 
-  ngOnInit(): void {
-    this.mediadetailsService.getMediaList().subscribe(data => {
-      this.categories = data.categories;
-      this.totalCategories = this.categories.length;
-      this.loading = false; // Data loaded
-      this.tabContent = data.tabContent;
-      this.filteredCategories = [...this.categories];
-      this.filteredTabContent = [...this.tabContent];
-    });
-  }
   filterResults(): void {
-    this.currentPage = 1; // Reset pagination when filtering
     const query = this.searchQuery.toLowerCase();
-    console.log("Search Query:", query);
+    // this.currentPage = 1;
 
-    this.filteredCategories = this.categories.filter(category =>
-      category.toLowerCase().includes(query)
-    );
-
-    this.filteredTabContent = this.tabContent.map(tab =>
-      tab.filter((item: { name: string; }) => item.name.toLowerCase().includes(query))
-    );
-
-    console.log("Filtered Data:", this.filteredTabContent);
+    this.filteredTabContent = {};
+    for (const label of Object.keys(this.tabContent)) {
+      this.filteredTabContent[label] = this.tabContent[label].filter(item =>
+        item.name.toLowerCase().includes(query)
+      );
+    }
   }
 
-  onPageChange(event: number) {
-    this.currentPage = event; // Update the current page when pagination changes
-  }
+  onPageChange(page: number): void {
+  const activeLabel = this.categories[this.activeTab].label;
+  this.currentPages[activeLabel] = page;
+}
 
 }

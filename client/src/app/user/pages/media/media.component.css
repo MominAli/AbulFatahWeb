@@ -39,7 +39,7 @@
  .media-name {
    font-size: 15px;
    font-weight: 600;
-   color:var(--bg-color);
+   color:var(--primary-color);
    margin: 10px 0;
    text-transform: capitalize;
  }
