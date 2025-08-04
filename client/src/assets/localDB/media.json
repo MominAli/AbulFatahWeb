@@ -1,137 +1,106 @@
 {
   "categories": [
-    
-    "Naat",
-    "Bayan",
-    "Old Bayan",
-    "Muharram (محرم)",
-    "Safar (صفر)",
-    "Rabi al-Awwal (ربيع الأول)",
-    "Rabi al-Thani (ربيع الثاني)",
-    "Jumada al-Awwal (جمادى الأولى)",
-    "Jumada al-Thani (جمادى الآخرة)",
-    "Rajab (رجب)",
-    "Shaban (شعبان)",
-    "Ramadan (رمضان)",
-    "Shawwal (شوال)",
-    "Dhu al-Qadah (ذو القعدة)",
-    "Dhu al-Hijjah (ذو الحجة)"
+    { "title": "Naat", "label": "Latest Naat" },
+    { "title": "Manqabat", "label": "Latest Manqabat" },
+    { "title": "Malange Maula Ali", "label": "Malange Maula Ali" },
+    { "title": "Hussaini Zal Zala", "label": "Hussaini Zal Zala" },
+    { "title": "Jashne Ghausul Wara", "label": "Jashne Ghausul Wara" },
+    { "title": "Huzoor Sher E Hindustan", "label": "Huzoor Sher E Hindustan" },
+    { "title": "Dars e Quran Shareef ", "label": "Dars e Quran Shareef " },
+    { "title": "Islamic Months", "label": "Muharram (محرم)" },
+    { "title": "Islamic Months", "label": "Safar (صفر)" },
+    { "title": "Islamic Months", "label": "Rabi al-Awwal (ربيع الأول)" },
+    { "title": "Islamic Months", "label": "Rabi al-Thani (ربيع الثاني)" },
+    { "title": "Islamic Months", "label": "Jumada al-Awwal (جمادى الأولى)" },
+    { "title": "Islamic Months", "label": "Jumada al-Thani (جمادى الآخرة)" },
+    { "title": "Islamic Months", "label": "Rajab (رجب)" },
+    { "title": "Islamic Months", "label": "Shaban (شعبان)" },
+    { "title": "Islamic Months", "label": "Ramadan (رمضان)" },
+    { "title": "Islamic Months", "label": "Shawwal (شوال)" },
+    { "title": "Islamic Months", "label": "Dhu al-Qadah (ذو القعدة)" },
+    { "title": "Islamic Months", "label": "Dhu al-Hijjah (ذو الحجة)" }
   ],
-    "tabContent": [
-      [
+  "tabContent": {
+    "Latest Naat": [
         {
           "name": "Faaslon ko taqalluf hai humse agar",
           "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
         },
-        {
-          "name": "Huzoor Aisa Koi Intezam Hojaye",
-          "url": "https://www.youtube.com/embed/yIOo1gRbb-U?si=bAYXK1moHW8VZA8w"
-        },
-        {
-          "name": "Maula Ya Salli Wa sallim - Qaseeda Burda Shareef",
-          "url": "https://www.youtube.com/embed/y4LerDDGoNM?si=SlabsW4g1LkljAnM"
-        },
-        {
-          "name": "Sabse Aula wa Aala hamara Nabi",
-          "url": "https://www.youtube.com/embed/ntOvZoTFTRY?si=KDSaN2IrARoFjjQG"
-        },
-        {
-          "name": "Koi Duniya e Ata mai nahi Hamta Tera",
-          "url": "https://www.youtube.com/embed/i8YyekWrbhU?si=fXzHpxMwWIukZUJJ"
-        },
-        {
-          "name": "Dar Bada ho to sawali bhi khada sajta hai",
-          "url": "https://www.youtube.com/embed/-SZajol3vpI?si=NAmIcpqv3Iod4CJ7"
-        },
-        {
-          "name": "Lutf Unka aam Ho hi jayega",
-          "url": "https://www.youtube.com/embed/bzFPkYc6AzM?si=fOWY2jsKC3SoxoMY"
-        },
-        {
-          "name": "Koi Gul baqi rahega na Chaman Reh jayega",
-          "url": "https://www.youtube.com/embed/imgpBLb6g0E?si=KhQ2VRRMIjX3oX-I"
-        },
-        {
-          "name": "Subho taiba mai huwi Batta Hai baada Noor ka",
-          "url": "https://www.youtube.com/embed/FwP6SfqdVlM?si=1_HF7x8lBJRnLzIU"
-        },
-        {
-          "name": "Tere Qadmo mai aana mera kaam tha",
-          "url": "https://www.youtube.com/embed/BaPTR0SSXZo?si=krBvP7wDsuMUjGdt"
-        },
-        {
-          "name": "Shere Sunnat Hain",
-          "url": "https://www.youtube.com/embed/kSOpCVJ-uxM?si=l9xDa5LD-FyQ1tzh"
-        },
-        {
-          "name": "Shere Beshae Ahlesunnat Maulana Hashmat Ali",
-          "url": "https://www.youtube.com/embed/OPu8PjYYW7Y?si=HiIKCqaUDRm5wu9W"
-        },
-        {
-          "name": "Hashmati Rang mai rang jao mere yaar",
-          "url": "https://www.youtube.com/embed/A8sS_qxCWJg?si=7vzaUNSG9-aln0Df"
-        },
-        {
-          "name": "Mazhare Aalahazrat Chale aaiye",
-          "url": "https://www.youtube.com/embed/nnFJwA6vwQg?si=EpgW-sNln-SldjnM"
-        },
-        {
-          "name": "Shere Sunnat rehnuma Hashmat Ali Khan Qadri",
-          "url": "https://www.youtube.com/embed/w-jpQaMBWmM?si=qg5fV9dvvDEqBsb-"
-        },
-        {
-          "name": "Jo tujhe bhool gaya mazhare Aalahazrat",
-          "url": "https://www.youtube.com/embed/mbP0rKor95A?si=X9AzFreEMAm7sek2"
-        },
-        {
-          "name": "Nadroon ko ilm ke moti Aaqa ne Ata kiye",
-          "url": "https://www.youtube.com/embed/Bly17hO2O6A?si=0Dd0pcefjeDYcdKM"
-        },
-        {
-          "name": "Muhammad Hamare Badi shaan wale (Sallallahu Alaihi wasallam)",
-          "url": "https://www.youtube.com/embed/XHvFELfqFkw?si=wH2LHfhM31VyuOsV"
-        },
-        {
-          "name": "Aankho ka tara Naame Muhammad (Sallallahu Alaihi wasallam)",
-          "url": "https://www.youtube.com/embed/jIWQnFVPDLA?si=b1jqCgXNx_Tz54d5"
-        },
-        {
-          "name": "Waah kya ilm Hai hazrate Aala Tera",
-          "url": "https://www.youtube.com/embed/B5ouofBAsJc?si=IS8Nk5JgqvnYd9UN"
-        },
-        {
-          "name": "Chalo Dekhlen wo haqeeqaten jinhe dekhna bhi misaal hai",
-          "url": "https://www.youtube.com/embed/aTcRF2gHf-Q?si=i45LjW8WUqQ48bkA"
-        },
-        {
-          "name": "Tere Jalwo Ki tabani Moinuddin Ajmeri",
-          "url": "https://www.youtube.com/embed/BiR4R6t1Tm4?si=GVlt1jPa9Nu9w8oo"
-        },
-        {
-          "name": "Hazaro mai 72 Tan the tasleem o raza wale",
-          "url": "https://www.youtube.com/embed/t2GPjYft0q4?si=l_kv_q9ntyuVfiRl"
-        },
-        {
-          "name": "Baghe jannat ke hain behre madhkhwane Ahlebait",
-          "url": "https://www.youtube.com/embed/EDyA9Op51uo?si=x1wdPQ52SHVVMet-"
-        },
-        {
-          "name": "Peshe Haq Muzda Shafa'at ka sunate jayenge",
-          "url": "https://www.youtube.com/embed/cBmWTjcxWBk?si=rhXkJVt8u3qFEtE6"
-        },
-        {
-          "name": "Karte hain jinno bashar har waqt charcha Ghous ka",
-          "url": "https://www.youtube.com/embed/3vCZ6Zz8D00?si=knjYd_Nr4omwiFrL"
-        },
-        {
-          "name": "Zameeno zaman tumhare liye",
-          "url": "https://www.youtube.com/embed/CVSJeZf9MG8?si=9eljinBRkKTlm52W"
-        },
-        {
-          "name": "Zeenate Yaseen Tui",
-          "url": "https://www.youtube.com/embed/Pz3MR8Wqblw?si=l51C-Y2QmOb1oHem"
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
         }
-      ]
-    ]
+    ],
+    "Latest Manqabat": [],
+    "Malange Maula Ali": [],
+    "Hussaini Zal Zala": [],
+    "Jashne Ghausul Wara": [],
+    "Huzoor Sher E Hindustan": [],
+    "Dars e Quran Shareef ": [
+       {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },{
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        },
+          {
+          "name": "Faaslon ko taqalluf hai humse agar",
+          "url": "https://www.youtube.com/embed/GZkbK1NXuas?si=OmuTbMDXgrzSfdRE"
+        }
+
+    ],
+    "Muharram (محرم)": [],
+    "Safar (صفر)": [],
+    "Rabi al-Awwal (ربيع الأول)": [],
+    "Rabi al-Thani (ربيع الثاني)": [],
+    "Jumada al-Awwal (جمادى الأولى)": [],
+    "Jumada al-Thani (جمادى الآخرة)": [],
+    "Rajab (رجب)": [],
+    "Shaban (شعبان)": [],
+    "Ramadan (رمضان)": [],
+    "Shawwal (شوال)": [],
+    "Dhu al-Qadah (ذو القعدة)": [],
+    "Dhu al-Hijjah (ذو الحجة)": []
   }
-  
+}
+
