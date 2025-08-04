@@ -9,14 +9,14 @@ img {
 }
 
 .bg-nav {
-    background-color: #157784;
+    background-color: #fff;
 }
 .navbar .navbar-nav .nav-link {
-    color: #fff !important;
+    color: #157784 !important;
 }
 
 .navbar .navbar-nav .nav-link.active {
-    color: #fcbb2c  !important;
+    color: 157784  !important;
 }
 
     .navbarTop {
