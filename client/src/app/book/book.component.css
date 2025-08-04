@@ -198,7 +198,7 @@
     font-size: 3rem;
 }
 .search-container {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto 50px;
     position: relative;
 }

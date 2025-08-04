@@ -28,10 +28,18 @@
           </div>
 
           <div class="col-md-8">
-            <div class="search-container">
-              <input type="text" class="form-control" placeholder="Search categories or media..."
+             <div class="row">
+        <div class="col-md-12">
+             <div class="search-box my-3 search-container">
+             <input type="text" class="form-control" placeholder="Search categories or media..."
                 [(ngModel)]="searchQuery" (input)="filterResults()" />
-
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+            <div class="search-container">
               <div class="tabs-content">
                 <div *ngFor="let content of tabContent; let i = index" class="tab-pane fade"
                   [class.show]="i === activeTab" [class.active]="i === activeTab">
