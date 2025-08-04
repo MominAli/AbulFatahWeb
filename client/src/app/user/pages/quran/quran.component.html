@@ -1,6 +1,5 @@
-<div *ngIf="loading" class="loading-container">
-  <img src="../../../../assets/img/logo/images.jpg" alt="Loading..." />
-</div>
+<app-loader [loading]="loading"></app-loader>
+<div *ngIf="!loading">
 
 <div class="container-fluid px-0">
   <div class="breadcrumb text-center">
@@ -87,5 +86,6 @@
       </div>
     </div>
   </section>
-  <app-footer></app-footer>
 </div>
+</div>
+  <app-footer></app-footer>

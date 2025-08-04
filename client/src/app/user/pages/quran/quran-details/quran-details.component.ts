@@ -7,10 +7,12 @@ import { ddlPara, ddlSurah, ddlQari, QurandetailsService, Surah, Para } from '..
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from '../../../../shared/components/loader/loader.component';
+import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 @Component({
   selector: 'app-quran-details',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NgxExtendedPdfViewerModule, FooterComponent,FormsModule],
+  imports: [LoaderComponent, CommonModule, RouterOutlet, NgxExtendedPdfViewerModule, FooterComponent,FormsModule],
 
   templateUrl: './quran-details.component.html',
   styleUrl: './quran-details.component.css'
@@ -28,38 +30,51 @@ export class QuranDetailsComponent {
   audioUrl: string = '';
   pdfUrl: string = '';
 
+  loading: boolean = true;
+
 
   constructor(private qurandetailsService: QurandetailsService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.qurandetailsService.getddlSurahLists().subscribe((data) => { this.ddlSurah = data; });
-    this.qurandetailsService.getddlParaLists().subscribe((data) => { this.ddlPara = data; });
-    this.qurandetailsService.getddlQariLists().subscribe((data) => { this.ddlQari = data; });
+  this.loading = true;
 
-    // Fetch Surah List
-    this.qurandetailsService.getSurahLists().subscribe((data) => {
-      this.surahLists = data;
-    });
+  // Run all data fetches in parallel and wait for completion
+  forkJoin({
+    ddlSurah: this.qurandetailsService.getddlSurahLists(),
+    ddlPara: this.qurandetailsService.getddlParaLists(),
+    ddlQari: this.qurandetailsService.getddlQariLists(),
+    surahLists: this.qurandetailsService.getSurahLists(),
+    paraLists: this.qurandetailsService.getParaLists()
+  }).subscribe({
+    next: (result) => {
+      this.ddlSurah = result.ddlSurah;
+      this.ddlPara = result.ddlPara;
+      this.ddlQari = result.ddlQari;
+      this.surahLists = result.surahLists;
+      this.paraLists = result.paraLists;
+    },
+    error: (err) => {
+      console.error('Error loading Quran lists:', err);
+    },
+    complete: () => {
+      this.loading = false;
+    }
+  });
 
-    // Fetch Para List
-    this.qurandetailsService.getParaLists().subscribe((data) => {
-      this.paraLists = data;
-    });
-    this.route.queryParams.subscribe(params => {
-      this.pdfUrl = params['pdf'] || '';
-      this.audioUrl = params['audio'] || '';
-      const selectedType = params['type'];
-      const selectedValue = params['value'];
+  // Handle route query parameters separately
+  this.route.queryParams.subscribe(params => {
+    this.pdfUrl = params['pdf'] || '';
+    this.audioUrl = params['audio'] || '';
+    const selectedType = params['type'];
+    const selectedValue = params['value'];
 
-      if (selectedType === 'para') {
-        this.selectedPara = selectedValue;
-      } else if (selectedType === 'surah') {
-        this.selectedSurah = selectedValue;
-      }
-    });
-
-
-  }
+    if (selectedType === 'para') {
+      this.selectedPara = selectedValue;
+    } else if (selectedType === 'surah') {
+      this.selectedSurah = selectedValue;
+    }
+  });
+}
 
   onParaChange(event: any) {
     const selected = this.paraLists.find(p => p.paraNumber === event.target.value);
