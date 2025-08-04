@@ -1,0 +1,32 @@
+.activities-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.readMore {
+   background: linear-gradient(45deg, #27ae60, #219653);
+    transform: translateY(-2px);
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.activities .activities-item h4 {
+    color: #000;
+}
+
+.activities .activities-item:hover h4 {
+    color: #fff;
+}

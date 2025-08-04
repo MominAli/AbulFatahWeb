@@ -7,3 +7,35 @@ img {
     border: 2px solid var(--bg-color);
     display: inline;
 }
+
+.bg-nav {
+    background-color: #157784;
+}
+.navbar .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #fcbb2c  !important;
+}
+
+    .navbarTop {
+      transition: all 0.3s ease-in-out;
+    }
+    .navbarTop.fixed-top.animate {
+      animation: slideDown 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    body.has-fixed-navbar {
+      padding-top: 70px; 
+    }

@@ -6,3 +6,22 @@
         margin-top: -30px;
     }
 }
+
+.maincarousel .carousel-caption {
+   position: absolute;
+    top: 33%;
+}
+
+
+.maincarousel .carousel-caption h1  {
+   color: #fff;
+   font-size: 3.1rem;
+   text-transform: capitalize;
+
+}
+.maincarousel .carousel-caption p  {
+   color: #fff;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+
+}

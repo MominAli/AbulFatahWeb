@@ -1,12 +1,15 @@
 /* Responsive Styling for Cards */
+
+
 .book-card {
-   border: 1px solid var(--secondary-color);
-   border-radius: 12px;
-   background:var(--bg-color);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   overflow: hidden;
-   box-shadow: 0 2px 4px var(--secondary-color);
-   max-width: 100%; /* Ensure cards fit within smaller screens */
+  background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .book-card:hover {
@@ -18,16 +21,35 @@
 
 /* Adjust Image Styling for Responsive Design */
 .card-img-wrapper {
-   height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background:var(--bg-color);
-   padding: 8px; /* Add padding to ensure space around the image */
+  height: 200px;
+  background: linear-gradient(45deg, #dedede, #dcdddf);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    transform: rotate(30deg);
+}
+
+.book-card .card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {
-   max-height: 180px; /* Reduce height for mobile screens */
+   max-height: 97px; /* Reduce height for mobile screens */
    max-width: 90%;
    object-fit: contain;
    border-radius: 4px;
@@ -38,9 +60,21 @@
    transform: scale(1.05);
 }
 
+.book-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #f39c12;
+    font-size: 12px;
+}
+
+.rating-text {
+    color: #7f8c8d;
+    margin-left: 5px;
+}
 /* Responsive Typography */
 .card-title {
-   font-size: 14px; /* Smaller font size for mobile screens */
+   font-size: 18px; /* Smaller font size for mobile screens */
    font-weight: 600;
    color: var(--text-color);
    margin: 10px 0;
@@ -49,11 +83,23 @@
 
 /* Buttons */
 .btn {
-   font-size: 12px; /* Reduce button font size for smaller screens */
+
    padding: 6px 10px;
    border-radius: 6px;
    font-weight: 500;
+   background: linear-gradient(45deg, #3498db, #157784);
+   color: white;
+    box-shadow: 0 3px 10px rgba(21, 119, 132, 0.3);
+    font-size: 14px;
+  
 }
+
+.btn-read {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+    box-shadow: 0 3px 10px rgba(46, 204, 113, 0.3);
+}
+
 
 .btn-outline-dark {
    border: 1px solidvar(--secondary-color);
@@ -134,4 +180,75 @@
    height: 100vh; /* Full viewport height */
  }
 
- 
+.breadcrumb {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb {
+    background: url(//bookly-theme.myshopify.com/cdn/shop/files/about-10_1.jpg?v=1678773087&width=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.breadcrumb:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #d8d8d8;
+    opacity: .81;
+}
+.breadcrumb .breadcrumb_title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.breadcrumb a, .breadcrumb span {
+    display: inline-block;
+    margin-top: 1rem;
+}
+.breadcrumb a, .breadcrumb span {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+.search-container input{
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-container .search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(45deg, #157784, #157784);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

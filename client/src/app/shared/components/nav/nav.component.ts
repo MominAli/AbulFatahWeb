@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AccountService } from '../../../admin/services/account.service';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -10,6 +10,8 @@ import { MultiLangService } from '../../../multi-lang.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
+
+
 
 // Refernce vido https://www.youtube.com/watch?v=YE2fXVFq3lo&t=1349ss
 @Component({
@@ -23,6 +25,21 @@ import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+
+@HostListener('window:scroll', [])
+  onWindowScroll() {
+    const navbar = document.getElementById('mainNavbar');
+    if (!navbar) return;
+
+    if (window.scrollY > 100) {
+      navbar.classList.add('fixed-top', 'animate');
+      document.body.classList.add('has-fixed-navbar');
+    } else {
+      navbar.classList.remove('fixed-top', 'animate');
+      document.body.classList.remove('has-fixed-navbar');
+    }
+  }
+
 
   multiLangService = inject(MultiLangService);
   selectedLanguageName: string = 'English'; // Default language name
