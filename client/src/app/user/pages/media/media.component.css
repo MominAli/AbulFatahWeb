@@ -162,6 +162,22 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.media-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 15px;
+  line-height: 1.4em;
+  height: 3.8em;               /* 1.4em * 2 lines = full two lines */
+  width: 180px;               /* Match thumbnail width */
+  margin: 8px auto 0;
+  text-align: center;
+  word-break: break-word;
+}
+
 
 /* Desktop View (default) - 4 images per row */
 @media (min-width: 992px) {
