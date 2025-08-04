@@ -33,7 +33,7 @@ export interface Book {
 
 export class BookdetailsService {
 
-  private dataUrl = 'assets/books.json'; // Path to the JSON file
+  private dataUrl = 'assets/localDB/books.json'; // Path to the JSON file
 
   constructor(private http: HttpClient) { }
 

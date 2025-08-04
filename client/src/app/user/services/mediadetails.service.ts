@@ -16,7 +16,7 @@ import { Observable } from 'rxjs';
 })
 export class MediadetailsService {
 
-  private dataUrl = 'assets/media.json'; // Path to the JSON file
+  private dataUrl = 'assets/localDB/media.json'; // Path to the JSON file
 
   constructor(private http: HttpClient) {}
 

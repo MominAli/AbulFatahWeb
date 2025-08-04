@@ -48,7 +48,7 @@ export interface ddlQari {
 })
 export class QurandetailsService {
 
-  private readonly dataUrl = 'assets/quran.json';
+  private readonly dataUrl = 'assets/localDB/quran.json';
 
   constructor(private http: HttpClient) { }
 
