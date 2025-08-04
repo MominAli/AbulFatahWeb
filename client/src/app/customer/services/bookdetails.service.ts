@@ -38,7 +38,6 @@ export class BookdetailsService {
   constructor(private http: HttpClient) { }
 
   getBookList(): Observable<any> {
-    debugger;
     console.log('Fetching books.json from:', this.dataUrl);
     return this.http.get<any>(this.dataUrl);
   }

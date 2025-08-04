@@ -60,18 +60,6 @@
    transform: scale(1.05);
 }
 
-.book-rating {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    color: #f39c12;
-    font-size: 12px;
-}
-
-.rating-text {
-    color: #7f8c8d;
-    margin-left: 5px;
-}
 /* Responsive Typography */
 .card-title {
    font-size: 18px; /* Smaller font size for mobile screens */

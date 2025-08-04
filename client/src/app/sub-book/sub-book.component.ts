@@ -30,7 +30,6 @@ export class SubBookComponent {
   books: any[] = [];
 
   ngOnInit(): void {
-    debugger;
     const bookId = Number(this.route.snapshot.paramMap.get('bookId'));
 
     this.bookdetailsService.getBookList().subscribe({

@@ -45,7 +45,6 @@ export class QuranDetailsComponent {
     this.qurandetailsService.getParaLists().subscribe((data) => {
       this.paraLists = data;
     });
-debugger;
     this.route.queryParams.subscribe(params => {
       this.pdfUrl = params['pdf'] || '';
       this.audioUrl = params['audio'] || '';
