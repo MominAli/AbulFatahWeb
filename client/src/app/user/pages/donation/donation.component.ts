@@ -4,7 +4,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 @Component({
   selector: 'app-donation',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './donation.component.html',
   styleUrl: './donation.component.css'
 })

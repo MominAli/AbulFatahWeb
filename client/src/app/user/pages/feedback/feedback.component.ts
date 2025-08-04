@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-feedback',
+  imports: [FooterComponent],
+  standalone: true,
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.css']
 })

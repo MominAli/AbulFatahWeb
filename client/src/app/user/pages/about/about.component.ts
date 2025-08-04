@@ -9,5 +9,5 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+ 
 }
