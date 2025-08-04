@@ -8,11 +8,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { MediadetailsService } from '../../services/mediadetails.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [LoaderComponent, FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })

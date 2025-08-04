@@ -1,7 +1,5 @@
-<!-- <div  class="loading-container">
-    <img src="../../../../assets/img/logo/images.jpg" alt="Loading..."  />
-  </div> -->
-
+<app-loader [loading]="loading"></app-loader>
+<div *ngIf="!loading">
 <div class="container-fluid px-0">
 <div class="breadcrumb text-center">
 <div class="w-100">
@@ -58,5 +56,6 @@
             previousLabel="Pervious" nextLabel="Next">
         </pagination-controls>
     </div>
+</div>
 </div>
 <app-footer></app-footer>

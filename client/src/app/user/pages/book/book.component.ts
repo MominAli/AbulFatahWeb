@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
+import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [LoaderComponent,FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
@@ -31,6 +32,8 @@ export class BookComponent {
       next: data => {
         this.books = data;
         console.log('Books loaded:', data);
+      this.loading = false; // Data loaded
+
       },
       error: err => {
         console.error('Error loading books:', err);
