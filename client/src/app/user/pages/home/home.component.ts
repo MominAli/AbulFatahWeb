@@ -6,7 +6,7 @@ import { EventsComponent } from '../events/events.component';
 import { MediaComponent } from '../media/media.component';
 import { Router } from '@angular/router';
 import { CarouselComponent } from '../../../shared/components/carousel/carousel.component';
-import { BookComponent } from '../../../book/book.component';
+import { BookComponent } from '../../pages/book/book.component';
 
 @Component({
     selector: 'app-home',

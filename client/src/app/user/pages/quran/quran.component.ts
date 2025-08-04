@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Surah, Para, QurandetailsService } from '../../../customer/services/qurandetails.service';
+import { Surah, Para, QurandetailsService } from '../../services/qurandetails.service';
 import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 @Component({

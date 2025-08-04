@@ -6,10 +6,7 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { HasRoleDirective } from '../../../shared/directives/has-role.directive';
 import { RegisterComponent } from '../../../admin/pages/register/register.component';
-import { MultiLangService } from '../../../multi-lang.service';
-import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 
 
@@ -18,9 +15,9 @@ import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
   selector: 'app-nav',
   standalone: true,
   imports: [
-    TranslateModule, CommonModule,FormsModule, BsDropdownModule,
+     CommonModule,FormsModule, BsDropdownModule,
      RouterLink, RouterLinkActive, HasRoleDirective,
-     RegisterComponent,ThemeToggleComponent],
+     RegisterComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
@@ -39,42 +36,6 @@ export class NavComponent {
       document.body.classList.remove('has-fixed-navbar');
     }
   }
-
-
-  multiLangService = inject(MultiLangService);
-  selectedLanguageName: string = 'English'; // Default language name
-
-  
-  toggleLanguage(language: string): void {
-    if (this.multiLangService.languageSingnal() !== language) {
-      this.multiLangService.updateLanguage(language);
-      this.selectedLanguageName = this.getLanguageName(language);
-      console.log('Language changed to ', language);
-
-    }
-  }
-  // Method to get language name based on language code
-  getLanguageName(language: string): string {
-    const languageNames: { [key: string]: string } = {
-      en: 'English',
-      ur: 'Urdu',
-      hi: 'Hindi',
-      ar: 'Arabic'
-    };
-    return languageNames[language] || 'Unknown';
-  }
-  
-  // Method to get CSS class for language icons
-  getLanguageIconClass(language: string): string {
-    const languageIcons: { [key: string]: string } = {
-      en: 'fi-us',
-      ur: 'fi-pk',
-      hi: 'fi-in',
-      ar: 'fi-sa'
-    };
-    return languageIcons[language] || '';
-  }
-  
   accountService = inject(AccountService);
   private router = inject(Router)
   private toastr = inject(ToastrService);

@@ -9,21 +9,21 @@ import { MemberEditComponent } from '../app/admin/pages/members/member-edit/memb
 import { memberDetailedResolver } from '../app/core/guards/_resolvers/member-detailed.resolver';
 import { AdminPanelComponent } from '../app/admin/pages/admin-panel/admin-panel.component';
 
-/* customer module */
+/* user module */
 
-import { HomeComponent } from '../app/customer/pages/home/home.component';
-import { ActivityComponent } from '../app/customer/pages/activity/activity.component';
-import { QuranDetailsComponent } from '../app/customer/pages/quran/quran-details/quran-details.component';
-import { AboutComponent } from '../app/customer/pages/about/about.component';
-import { FeedbackComponent } from '../app/customer/pages/feedback/feedback.component';
-import { DonationComponent } from '../app/customer/pages/donation/donation.component';
-import { BiograhpyComponent } from '../app/customer/pages/biograhpy/biograhpy.component';
-import { MediaComponent } from '../app/customer/pages/media/media.component';
-import { QuranComponent } from '../app/customer/pages/quran/quran.component';
-import { ContactComponent } from '../app/customer/pages/contact/contact.component';
-import { BookComponent } from './book/book.component';
-import { BookDetailsComponent } from './book-details/book-details.component';
-import { SubBookComponent } from './sub-book/sub-book.component';
+import { HomeComponent } from '../app/user/pages/home/home.component';
+import { ActivityComponent } from '../app/user/pages/activity/activity.component';
+import { QuranDetailsComponent } from '../app/user/pages/quran/quran-details/quran-details.component';
+import { AboutComponent } from '../app/user/pages/about/about.component';
+import { FeedbackComponent } from '../app/user/pages/feedback/feedback.component';
+import { DonationComponent } from '../app/user/pages/donation/donation.component';
+import { BiograhpyComponent } from '../app/user/pages/biograhpy/biograhpy.component';
+import { MediaComponent } from '../app/user/pages/media/media.component';
+import { QuranComponent } from '../app/user/pages/quran/quran.component';
+import { ContactComponent } from '../app/user/pages/contact/contact.component';
+import { BookComponent } from '../app/user/pages//book/book.component';
+import { BookDetailsComponent } from '../app/user/pages//book-details/book-details.component';
+import { SubBookComponent } from '../app/user/pages//sub-book/sub-book.component';
 
 /* shared module */
 

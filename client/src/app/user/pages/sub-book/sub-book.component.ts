@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BookdetailsService } from '../../../src/app/customer/services/bookdetails.service';
+import { BookdetailsService } from '../../services/bookdetails.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NgxPaginationModule } from 'ngx-pagination';
-import { FooterComponent } from '../../../src/app/shared/components/footer/footer.component';
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-sub-book',

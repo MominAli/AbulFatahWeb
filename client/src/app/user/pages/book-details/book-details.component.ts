@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BookdetailsService } from '../../../src/app/customer/services/bookdetails.service';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
+import { BookdetailsService } from '../../services/bookdetails.service';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
-import { FooterComponent } from '../../../src/app/shared/components/footer/footer.component';
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 
 
 export interface SubBook {

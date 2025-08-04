@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ddlPara, ddlSurah, ddlQari, QurandetailsService, Surah, Para } from '../../../../customer/services/qurandetails.service';
+import { ddlPara, ddlSurah, ddlQari, QurandetailsService, Surah, Para } from '../../../services/qurandetails.service';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
