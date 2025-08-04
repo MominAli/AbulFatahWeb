@@ -197,15 +197,6 @@
     font-weight: 600;
     font-size: 3rem;
 }
-.breadcrumb a, .breadcrumb span {
-    display: inline-block;
-    margin-top: 1rem;
-}
-.breadcrumb a, .breadcrumb span {
-    display: inline-block;
-    margin-top: 1rem;
-}
-
 .search-container {
     max-width: 600px;
     margin: 0 auto 50px;
