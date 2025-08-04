@@ -4,7 +4,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 @Component({
   selector: 'app-biograhpy',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent],
   templateUrl: './biograhpy.component.html',
   styleUrl: './biograhpy.component.css'
 })
