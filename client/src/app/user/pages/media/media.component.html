@@ -1,10 +1,8 @@
 <app-loader [loading]="loading"></app-loader>
 
 <div *ngIf="!loading" class="container-fluid px-0">
-<app-hero-banner
-  [title]="'Media Library'"
-  [subtitle]="'Explore, media, and download your favorite media'">
-</app-hero-banner>
+  <app-hero-banner [title]="'Media Library'" [subtitle]="'Explore, media, and download your favorite media'">
+  </app-hero-banner>
 
   <div class="media-section pt-5">
     <div class="container mt-4">
@@ -29,52 +27,51 @@
           <!-- Content Section -->
           <div class="col-md-8">
             <div class="search-box my-3 search-container">
-              <input type="text" class="form-control" placeholder="Search media..."
-                [(ngModel)]="searchQuery" (input)="filterResults()" />
+              <input type="text" class="form-control" placeholder="Search media..." [(ngModel)]="searchQuery"
+                (input)="filterResults()" />
               <button class="search-btn" id="searchBtn">
                 <i class="fas fa-search"></i>
               </button>
             </div>
 
             <div class="tabs-content">
-              <div *ngFor="let category of categories; let i = index"
-                class="tab-pane fade"
-                [class.show]="i === activeTab"
-                [class.active]="i === activeTab"
-                [hidden]="i !== activeTab">
-                
+              <div *ngFor="let category of categories; let i = index" class="tab-pane fade"
+                [class.show]="i === activeTab" [class.active]="i === activeTab" [hidden]="i !== activeTab">
                 <div class="row">
-                  <div *ngIf="filteredTabContent[category.label]?.length === 0"
+                  <!-- Offline Message -->
+                  <div *ngIf="!isOnline" class="text-center w-100 text-muted py-5">
+                    You are currently offline. Media content is unavailable.
+                  </div>
+
+                  <!-- No Media Message -->
+                  <div *ngIf="isOnline && filteredTabContent[category.label]?.length === 0"
                     class="text-center w-100 text-muted py-5">
                     No media available in this category.
                   </div>
 
-                  <div *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
-                    class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
+                  <!-- Media Cards -->
+                  <ng-container *ngIf="isOnline">
+                    <div
+                      *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
+                      class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center grid-item my-2 px-2">
 
-                    <div class="media-card">
-                      <img *ngIf="!item.loaded"
-                        [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
-                        (click)="item.loaded = true"
-                        width="180"
-                        height="200"
-                        alt="Video thumbnail">
-                      <iframe *ngIf="item.loaded" [src]="sanitizeUrl(item.url)"
-                        width="180"
-                        height="200"
-                        allowfullscreen></iframe>
-                      <p class="media-name">{{ item.name }}</p>
+                      <div class="media-card">
+                        <img *ngIf="!item.loaded"
+                          [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
+                          (click)="item.loaded = true" width="180" height="200" alt="Video thumbnail">
+                        <iframe *ngIf="item.loaded" [src]="sanitizeUrl(item.url)" width="180" height="200"
+                          allowfullscreen></iframe>
+                        <p class="media-name">{{ item.name }}</p>
+                      </div>
                     </div>
-                  </div>
+                  </ng-container>
                 </div>
 
+
+
                 <div class="text-center mt-3">
-                  <pagination-controls
-                    id="{{ category.label }}"
-                    (pageChange)="onPageChange($event)"
-                    [responsive]="true"
-                    previousLabel="Previous"
-                    nextLabel="Next">
+                  <pagination-controls id="{{ category.label }}" (pageChange)="onPageChange($event)" [responsive]="true"
+                    previousLabel="Previous" nextLabel="Next">
                   </pagination-controls>
                 </div>
               </div>

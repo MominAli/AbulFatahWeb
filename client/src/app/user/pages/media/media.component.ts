@@ -56,6 +56,15 @@ export class MediaComponent implements OnInit {
         this.loading = false;
       }
     });
+        window.addEventListener('online', () => this.isOnline = true);
+    window.addEventListener('offline', () => this.isOnline = false);
+  }
+   isOnline: boolean = navigator.onLine;
+
+
+  ngOnDestroy() {
+    window.removeEventListener('online', () => this.isOnline = true);
+    window.removeEventListener('offline', () => this.isOnline = false);
   }
 
   private initializeItems(content: Record<string, any[]>): Record<string, any[]> {
