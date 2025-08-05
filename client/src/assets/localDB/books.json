@@ -9,25 +9,25 @@
         "id": 101,
         "title": "Volume 1",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 102,
         "title": "Volume 2",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 103,
         "title": "Volume 3",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 104,
         "title": "Volume 4",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 105,
@@ -39,31 +39,31 @@
         "id": 106,
         "title": "Volume 6",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 107,
         "title": "Volume 7",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 108,
         "title": "Volume 8",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 109,
         "title": "Volume 9",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       },
       {
         "id": 110,
         "title": "Volume 10",
         "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-        "pdfPath": ""
+        "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf"
       }
     ]
   },
@@ -72,7 +72,7 @@
     "title": "Simple Book 2",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -80,7 +80,7 @@
     "title": "Simple Book 3",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -88,7 +88,7 @@
     "title": "Simple Book 4",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -96,7 +96,7 @@
     "title": "Simple Book 5",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -104,7 +104,7 @@
     "title": "Simple Book 6",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -112,7 +112,7 @@
     "title": "Simple Book 7",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -120,7 +120,7 @@
     "title": "Simple Book 8",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -128,7 +128,7 @@
     "title": "Simple Book 9",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -136,7 +136,7 @@
     "title": "Simple Book 10",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -144,7 +144,7 @@
     "title": "Simple Book 11",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   },
   {
@@ -152,7 +152,7 @@
     "title": "Simple Book 12",
     "hasChildren": false,
     "img": "assets/img/books/FutuhaatAbulFatah/01_main_cover.png",
-    "pdfPath": "",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
     "subBooks": []
   }
 ]
