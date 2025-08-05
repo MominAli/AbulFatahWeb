@@ -8,11 +8,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 import { MediadetailsService } from '../../services/mediadetails.service';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-media',
   standalone: true,
-  imports: [LoaderComponent, FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [LoaderComponent, FooterComponent,HeroBannerComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })

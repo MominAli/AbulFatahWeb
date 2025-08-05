@@ -1,11 +1,9 @@
 <app-loader [loading]="loading"></app-loader>
 <div *ngIf="!loading">
-<section class="hero-section">
-    <div class="container text-center">
-      <h1 class="hero-title">📚 Books Library</h1>
-      <p class="hero-subtitle">Explore, read, and download your favorite books</p>
-    </div>
-  </section>
+    <app-hero-banner
+  [title]="'Books Library'"
+  [subtitle]="'Explore, read, and download your favorite books'">
+</app-hero-banner>
 
 <div class="container">
     <!-- Book Grid -->

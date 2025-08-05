@@ -9,10 +9,11 @@ import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from '../../../../shared/components/loader/loader.component';
 import { forkJoin } from 'rxjs/internal/observable/forkJoin';
+import { HeroBannerComponent } from '../../../../shared/components/hero-banner/hero-banner.component';
 @Component({
   selector: 'app-quran-details',
   standalone: true,
-  imports: [LoaderComponent, CommonModule, RouterOutlet, NgxExtendedPdfViewerModule, FooterComponent,FormsModule],
+  imports: [LoaderComponent,HeroBannerComponent, CommonModule, RouterOutlet, NgxExtendedPdfViewerModule, FooterComponent,FormsModule],
 
   templateUrl: './quran-details.component.html',
   styleUrl: './quran-details.component.css'

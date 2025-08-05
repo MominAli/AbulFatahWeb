@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-feedback',
-  imports: [FooterComponent],
+  imports: [FooterComponent,HeroBannerComponent],
   standalone: true,
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.css']

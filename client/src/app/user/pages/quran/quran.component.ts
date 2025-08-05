@@ -6,11 +6,12 @@ import { forkJoin } from 'rxjs';
 import { Surah, Para, QurandetailsService } from '../../services/qurandetails.service';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-quran',
   standalone: true,
-  imports: [FooterComponent, CommonModule, LoaderComponent],
+  imports: [FooterComponent,HeroBannerComponent, CommonModule, LoaderComponent],
   templateUrl: './quran.component.html',
   styleUrl: './quran.component.css'
 })

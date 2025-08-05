@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-sub-book',
   standalone: true,
-  imports: [FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [FooterComponent, CommonModule,HeroBannerComponent, FormsModule, NgxPaginationModule],
   templateUrl: './sub-book.component.html',
   styleUrl: './sub-book.component.css'
 })

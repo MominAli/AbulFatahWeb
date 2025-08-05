@@ -1,108 +1,104 @@
-
+/* ============================= */
+/* 📖 BIOGRAPHY BOX */
+/* ============================= */
 .biography-box {
-    box-shadow: 0 0 15px var(--secondary-color);
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
- }
- 
- .biography-box h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-align: center;
- }
- 
- .biography-box .accordion-button {
-    box-shadow: none !important;
-    background-color: var(--light-secondary-color) !important;
-    color: var(--primary-color) !important;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0px 0px 10px;
-    border-radius: 9px !important;
- }
- .biography-box .accordion-button::after {
-    color: var(--bg-color)!important;
- }
- 
- .biography-box .accordion-item {
-    border: none;
- }
- 
- .biography-img {
-    width: fit-content;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 2px solid var(--primary-color);
-    overflow: hidden;
- }
- .biography-img img {
-    width: 120px;
- }
- .content-text {
-    margin-top: 20px;
-    border-top: 1px solid;
-    padding: 15px;
- }
- .content-text .biography-text {
-    font-size: 16px;
- }
- .biography-card {
-    padding-top: 20px;
-    border-radius: 20px;
-    height: 100% !important;
-    flex: 1;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, .16) 0 3px 6px, rgba(0, 0, 0, .23) 0 3px 6px;
- }
- 
- .content-text .title {
-    width: 40%;
-    white-space: nowrap;
-    font-weight: 700;
-    color: var(--text-color);
- }
- .content-text .text {
-    width: 60%;
-    text-align: left;
-    color:var(--text-color);
- }
- .content-text h2 {
-    font-size: 16px;
-    margin-bottom: 12px;
-    display: flex;
-    font-weight: 700;
-    text-align: left;
-    
- }
- .breadcrumb {
-    padding-top: 85px;
-    padding-bottom: 85px;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 1;
+  box-shadow: 0 0 15px var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
 }
-.breadcrumb {
-    background: url(//bookly-theme.myshopify.com/cdn/shop/files/about-10_1.jpg?v=1678773087&width=1920);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.biography-box h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
 }
-.breadcrumb:before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background: #d8d8d8;
-    opacity: .81;
+
+/* ============================= */
+/* 📂 ACCORDION STYLES */
+/* ============================= */
+.biography-box .accordion-item {
+  border: none;
 }
-.breadcrumb .breadcrumb_title {
-    margin: 0;
-    font-weight: 600;
-    font-size: 3rem;
+
+.biography-box .accordion-button {
+  background-color: var(--light-secondary-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  box-shadow: none;
 }
+
+.biography-box .accordion-button::after {
+  color: var(--bg-color);
+}
+
+/* ============================= */
+/* 🖼️ BIOGRAPHY IMAGE */
+/* ============================= */
+.biography-img {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  overflow: hidden;
+}
+
+.biography-img img {
+  width: 120px;
+  display: block;
+}
+
+/* ============================= */
+/* 📝 BIOGRAPHY CARD */
+/* ============================= */
+.biography-card {
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ============================= */
+/* 📄 CONTENT TEXT */
+/* ============================= */
+.content-text {
+  margin-top: 20px;
+  border-top: 1px solid var(--secondary-color);
+  padding: 15px;
+}
+
+.content-text .biography-text {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.content-text h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  display: flex;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.content-text .title {
+  width: 40%;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--text-color);
+}
+
+.content-text .text {
+  width: 60%;
+  text-align: left;
+  color: var(--text-color);
+}
+

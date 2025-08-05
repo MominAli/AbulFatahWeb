@@ -6,11 +6,12 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [LoaderComponent, FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [LoaderComponent,HeroBannerComponent, FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })

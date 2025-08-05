@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
+import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
 
 export interface SubBook {
@@ -25,7 +26,7 @@ export interface Book {
 @Component({
   selector: 'app-book-details',
   standalone: true,
-  imports: [LoaderComponent, CommonModule,FormsModule,FooterComponent,NgxExtendedPdfViewerModule],
+  imports: [LoaderComponent,HeroBannerComponent, CommonModule,FormsModule,FooterComponent,NgxExtendedPdfViewerModule],
   templateUrl: './book-details.component.html',
   styleUrl: './book-details.component.css'
 })
