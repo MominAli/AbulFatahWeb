@@ -8,17 +8,8 @@
     { "title": "Huzoor Sher E Hindustan", "label": "Huzoor Sher E Hindustan" },
     { "title": "Dars e Quran Shareef ", "label": "Dars e Quran Shareef " },
     { "title": "Islamic Months", "label": "Muharram (محرم)" },
-    { "title": "Islamic Months", "label": "Safar (صفر)" },
     { "title": "Islamic Months", "label": "Rabi al-Awwal (ربيع الأول)" },
-    { "title": "Islamic Months", "label": "Rabi al-Thani (ربيع الثاني)" },
-    { "title": "Islamic Months", "label": "Jumada al-Awwal (جمادى الأولى)" },
-    { "title": "Islamic Months", "label": "Jumada al-Thani (جمادى الآخرة)" },
-    { "title": "Islamic Months", "label": "Rajab (رجب)" },
-    { "title": "Islamic Months", "label": "Shaban (شعبان)" },
-    { "title": "Islamic Months", "label": "Ramadan (رمضان)" },
-    { "title": "Islamic Months", "label": "Shawwal (شوال)" },
-    { "title": "Islamic Months", "label": "Dhu al-Qadah (ذو القعدة)" },
-    { "title": "Islamic Months", "label": "Dhu al-Hijjah (ذو الحجة)" }
+    { "title": "Islamic Months", "label": "Rabi al-Thani (ربيع الثاني)" }
   ],
   "tabContent": {
     "Latest Naat": [
@@ -542,17 +533,8 @@
     "url": "https://www.youtube.com/embed/P6CgCApH60A"
   }
 ],
-    "Safar (صفر)": [],
     "Rabi al-Awwal (ربيع الأول)": [],
-    "Rabi al-Thani (ربيع الثاني)": [],
-    "Jumada al-Awwal (جمادى الأولى)": [],
-    "Jumada al-Thani (جمادى الآخرة)": [],
-    "Rajab (رجب)": [],
-    "Shaban (شعبان)": [],
-    "Ramadan (رمضان)": [],
-    "Shawwal (شوال)": [],
-    "Dhu al-Qadah (ذو القعدة)": [],
-    "Dhu al-Hijjah (ذو الحجة)": []
+    "Rabi al-Thani (ربيع الثاني)": []
   }
 }
 
