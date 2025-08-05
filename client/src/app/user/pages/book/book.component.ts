@@ -45,6 +45,7 @@ export class BookComponent {
   }
 
   downloadPDF(bookName: string): void {
+    debugger;
     const pdfUrl = `../../assets/books/${bookName}.pdf`;
     console.debug(`Downloading PDF: ${pdfUrl}`);
 
