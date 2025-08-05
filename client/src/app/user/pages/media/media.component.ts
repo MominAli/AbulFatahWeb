@@ -36,6 +36,7 @@ currentPages: { [label: string]: number } = {};
   ) {}
 
   ngOnInit(): void {
+    debugger;
     this.mediadetailsService.getMediaList().subscribe(data => {
       this.categories = data.categories;
       this.tabContent = this.initializeItems(data.tabContent);

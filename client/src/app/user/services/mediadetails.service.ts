@@ -10,7 +10,7 @@
  */
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError, Observable, tap, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -18,12 +18,19 @@ export class MediadetailsService {
 
   private dataUrl = 'assets/localDB/media.json'; // Path to the JSON file
 
-  constructor(private http: HttpClient) {}
-
+  constructor(private http: HttpClient) { }
   getMediaList(): Observable<any> {
-    console.log('Fetching media.json from:', this.dataUrl);
-    return this.http.get<any>(this.dataUrl);
-  }
+    console.debug(`Starting media list fetch from: ${this.dataUrl}`);
 
+    return this.http.get<any>(this.dataUrl).pipe(
+      tap(response => {
+        console.info(' Media Data loaded successfully:', response);
+      }),
+      catchError(error => {
+        console.error(' Error loading media data:', error);
+        return throwError(() => new Error('Data load failed'));
+      })
+    );
+  }
 
 }

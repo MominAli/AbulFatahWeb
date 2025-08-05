@@ -10,7 +10,7 @@
  */
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { catchError, Observable, tap, throwError } from 'rxjs';
 
 export interface SubBook {
   id: number;
@@ -38,8 +38,18 @@ export class BookdetailsService {
   constructor(private http: HttpClient) { }
 
   getBookList(): Observable<any> {
-    console.log('Fetching books.json from:', this.dataUrl);
-    return this.http.get<any>(this.dataUrl);
+    console.debug(`Initiating book list fetch from: ${this.dataUrl}`);
+
+    return this.http.get<any>(this.dataUrl).pipe(
+      tap(response => {
+        console.info('Book data loaded successfully:', response);
+      }),
+      catchError(error => {
+        console.error('Failed to load book data:', error);
+        return throwError(() => new Error('Book list fetch failed'));
+      })
+    );
   }
+
 
 }
