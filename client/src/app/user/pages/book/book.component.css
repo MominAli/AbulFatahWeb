@@ -95,7 +95,7 @@
 
 .card-img-wrapper {
   height: 200px;
-  background: linear-gradient(45deg, #dedede, #dcdddf);
+   background: linear-gradient(to right, #e3f2fd, #f1f8e9);
   position: relative;
   overflow: hidden;
   display: flex;
