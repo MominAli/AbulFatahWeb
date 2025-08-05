@@ -1,53 +1,68 @@
-<!-- <div  class="loading-container">
-    <img src="../../../../assets/img/logo/images.jpg" alt="Loading..."  />
-  </div> -->
-<div class="container">
-    <!-- Book Grid -->
-    <div class="row">
-        <!-- Search Box -->
-         <div class="row">
-        <div class="col-md-12">
-             <div class="search-box my-3 search-container">
-            <input type="text" class="form-control" placeholder="Search sub books..." />
-            <button class="search-btn" id="searchBtn">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-        <div
-            *ngFor="let item of subBook | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
-            class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2">
-            <div class="card book-card" tabindex="0">
-                <div class="card-img-wrapper">
-                    <img [src]="item.img" [alt]="item.title || 'Book Image'" loading="lazy" class="card-img-top" 
-                     />
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title text-truncate" [attr.title]="item.title">{{ item.title }}</h5>
-                    <div class="d-flex justify-content-between mt-3">
-                        <button class="btn btn-outline-dark btn-sm" *ngIf="!item.hasChildren" (click)="onRead(item)">
-                            Read
-                        </button>
-                        <button class="btn btn-success btn-sm" *ngIf="!item.hasChildren">
-                            <i class="fas fa-file-pdf fa-fw"></i> Download
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="hero-section">
+  <div class="container text-center">
+    <h1 class="hero-title">📚 Books Library</h1>
+    <p class="hero-subtitle">Explore, read, and download your favorite books</p>
+  </div>
+</section>
 
-    <!-- Pagination -->
-    <div class="pagination-wrapper mt-4 d-flex justify-content-center">
-        <pagination-controls
-            id="content-pagination"
-            (pageChange)="currentPage = $event"
-            class="pagination"
-            previousLabel="Pervious"
-            nextLabel="Next"
-        >
-        </pagination-controls>
+<div class="container">
+  <!-- Search Box -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="search-box my-3 search-container">
+        <input type="text" class="form-control" placeholder="Search sub books..." />
+        <button class="search-btn" id="searchBtn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
     </div>
+  </div>
+
+  <!-- Book Grid -->
+  <div class="row">
+    <div
+      *ngFor="let item of subBook | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+      class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2"
+    >
+      <div class="card book-card" tabindex="0">
+        <div class="card-img-wrapper">
+          <img
+            [src]="item.img"
+            [alt]="item.title || 'Book Image'"
+            loading="lazy"
+            class="card-img-top"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-truncate" [attr.title]="item.title">{{ item.title }}</h5>
+          <div class="d-flex justify-content-between mt-3">
+            <button
+              class="btn btn-outline-dark btn-sm"
+              *ngIf="!item.hasChildren"
+              (click)="onRead(item)"
+            >
+              Read
+            </button>
+            <button class="btn btn-success btn-sm" *ngIf="!item.hasChildren">
+              <i class="fas fa-file-pdf fa-fw"></i> Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-wrapper mt-4 d-flex justify-content-center">
+    <pagination-controls
+      id="content-pagination"
+      (pageChange)="currentPage = $event"
+      class="pagination"
+      previousLabel="Previous"
+      nextLabel="Next"
+    >
+    </pagination-controls>
+  </div>
 </div>
+
 <app-footer></app-footer>
