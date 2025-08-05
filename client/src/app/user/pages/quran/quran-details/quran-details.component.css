@@ -1,30 +1,4 @@
-.next-section {
-  background-color: var(--primary-color);
-  padding: 6px 6px;
-  border-radius: 40px 0px 0px 40px;
-  color: var(--bg-color);
-  border: 5px solid var(--primary-color);
-  font-size: 14px;
-  width: 140px;
-  float: left;
-  text-align: center;
-  font-size: 10px !important;
-  text-decoration: none;
-}
 
-.previous-section {
-  background-color: var(--primary-color);
-  padding: 6px 6px;
-  border-radius: 0px 40px 40px 0px;
-  color: var(--bg-color);
-  border: 5px solid var(--primary-color);
-  font-size: 14px;
-  width: 140px;
-  float: right;
-  text-align: center;
-  font-size: 10px !important;
-  text-decoration: none;
-}
 
 .text-title p {
   font-family: Al-Qalam;
