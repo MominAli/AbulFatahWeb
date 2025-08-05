@@ -1,73 +1,80 @@
-import { Component, inject, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AccountService } from '../../../admin/services/account.service';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ToastrService } from 'ngx-toastr';
+
+import { AccountService } from '../../../admin/services/account.service';
 import { HasRoleDirective } from '../../../shared/directives/has-role.directive';
 import { RegisterComponent } from '../../../admin/pages/register/register.component';
-import { CommonModule } from '@angular/common';
 
-
-
-// Refernce vido https://www.youtube.com/watch?v=YE2fXVFq3lo&t=1349ss
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [
-     CommonModule,FormsModule, BsDropdownModule,
-     RouterLink, RouterLinkActive, HasRoleDirective,
-     RegisterComponent],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrl: './nav.component.css',
+  imports: [
+    CommonModule,
+    FormsModule,
+    BsDropdownModule,
+    RouterLink,
+    RouterLinkActive,
+    HasRoleDirective,
+    RegisterComponent
+  ]
 })
 export class NavComponent {
+  accountService = inject(AccountService);
+  private router = inject(Router);
+  private toastr = inject(ToastrService);
 
-@HostListener('window:scroll', [])
-  onWindowScroll() {
+  model: Record<string, any> = {};
+  registerMode = false;
+  isNavbarCollapsed = true;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
     const navbar = document.getElementById('mainNavbar');
     if (!navbar) return;
 
-    if (window.scrollY > 100) {
-      navbar.classList.add('fixed-top', 'animate');
-      document.body.classList.add('has-fixed-navbar');
-    } else {
-      navbar.classList.remove('fixed-top', 'animate');
-      document.body.classList.remove('has-fixed-navbar');
-    }
-  }
-  accountService = inject(AccountService);
-  private router = inject(Router)
-  private toastr = inject(ToastrService);
-  model: any = {};
+    const scrollTop = window.scrollY;
+    const threshold = 100;
 
-  login() {
+    navbar.classList.toggle('fixed-top', scrollTop > threshold);
+    navbar.classList.toggle('animate', scrollTop > threshold);
+    document.body.classList.toggle('has-fixed-navbar', scrollTop > threshold);
+  }
+
+  login(): void {
     this.accountService.login(this.model).subscribe({
-      next: _ => {
-        this.router.navigateByUrl('/members')
+      next: () => {
+        console.debug('Login successful');
+        this.router.navigateByUrl('/members');
       },
-      error: error => this.toastr.error(error.error)
-    })
+      error: (err) => {
+        console.error('Login error:', err);
+        this.toastr.error(err.error);
+      }
+    });
   }
 
-  logout() {
+  logout(): void {
     this.accountService.logout();
+    console.debug('👋 Logged out');
     this.router.navigateByUrl('/');
   }
 
-  registerMode = false;
-
-  registerToggle() {
-    this.registerMode = !this.registerMode
+  registerToggle(): void {
+    this.registerMode = !this.registerMode;
   }
 
-  cancelRegisterMode(event: boolean) {
+  cancelRegisterMode(event: boolean): void {
     this.registerMode = event;
   }
-  isNavbarCollapsed = true;
 
-  closeNavbar() {
+  closeNavbar(): void {
     this.isNavbarCollapsed = true;
   }
 }
-
