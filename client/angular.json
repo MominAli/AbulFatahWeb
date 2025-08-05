@@ -37,8 +37,7 @@
               "@angular/material/prebuilt-themes/purple-green.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "node_modules/ngx-spinner/animations/line-scale-party.css",
-              "node_modules/ngx-toastr/toastr.css",
-              "src/theme.css"
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
