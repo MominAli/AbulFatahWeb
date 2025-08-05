@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, map, Observable, of, tap, throwError } from 'rxjs';
 
 export interface Surah {
+  type: string;
   surahNumber: number;
   suranameEng: string;
   suranameArabic: string;

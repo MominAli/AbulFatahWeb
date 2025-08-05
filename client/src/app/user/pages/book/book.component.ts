@@ -10,7 +10,7 @@ import { LoaderComponent } from '../../../shared/components/loader/loader.compon
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [LoaderComponent,FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
+  imports: [LoaderComponent, FooterComponent, CommonModule, FormsModule, NgxPaginationModule],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
@@ -26,39 +26,44 @@ export class BookComponent {
   books: any[] = [];
 
   constructor(private bookdetailsService: BookdetailsService, private router: Router) { }
+  ngOnInit(): void {
+    this.loading = true;
+    console.debug('Fetching book list...');
 
-   ngOnInit(): void {
     this.bookdetailsService.getBookList().subscribe({
-      next: data => {
+      next: (data) => {
         this.books = data;
-        console.log('Books loaded:', data);
-      this.loading = false; // Data loaded
-
+        this.loading = false;
+        console.info(` Books loaded: ${data.length} items`);
       },
-      error: err => {
-        console.error('Error loading books:', err);
+      error: (err) => {
+        this.loading = false;
+        console.error(' Error loading book list:', err);
       }
     });
-    console.log(this.books);
   }
-
 
   downloadPDF(bookName: string): void {
     const pdfUrl = `../../assets/books/${bookName}.pdf`;
+    console.debug(`Downloading PDF: ${pdfUrl}`);
+
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = `${bookName}.pdf`;
     link.click();
   }
 
- goToSubBooks(bookId: number): void {
-  this.router.navigate(['/sub-book', bookId]);
-}
-
- onRead(book: any): void {
-  if (!book.hasChildren) {
-    this.router.navigate(['/book-details', book.id]);
+  goToSubBooks(bookId: number): void {
+    console.debug(`Navigating to sub-books for Book ID: ${bookId}`);
+    this.router.navigate(['/sub-book', bookId]);
   }
-}
+
+  onRead(book: { hasChildren: boolean; id: number }): void {
+    if (!book.hasChildren) {
+      console.debug(`Navigating to book details for Book ID: ${book.id}`);
+      this.router.navigate(['/book-details', book.id]);
+    }
+  }
+
 }
 

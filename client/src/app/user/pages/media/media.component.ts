@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-
+import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { FooterComponent } from '../../../shared/components/footer/footer.component';
-import { MediadetailsService } from '../../services/mediadetails.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
+import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
+import { MediadetailsService } from '../../services/mediadetails.service';
 
 @Component({
   selector: 'app-media',
@@ -17,15 +16,15 @@ import { LoaderComponent } from '../../../shared/components/loader/loader.compon
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })
-
 export class MediaComponent implements OnInit {
   categories: { title: string; label: string }[] = [];
-  tabContent: { [label: string]: any[] } = {};
-  filteredTabContent: { [label: string]: any[] } = {};
+  tabContent: Record<string, any[]> = {};
+  filteredTabContent: Record<string, any[]> = {};
+  currentPages: Record<string, number> = {};
+
   activeTab = 0;
   searchQuery = '';
   itemsPerPage = 8;
-currentPages: { [label: string]: number } = {};
   totalCategories = 0;
   mobileTabsVisible = false;
   loading = true;
@@ -36,23 +35,32 @@ currentPages: { [label: string]: number } = {};
   ) {}
 
   ngOnInit(): void {
-    debugger;
-    this.mediadetailsService.getMediaList().subscribe(data => {
-      this.categories = data.categories;
-      this.tabContent = this.initializeItems(data.tabContent);
-      this.filteredTabContent = { ...this.tabContent };
-      this.totalCategories = this.categories.length;
-      this.categories.forEach(cat => {
-  this.currentPages[cat.label] = 1;
-});
-      this.loading = false;
+    console.debug('Fetching media list...');
+    this.loading = true;
+
+    this.mediadetailsService.getMediaList().subscribe({
+      next: (data) => {
+        this.categories = data.categories;
+        this.tabContent = this.initializeItems(data.tabContent);
+        this.filteredTabContent = { ...this.tabContent };
+        this.totalCategories = this.categories.length;
+        this.categories.forEach(cat => {
+          this.currentPages[cat.label] = 1;
+        });
+        console.log(`Loaded ${this.totalCategories} categories`);
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error('Error fetching media list:', err);
+        this.loading = false;
+      }
     });
   }
 
-  initializeItems(content: { [label: string]: any[] }): { [label: string]: any[] } {
-    const initialized: { [label: string]: any[] } = {};
-    for (const key in content) {
-      initialized[key] = content[key].map(item => ({
+  private initializeItems(content: Record<string, any[]>): Record<string, any[]> {
+    const initialized: Record<string, any[]> = {};
+    for (const label in content) {
+      initialized[label] = content[label].map(item => ({
         ...item,
         loaded: false
       }));
@@ -63,7 +71,6 @@ currentPages: { [label: string]: number } = {};
   changeTab(index: number): void {
     this.activeTab = index;
     this.mobileTabsVisible = false;
-    // this.currentPage = 1;
   }
 
   toggleMenu(): void {
@@ -71,10 +78,8 @@ currentPages: { [label: string]: number } = {};
   }
 
   sanitizeUrl(url: string): SafeResourceUrl {
-    if (url.includes('watch?v=')) {
-      url = url.replace('watch?v=', 'embed/');
-    }
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    const embedUrl = url.includes('watch?v=') ? url.replace('watch?v=', 'embed/') : url;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl);
   }
 
   extractVideoId(url: string): string {
@@ -84,10 +89,9 @@ currentPages: { [label: string]: number } = {};
 
   filterResults(): void {
     const query = this.searchQuery.toLowerCase();
-    // this.currentPage = 1;
-
     this.filteredTabContent = {};
-    for (const label of Object.keys(this.tabContent)) {
+
+    for (const label in this.tabContent) {
       this.filteredTabContent[label] = this.tabContent[label].filter(item =>
         item.name.toLowerCase().includes(query)
       );
@@ -95,8 +99,9 @@ currentPages: { [label: string]: number } = {};
   }
 
   onPageChange(page: number): void {
-  const activeLabel = this.categories[this.activeTab].label;
-  this.currentPages[activeLabel] = page;
-}
-
+    const activeLabel = this.categories[this.activeTab]?.label;
+    if (activeLabel) {
+      this.currentPages[activeLabel] = page;
+    }
+  }
 }
