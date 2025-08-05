@@ -1,27 +1,21 @@
-.mt-150{
+/* Margin Utility */
+.mt-150 {
     margin-top: 150px;
 }
+
 @media screen and (max-width: 768px) {
     .mt-150 {
         margin-top: -30px;
     }
 }
 
-.maincarousel .carousel-caption {
-   position: absolute;
-    top: 33%;
-}
+/* Responsive Caption Adjustments */
+@media screen and (max-width: 768px) {
+    .maincarousel .carousel-caption h1 {
+        font-size: 2rem;
+    }
 
-
-.maincarousel .carousel-caption h1  {
-   color: #fff;
-   font-size: 3.1rem;
-   text-transform: capitalize;
-
-}
-.maincarousel .carousel-caption p  {
-   color: #fff;
-   font-size: 1.5rem;
-   text-transform: capitalize;
-
+    .maincarousel .carousel-caption p {
+        font-size: 1.2rem;
+    }
 }
