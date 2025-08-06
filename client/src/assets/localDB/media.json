@@ -1,18 +1,30 @@
 {
   "categories": [
-    { "title": "Naat", "label": "Latest Naat" },
-    { "title": "Manqabat", "label": "Latest Manqabat" },
+    { "title": "Dars e Quran Shareef ", "label": "Dars e Quran Shareef " },
+    { "title": "Naate Paak", "label": "Naate Paak" },
+    { "title": "Manqabat Sharif", "label": "Manqabat Sharif" },
+
+    
+    { "title": "Rabi-ul-Awwal Sharif", "label": "Rabi-ul-Awwal Sharif" },
+    { "title": "Rabi-us-Saani Sharif", "label": "Rabi-us-Saani Sharif" },
+
+    { "title": "Moharram-ul-Haram", "label": "Moharram-ul-Haram" },
+
+     { "title": "Huzur Sher-e-Hindustan", "label": "Huzur Sher-e-Hindustan" },  
     { "title": "Malange Maula Ali", "label": "Malange Maula Ali" },
     { "title": "Hussaini Zal Zala", "label": "Hussaini Zal Zala" },
-    { "title": "Jashne Ghausul Wara", "label": "Jashne Ghausul Wara" },
-    { "title": "Huzoor Sher E Hindustan", "label": "Huzoor Sher E Hindustan" },
-    { "title": "Dars e Quran Shareef ", "label": "Dars e Quran Shareef " },
-    { "title": "Islamic Months", "label": "Muharram (محرم)" },
-    { "title": "Islamic Months", "label": "Rabi al-Awwal (ربيع الأول)" },
-    { "title": "Islamic Months", "label": "Rabi al-Thani (ربيع الثاني)" }
+   
+    
+    
+    { "title": "Huzur Shamail-e-Millat", "label": "Huzur Shamail-e-Millat" },
+    { "title": "Hazrat Muftiye Azam Pilibhit", "label": "Hazrat Muftiye Azam Pilibhit" },
+    { "title": "Huzur Mohaqqiq-e-Asr", "label": "Huzur Mohaqqiq-e-Asr" },
+    { "title": "Humshabeeh-e-Nasire Millat", "label": "Humshabeeh-e-Nasire Millat" }
+
   ],
+
   "tabContent": {
-    "Latest Naat": [
+    "Naate Paak": [
   {
     "name": "Faaslon ko taqalluf hai humse agar",
     "url": "https://www.youtube.com/embed/GZkbK1NXuas"
@@ -87,7 +99,7 @@
   }
 ]
 ,
-    "Latest Manqabat": [
+    "Manqabat Sharif": [
   {
     "name": "Shere Sunnat Hain",
     "url": "https://www.youtube.com/embed/kSOpCVJ-uxM"
@@ -212,7 +224,7 @@
   }
 ]
 ,
-  "Jashne Ghausul Wara": [
+  "Rabi-us-Saani Sharif": [
   {
     "name": "Jashne Ghausul wara conference Aghiya Kunda 2022",
     "url": "https://www.youtube.com/embed/EMBmB4_Bta0?si=74mL2Md-TRmHY41g"
@@ -247,7 +259,7 @@
   }
 ]
 , 
-   "Huzoor Sher E Hindustan": [
+   "Huzur Sher-e-Hindustan": [
   {
     "name": "Radde Sulahkulliayat",
     "url": "https://www.youtube.com/embed/MyfiBBAPeUY"
@@ -345,7 +357,7 @@
     "url": "https://www.youtube.com/embed/poMg4-cD8Ak"
   }
 ],
-   "Dars e Quran Shareef": [
+   "Darse Quran": [
   {
     "name": "1 Ramzanul Mubarak 2023",
     "url": "https://www.youtube.com/embed/p4h2kNvZQLw"
@@ -455,7 +467,7 @@
     "url": "https://www.youtube.com/embed/dfgl1Q4K_xA"
   }
 ],
-  "Muharram (محرم)": [
+  "Moharram-ul-Haram": [
   {
     "name": "Day 3",
     "url": "https://www.youtube.com/embed/NvFnakAdfwI?si=9GSG0rGx62i_l14n"
@@ -533,8 +545,14 @@
     "url": "https://www.youtube.com/embed/P6CgCApH60A"
   }
 ],
-    "Rabi al-Awwal (ربيع الأول)": [],
-    "Rabi al-Thani (ربيع الثاني)": []
+    "Rabi-ul-Awwal Sharif": [],
+    "Rabi-us-Saani Sharif": [],
+
+    "Huzur Shamail-e-Millat": [],
+    "Hazrat Muftiye Azam Pilibhit": [],
+    "Huzur Mohaqqiq-e-Asr": [],
+    "Humshabeeh-e-Nasire Millat": []
+
   }
 }
 
